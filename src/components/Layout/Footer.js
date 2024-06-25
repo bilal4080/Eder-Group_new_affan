@@ -26,7 +26,7 @@ const Footer = () => {
                         <div className="mt-6 flex justify-center gap-4 lg:justify-start">
                             <a
                                 className="text-gray-700 transition hover:text-gray-700/75"
-                                href="https://www.facebook.com/nodexlogistics/"
+                                href="https://www.facebook.com/theminuseder/"
                                 target="_blank"
                                 rel="noreferrer"
                             >
