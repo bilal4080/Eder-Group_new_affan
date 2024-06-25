@@ -1,0 +1,29 @@
+html,
+body {
+  position: relative;
+  height: auto;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  height: auto;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-slide {
+  overflow: hidden;
+}
