@@ -67,18 +67,15 @@ export default function Hero() {
             <div className="relative min-w-[90%] min-h-[80%] mx-auto z-10 flex  h-auto ">
                 <section className="flex  justify-center items-center ">
                     <li className="my-16 flex gap-5 text-md  md:text-xl flex-col">
-                        <a href="https://www.facebook.com/nodexlogistics/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.facebook.com/theminuseder/" target="_blank" rel="noopener noreferrer">
                             <FaFacebookF className="cursor-pointer" />
                         </a>
-                        <FaInstagram className=" cursor-pointer" />
-                        <a
-                            href="https://www.linkedin.com/in/nodex-logistics-5975a226a/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <FaLinkedinIn className="cursor-pointer" />
+
+                        <a href="https://www.instagram.com/edergmbh/" target="_blank" rel="noopener noreferrer">
+                            <FaInstagram className="cursor-pointer" />
                         </a>
                         <FaXTwitter className=" cursor-pointer" />
+                        <FaLinkedinIn className=" cursor-pointer" />
                     </li>
                 </section>
                 <div className="relative px-8 w-full py-6 sm:py-24 ">

@@ -43,7 +43,7 @@ const Footer = () => {
 
                             <a
                                 className="text-gray-700 transition hover:text-gray-700/75"
-                                href="https://www.linkedin.com/in/nodex-logistics-5975a226a/"
+                                href="https://www.instagram.com/edergmbh/"
                                 target="_blank"
                                 rel="noreferrer"
                             >
@@ -60,7 +60,7 @@ const Footer = () => {
 
                             <a
                                 className="text-gray-700 transition hover:text-gray-700/75"
-                                href="https://www.facebook.com/nodexlogistics/"
+                                href=""
                                 target="_blank"
                                 rel="noreferrer"
                             >
