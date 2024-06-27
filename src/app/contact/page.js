@@ -2,51 +2,51 @@
 import React, {useState} from "react";
 import axios from "axios";
 
-const ContactForm = () => {
+const Kontaktformular = () => {
     const [email, setEmail] = useState("");
-    const [subject, setSubject] = useState("");
-    const [message, setMessage] = useState("");
-    const [errors, setErrors] = useState({});
+    const [betreff, setBetreff] = useState("");
+    const [nachricht, setNachricht] = useState("");
+    const [fehler, setFehler] = useState({});
     const [status, setStatus] = useState("");
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // Simple validation
-        let errors = {};
+        // Einfache Validierung
+        let fehler = {};
         if (!email) {
-            errors.email = "Email is required";
+            fehler.email = "E-Mail ist erforderlich";
         }
-        if (!subject) {
-            errors.subject = "Subject is required";
+        if (!betreff) {
+            fehler.betreff = "Betreff ist erforderlich";
         }
-        if (!message) {
-            errors.message = "Message is required";
+        if (!nachricht) {
+            fehler.nachricht = "Nachricht ist erforderlich";
         }
 
-        if (Object.keys(errors).length === 0) {
+        if (Object.keys(fehler).length === 0) {
             try {
                 const response = await axios.post("/api/send_email", {
                     email,
-                    subject,
-                    message,
+                    betreff,
+                    nachricht,
                 });
 
                 if (response.status === 200) {
                     setEmail("");
-                    setSubject("");
-                    setMessage("");
-                    setStatus("success");
+                    setBetreff("");
+                    setNachricht("");
+                    setStatus("erfolg");
                 } else {
-                    console.error("Unexpected response:", response);
-                    setStatus("error");
+                    console.error("Unerwartete Antwort:", response);
+                    setStatus("fehler");
                 }
             } catch (error) {
-                console.error("Error sending email:", error);
-                setStatus("error");
+                console.error("Fehler beim Senden der E-Mail:", error);
+                setStatus("fehler");
             }
         } else {
-            setErrors(errors);
+            setFehler(fehler);
         }
     };
 
@@ -54,20 +54,20 @@ const ContactForm = () => {
         <section className="bg-white dark:bg-gray-900 pt-10">
             <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                 <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
-                    Contact Us
+                    Kontaktieren Sie uns
                 </h2>
                 <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-                    Do you have a technical issue? Want to send feedback about a beta feature? Need details about our
-                    business plan? Let us know.
+                    Haben Sie ein technisches Problem? Möchten Sie Feedback zu einer Beta-Funktion geben? Benötigen Sie
+                    Details zu unserem Geschäftsplan? Lassen Sie es uns wissen.
                 </p>
-                {status === "success" && (
+                {status === "erfolg" && (
                     <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-2 rounded-md mb-4">
-                        Email sent successfully!
+                        E-Mail erfolgreich gesendet!
                     </div>
                 )}
-                {status === "error" && (
+                {status === "fehler" && (
                     <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-2 rounded-md mb-4">
-                        Error sending email. Please try again later.
+                        Fehler beim Senden der E-Mail. Bitte versuchen Sie es später erneut.
                     </div>
                 )}
                 <form onSubmit={handleSubmit} className="space-y-8">
@@ -76,66 +76,66 @@ const ContactForm = () => {
                             htmlFor="email"
                             className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                         >
-                            Your Email
+                            Ihre E-Mail
                         </label>
                         <input
                             type="email"
                             id="email"
                             className={`shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light ${
-                                errors.email ? "border-red-500" : ""
+                                fehler.email ? "border-red-500" : ""
                             }`}
                             placeholder="affan@eder.de"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             required
                         />
-                        {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
+                        {fehler.email && <p className="text-red-500 text-xs mt-1">{fehler.email}</p>}
                     </div>
                     <div>
                         <label
-                            htmlFor="subject"
+                            htmlFor="betreff"
                             className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                         >
-                            Subject
+                            Betreff
                         </label>
                         <input
                             type="text"
-                            id="subject"
+                            id="betreff"
                             className={`block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light ${
-                                errors.subject ? "border-red-500" : ""
+                                fehler.betreff ? "border-red-500" : ""
                             }`}
-                            placeholder="Let us know how we can help you"
-                            value={subject}
-                            onChange={(e) => setSubject(e.target.value)}
+                            placeholder="Lassen Sie uns wissen, wie wir Ihnen helfen können"
+                            value={betreff}
+                            onChange={(e) => setBetreff(e.target.value)}
                             required
                         />
-                        {errors.subject && <p className="text-red-500 text-xs mt-1">{errors.subject}</p>}
+                        {fehler.betreff && <p className="text-red-500 text-xs mt-1">{fehler.betreff}</p>}
                     </div>
                     <div className="sm:col-span-2">
                         <label
-                            htmlFor="message"
+                            htmlFor="nachricht"
                             className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
                         >
-                            Your Message
+                            Ihre Nachricht
                         </label>
                         <textarea
-                            id="message"
+                            id="nachricht"
                             rows="6"
                             className={`block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 ${
-                                errors.message ? "border-red-500" : ""
+                                fehler.nachricht ? "border-red-500" : ""
                             }`}
-                            placeholder="Leave a comment..."
-                            value={message}
-                            onChange={(e) => setMessage(e.target.value)}
+                            placeholder="Hinterlassen Sie einen Kommentar..."
+                            value={nachricht}
+                            onChange={(e) => setNachricht(e.target.value)}
                             required
                         ></textarea>
-                        {errors.message && <p className="text-red-500 text-xs mt-1">{errors.message}</p>}
+                        {fehler.nachricht && <p className="text-red-500 text-xs mt-1">{fehler.nachricht}</p>}
                     </div>
                     <button
                         type="submit"
                         className="py-3 px-5 text-sm bg-black font-medium text-center text-white rounded-lg sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                     >
-                        Send Message
+                        Nachricht senden
                     </button>
                 </form>
             </div>
@@ -143,4 +143,4 @@ const ContactForm = () => {
     );
 };
 
-export default ContactForm;
+export default Kontaktformular;
