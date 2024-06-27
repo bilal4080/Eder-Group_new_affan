@@ -1,11 +1,11 @@
 "use client";
 import React, {useState, useEffect} from "react";
-// Import react scroll
 import {Link as LinkScroll} from "react-scroll";
 import LogoVPN from "../../../public/Logo.png";
 import Image from "next/image";
 import {SlArrowDown} from "react-icons/sl";
 import Link from "next/link";
+
 const Header = () => {
     const [activeLink, setActiveLink] = useState(null);
     const [scrollActive, setScrollActive] = useState(false);
@@ -33,11 +33,23 @@ const Header = () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
+
     useEffect(() => {
         window.addEventListener("scroll", () => {
             setScrollActive(window.scrollY > 20);
         });
     }, []);
+
+    const closeMenu = () => {
+        setOpen(false);
+        setSubSCSMenu1(false);
+        setSSubMenu1(false);
+        setECSSubMenu1(false);
+        setFSubMenu1(false);
+        setISubMenu1(false);
+        setWSSubMenu1(false);
+    };
+
     const headerItems = [
         {
             heading: "Lösungen für die Lieferkette",
@@ -51,23 +63,10 @@ const Header = () => {
                 setSubSCSMenu1(data);
             },
             subLinks: [
-                {
-                    link: "/industry_solutions",
-                    text: "Branchenlösungen",
-                },
-                {
-                    link: "/port_logistics",
-                    text: "Hafenlogistik",
-                },
-                {
-                    link: "/offshore_logistics",
-                    text: "Offshore-Logistik",
-                },
-
-                {
-                    link: "/commodity_logistics",
-                    text: "Warenlogistik",
-                },
+                {link: "/industry_solutions", text: "Branchenlösungen"},
+                {link: "/port_logistics", text: "Hafenlogistik"},
+                {link: "/offshore_logistics", text: "Offshore-Logistik"},
+                {link: "/commodity_logistics", text: "Warenlogistik"},
             ],
         },
         {
@@ -82,39 +81,13 @@ const Header = () => {
                 setSubSCSMenu1(false);
             },
             subLinks: [
-                {
-                    link: "/sea_freight",
-                    text: "Seefracht",
-                },
-                {
-                    link: "/air_freight",
-                    text: "Luftfracht",
-                },
-                {
-                    link: "/custom_clear",
-                    text: "Zollabfertigung",
-                },
-                {
-                    link: "/ground_dist",
-                    text: "Bodendistribution",
-                },
-                {
-                    link: "/inter_model",
-                    text: "Intermodal",
-                },
-                {
-                    link: "/ware_house",
-                    text: "Lagerhaltung",
-                },
-
-                {
-                    link: "/trans_border",
-                    text: "Transgrenz",
-                },
-                // {
-                //   link: "/press",
-                //   text: "Transportation Technology",
-                // },
+                {link: "/sea_freight", text: "Seefracht"},
+                {link: "/air_freight", text: "Luftfracht"},
+                {link: "/custom_clear", text: "Zollabfertigung"},
+                {link: "/ground_dist", text: "Bodendistribution"},
+                {link: "/inter_model", text: "Intermodal"},
+                {link: "/ware_house", text: "Lagerhaltung"},
+                {link: "/trans_border", text: "Transgrenz"},
             ],
         },
         {
@@ -128,149 +101,8 @@ const Header = () => {
                 setSSubMenu1(false);
                 setSubSCSMenu1(false);
             },
-            subLinks: [
-                // {
-                //   link: "/team",
-                //   text: "2-Day Shipping",
-                // },
-                // {
-                //   link: "/career",
-                //   text: "Customization",
-                // },
-                // {
-                //   link: "/sustainability",
-                //   text: "Global Expansion",
-                // },
-                // {
-                //   link: "/partnerships",
-                //   text: "Omnichannel & B2B",
-                // },
-                // {
-                //   link: "/press",
-                //   text: "WMS",
-                // },
-                // {
-                //   link: "/press",
-                //   text: "Outsourced Fulfillment",
-                // },
-                // {
-                //   link: "/team",
-                //   text: "1-Day Delivery",
-                // },
-                // {
-                //   link: "/career",
-                //   text: "Our advantages",
-                // },
-                // {
-                //   link: "/sustainability",
-                //   text: "E-commerce fulfillment",
-                // },
-                // {
-                //   link: "/partnerships",
-                //   text: "Fulfillment Center",
-                // },
-                // {
-                //   link: "/press",
-                //   text: "Fulfillment costs",
-                // },
-                // {
-                //   link: "/press",
-                //   text: "Shipping automation",
-                // },
-                // {
-                //   link: "/press",
-                //   text: "3PL Logistics",
-                // },
-                // {
-                //   link: "/press",
-                //   text: "3PL vs. 4PL",
-                // },
-                // {
-                //   link: "/team",
-                //   text: "Shopify",
-                // },
-                // {
-                //   link: "/career",
-                //   text: "WooCommerce",
-                // },
-                {
-                    link: "/3pl_4pl",
-                    text: "3PL vs. 4PL",
-                },
-            ],
+            subLinks: [{link: "/3pl_4pl", text: "3PL vs. 4PL"}],
         },
-        // {
-        //   heading: "Fulfillment",
-        //   state: subFMenu1,
-        //   func: (data) => {
-        //     setISubMenu1(false);
-        //     setECSSubMenu1(false);
-        //     setWSSubMenu1(false);
-        //     setFSubMenu1(data);
-        //     setSSubMenu1(false);
-        //     setSubSCSMenu1(false);
-        //   },
-        //   subLinks: [
-        //     {
-        //       link: "/team",
-        //       text: "1-Day Delivery",
-        //     },
-        //     {
-        //       link: "/career",
-        //       text: "Our advantages",
-        //     },
-        //     {
-        //       link: "/sustainability",
-        //       text: "E-commerce fulfillment",
-        //     },
-        //     {
-        //       link: "/partnerships",
-        //       text: "Fulfillment Center",
-        //     },
-        //     {
-        //       link: "/press",
-        //       text: "Fulfillment costs",
-        //     },
-        //     {
-        //       link: "/press",
-        //       text: "Shipping automation",
-        //     },
-        //     {
-        //       link: "/press",
-        //       text: "3PL Logistics",
-        //     },
-        //     {
-        //       link: "/press",
-        //       text: "3PL vs. 4PL",
-        //     },
-        //   ],
-        // },
-        // {
-        //   heading: "Integrations",
-        //   state: subIMenu1,
-        //   func: (data) => {
-        //     setISubMenu1(data);
-        //     setECSSubMenu1(false);
-        //     setWSSubMenu1(false);
-        //     setFSubMenu1(false);
-        //     setSSubMenu1(false);
-        //     setSubSCSMenu1(false);
-        //   },
-        //   subLinks: [
-        //     {
-        //       link: "/team",
-        //       text: "Shopify",
-        //     },
-        //     {
-        //       link: "/career",
-        //       text: "WooCommerce",
-        //     },
-        //     {
-        //       link: "/sustainability",
-        //       text: "Shopware",
-        //     },
-        //   ],
-        // },
         {
             heading: "Exports",
             state: subWSMenu1,
@@ -282,26 +114,10 @@ const Header = () => {
                 setSSubMenu1(false);
                 setSubSCSMenu1(false);
             },
-            subLinks: [
-                {
-                    link: "/tyres",
-                    text: "Reifen",
-                },
-                // {
-                //     link: "/NotFound",
-                //     text: "Steel",
-                // },
-                // {
-                //     link: "/NotFound",
-                //     text: "Metals",
-                // },
-            ],
+            subLinks: [{link: "/tyres", text: "Reifen"}],
         },
-        // {
-        //     link: "/blog",
-        //     text: "Blog",
-        // },
     ];
+
     return (
         <>
             <header
@@ -330,7 +146,6 @@ const Header = () => {
                                     quality={100}
                                     width={100}
                                     height={100}
-                                    // layout="responsive"
                                 />
                             </Link>
                             <button
@@ -356,13 +171,12 @@ const Header = () => {
                         <nav
                             className={`xl:h-auto ${
                                 open ? "flex min-h-screen max-h-max " : "h-0 scale-y-0 xl:scale-y-100"
-                            }  flex flex-col flex-grow xl:items-center pb-4 xl:pb-0 xl:flex xl:justify-end xl:flex-row origin-top duration-300`}
+                            } flex flex-col flex-grow xl:items-center pb-4 xl:pb-0 xl:flex xl:justify-end xl:flex-row origin-top duration-300`}
                         >
                             {headerItems?.map((item, index) => (
                                 <div key={index}>
                                     {item?.link ? (
                                         <>
-                                            {" "}
                                             <LinkScroll
                                                 activeClass="active"
                                                 to={item.link}
@@ -371,6 +185,7 @@ const Header = () => {
                                                 duration={1000}
                                                 onSetActive={() => {
                                                     setActiveLink(item.text);
+                                                    closeMenu();
                                                 }}
                                                 className={
                                                     "px-4 py-2 mx-2 cursor-pointer font-normal animation-hover inline-block relative" +
@@ -384,41 +199,39 @@ const Header = () => {
                                         </>
                                     ) : (
                                         <>
-                                            <div
-                                                // onMouseLeave={() => setSubSCSMenu1(!subSCSMenu1)}
-                                                className={`px-4
-               py-2 mx-2 cursor-pointer relative animation-hover`}
-                                            >
+                                            <div className={`px-4 py-2 mx-2 cursor-pointer relative animation-hover`}>
                                                 <div
                                                     onClick={() => item.func(!item.state)}
                                                     onMouseEnter={() => item.func(!item.state)}
-                                                    className=" flex font-normal hover:text-white"
+                                                    className="flex font-normal hover:text-white"
                                                 >
                                                     {item.heading}
                                                     <SlArrowDown
                                                         className={`transition-all ml-2 mt-2 duration-500 ease-in-out font-medium ${
                                                             item.state ? "rotate-180" : ""
                                                         }`}
-                                                        // color="white"
                                                         size={10}
                                                     />
                                                 </div>
                                                 <div
                                                     onMouseLeave={() => item.func(!item.state)}
-                                                    className={`xl:flex absolute hover-submenu border  rounded-lg border-gray-500 top-16 right-auto hidden gap-4 w-max ${
+                                                    className={`xl:flex absolute hover-submenu border rounded-lg border-gray-500 top-16 right-auto hidden gap-4 w-max ${
                                                         item.state ? "h-auto" : "scale-y-0 h-0"
                                                     } px-8 py-4`}
                                                 >
                                                     <div className="w-full">
-                                                        {item.subLinks.map((item, index) => (
-                                                            <Link href={item.link}>
+                                                        {item.subLinks.map((subItem, subIndex) => (
+                                                            <Link
+                                                                href={subItem.link}
+                                                                key={subIndex}
+                                                                onClick={closeMenu}
+                                                            >
                                                                 <li
-                                                                    key={index}
                                                                     className={
                                                                         "px-4 py-2 mx-2 flex cursor-pointer animation-hover relative hover:text-blue-300 "
                                                                     }
                                                                 >
-                                                                    {item.text}
+                                                                    {subItem.text}
                                                                 </li>
                                                             </Link>
                                                         ))}
@@ -430,15 +243,14 @@ const Header = () => {
                                                     item.state ? "h-auto" : "scale-y-0 h-0"
                                                 } px-4`}
                                             >
-                                                {item.subLinks.map((item, index) => (
-                                                    <Link href={item.link}>
+                                                {item.subLinks.map((subItem, subIndex) => (
+                                                    <Link href={subItem.link} key={subIndex} onClick={closeMenu}>
                                                         <li
-                                                            key={index}
                                                             className={
                                                                 "px-4 py-2 mx-2 flex cursor-pointer animation-hover relative hover:text-blue-300 "
                                                             }
                                                         >
-                                                            {item.text}
+                                                            {subItem.text}
                                                         </li>
                                                     </Link>
                                                 ))}
@@ -450,18 +262,18 @@ const Header = () => {
                             <div className="flex font-semibold flex-col xl:flex-row gap-3 my-4 xl:my-0">
                                 <Link
                                     href={"/contact"}
-                                    className=" tracking-wide py-2 px-5 rounded-md sm:px-8 bg-transparent  outline-none capitalize transition-all hover:shadow-blue "
+                                    className="tracking-wide py-2 px-5 rounded-md sm:px-8 bg-transparent outline-none capitalize transition-all hover:shadow-blue"
+                                    onClick={closeMenu}
                                 >
                                     Kontakt
                                 </Link>
-                                {/* <ButtonOutline>Sign Up</ButtonOutline> */}
                             </div>
                         </nav>
                     </div>
                 </div>
                 <div
                     className={
-                        " w-[95vw]  hidden xl:block bg-gray-400 mx-auto" +
+                        "w-[95vw] hidden xl:block bg-gray-400 mx-auto" +
                         (scrollActive ? "hidden h-0" : " block h-[0.1px]")
                     }
                 ></div>
@@ -471,12 +283,3 @@ const Header = () => {
 };
 
 export default Header;
-
-// <div className="flex flex-col xl:flex-row gap-3 my-4 xl:my-0">
-// <Link
-//     href={"/cal_pricing"}
-//     className="font-semibold tracking-wide py-2 px-5 rounded-md sm:px-8 bg-transparent hover:border hover:border-white outline-none capitalize transition-all hover:shadow-blue "
-// >
-//     Preiskatalog
-// </Link>
-// </div>
