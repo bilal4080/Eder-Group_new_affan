@@ -1,7 +1,6 @@
 "use client";
 import {useState, useEffect} from "react";
 import Link from "next/link"; // Import Link from Next.js
-import {AiOutlineWhatsApp} from "react-icons/ai"; // Import WhatsApp icon from React Icons
 import Hero from "@/components/Home/Hero";
 import SupplyChain from "@/components/Home/SupplyChain";
 import GlobalTransport from "@/components/Home/GlobalTransport";
@@ -14,27 +13,27 @@ import Section11 from "@/components/Home/Section11";
 
 export default function Home() {
     const [showPopup, setShowPopup] = useState(false);
-    const [showWhatsAppPopup, setShowWhatsAppPopup] = useState(false);
+    // const [showWhatsAppPopup, setShowWhatsAppPopup] = useState(false);
 
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowPopup(true);
         }, 5000);
 
-        const hidePopupTimer = setTimeout(() => {
-            setShowPopup(false);
-            setShowWhatsAppPopup(true);
-        }, 9000); // 5000ms + 4000ms to show the WhatsApp popup after 4 seconds of showing the first popup
+        // const hidePopupTimer = setTimeout(() => {
+        //     setShowPopup(false);
+        //     setShowWhatsAppPopup(true);
+        // }, 9000); // 5000ms + 4000ms to show the WhatsApp popup after 4 seconds of showing the first popup
 
         return () => {
             clearTimeout(timer);
-            clearTimeout(hidePopupTimer);
+            // clearTimeout(hidePopupTimer);
         };
     }, []);
 
     const closePopup = () => {
         setShowPopup(false);
-        setShowWhatsAppPopup(true);
+        // setShowWhatsAppPopup(true);
     };
 
     const scheduleMeeting = () => {
@@ -42,12 +41,12 @@ export default function Home() {
         closePopup();
     };
 
-    const openWhatsApp = () => {
-        const phoneNumber = "YOUR_PHONE_NUMBER"; // Replace with your WhatsApp phone number
-        const message = "Hello, I have a question about your services.";
-        const url = `https://wa.me/${+923111982255}?text=${encodeURIComponent(message)}`;
-        window.open(url, "_blank");
-    };
+    // const openWhatsApp = () => {
+    //     const phoneNumber = "YOUR_PHONE_NUMBER"; // Replace with your WhatsApp phone number
+    //     const message = "Hello, I have a question about your services.";
+    //     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    //     window.open(url, "_blank");
+    // };
 
     return (
         <>
@@ -80,7 +79,7 @@ export default function Home() {
                     </div>
                 </div>
             )}
-            {showWhatsAppPopup && (
+            {/* {showWhatsAppPopup && (
                 <div className="fixed bottom-0 right-0 m-8 flex items-center">
                     <button
                         onClick={openWhatsApp}
@@ -90,7 +89,7 @@ export default function Home() {
                         <span>WhatsApp us</span>
                     </button>
                 </div>
-            )}
+            )} */}
         </>
     );
 }

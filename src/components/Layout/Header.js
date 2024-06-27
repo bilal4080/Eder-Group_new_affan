@@ -104,7 +104,7 @@ const Header = () => {
             subLinks: [{link: "/3pl_4pl", text: "3PL vs. 4PL"}],
         },
         {
-            heading: "Exports",
+            heading: "Exporte",
             state: subWSMenu1,
             func: (data) => {
                 setISubMenu1(false);
