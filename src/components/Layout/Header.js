@@ -114,7 +114,11 @@ const Header = () => {
                 setSSubMenu1(false);
                 setSubSCSMenu1(false);
             },
-            subLinks: [{link: "/tyres", text: "Reifen"}],
+            subLinks: [
+                {link: "/tyres", text: "Reifen"},
+                {link: "/notfound", text: "Stahl"},
+                // {link: "/tyres", text: "Reifen"},
+            ],
         },
     ];
 

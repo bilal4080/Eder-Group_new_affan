@@ -1,29 +1,16 @@
 import React from "react";
+
 const Footer = () => {
     return (
         <div className="bg-white">
             <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
-                <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32">
-                    <div className="mx-auto max-w-sm lg:max-w-none">
-                        <p className="mt-4 text-center text-gray-500 lg:text-left lg:text-lg">
+                <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
+                    <div className="lg:col-span-1 text-center lg:text-left">
+                        <p className="text-gray-500 lg:text-lg">
                             Die unbefugte Nutzung, Vervielfältigung oder Verbreitung urheberrechtlich geschützten
                             Materials der Eder ist strengstens untersagt und kann rechtliche Schritte zur Folge haben.
                         </p>
-                        <p className="mt-4 text-center text-gray-500 lg:text-left lg:text-lg">
-                            <p className="mt-4 text-center text-gray-500 lg:text-left lg:text-lg">Kontakt</p>
-                            <p className="mt-4 text-center text-gray-500 lg:text-left lg:text-lg">EDER GmbH</p>
-                            <p className="mt-4 text-center text-gray-500 lg:text-left lg:text-lg">
-                                Ulmer Landstraße 383,86391 Stadtbergen
-                            </p>
-                            <p className="mt-4 text-center text-gray-500 lg:text-left lg:text-lg">
-                                Tel #: +49 1777 44 1002
-                            </p>
-                            <p className="mt-4 text-center text-gray-500 lg:text-left lg:text-lg">
-                                E-Mail: kontakt@the-eder.de
-                            </p>
-                        </p>
-
-                        <div className="mt-6 flex justify-center gap-4 lg:justify-start">
+                        <div className="mt-6 flex justify-center items-center gap-4 lg:justify-start">
                             <a
                                 className="text-gray-700 transition hover:text-gray-700/75"
                                 href="https://www.facebook.com/theminuseder/"
@@ -31,7 +18,6 @@ const Footer = () => {
                                 rel="noreferrer"
                             >
                                 <span className="sr-only"> Facebook </span>
-
                                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path
                                         fillRule="evenodd"
@@ -40,7 +26,6 @@ const Footer = () => {
                                     />
                                 </svg>
                             </a>
-
                             <a
                                 className="text-gray-700 transition hover:text-gray-700/75"
                                 href="https://www.instagram.com/edergmbh/"
@@ -48,7 +33,6 @@ const Footer = () => {
                                 rel="noreferrer"
                             >
                                 <span className="sr-only"> Instagram </span>
-
                                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path
                                         fillRule="evenodd"
@@ -57,7 +41,6 @@ const Footer = () => {
                                     />
                                 </svg>
                             </a>
-
                             <a
                                 className="text-gray-700 transition hover:text-gray-700/75"
                                 href=""
@@ -65,38 +48,42 @@ const Footer = () => {
                                 rel="noreferrer"
                             >
                                 <span className="sr-only"> Twitter </span>
-
                                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                                 </svg>
                             </a>
+                            <img src="/logo b.png" alt="EDER GmbH Logo" className="h-10" />
+                        </div>
+                    </div>
+                    <div className="lg:col-span-1 text-center lg:text-left">
+                        <div className=" text-gray-500 lg:text-md font-medium">
+                            <p className="text-gray-900">Kontakt</p>
+                            <p>EDER GmbH</p>
+                            <p>Ulmer Landstraße 383, 86391 Stadtbergen</p>
+                            <p>Tel #: +49 1777 44 1002</p>
+                            <p>E-Mail: kontakt@the-eder.de</p>
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-1 gap-8 text-center lg:grid-cols-3 lg:text-left">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 text-center lg:text-left">
                         <div>
                             <strong className="font-medium text-gray-900"> Dienstleistungen </strong>
-
                             <ul className="mt-6 space-y-1">
                                 <li>
                                     <a className="text-gray-700 transition hover:text-gray-700/75" href="/3pl_4pl">
-                                        {" "}
-                                        3PL{" "}
+                                        3PL
                                     </a>
                                 </li>
-
                                 <li>
                                     <a className="text-gray-700 transition hover:text-gray-700/75" href="/trans_border">
                                         Trans Border
                                     </a>
                                 </li>
-
                                 <li>
                                     <a className="text-gray-700 transition hover:text-gray-700/75" href="/air_freight">
                                         Luftfracht
                                     </a>
                                 </li>
-
                                 <li>
                                     <a className="text-gray-700 transition hover:text-gray-700/75" href="/sea_freight">
                                         Seefracht
@@ -104,77 +91,60 @@ const Footer = () => {
                                 </li>
                             </ul>
                         </div>
-
                         <div>
                             <strong className="font-medium text-gray-900"> Über uns </strong>
-
                             <ul className="mt-6 space-y-1">
                                 <li>
                                     <a className="text-gray-700 transition hover:text-gray-700/75" href="about_us">
-                                        {" "}
-                                        Über uns{" "}
+                                        Über uns
                                     </a>
                                 </li>
-
                                 <li>
                                     <a className="text-gray-700 transition hover:text-gray-700/75" href="#">
-                                        {" "}
-                                        Karrieren{" "}
+                                        Karrieren
                                     </a>
                                 </li>
-
                                 <li>
                                     <a className="text-gray-700 transition hover:text-gray-700/75" href="#">
-                                        {" "}
-                                        Geschichte{" "}
+                                        Geschichte
                                     </a>
                                 </li>
-
                                 <li>
                                     <a className="text-gray-700 transition hover:text-gray-700/75" href="#">
-                                        {" "}
-                                        Unser Team{" "}
+                                        Unser Team
                                     </a>
                                 </li>
                             </ul>
                         </div>
-
                         <div>
                             <strong className="font-medium text-gray-900"> Unterstützung </strong>
-
                             <ul className="mt-6 space-y-1">
                                 <li>
                                     <a className="text-gray-700 transition hover:text-gray-700/75" href="#">
-                                        {" "}
-                                        FAQs{" "}
+                                        FAQs
                                     </a>
                                 </li>
-
                                 <li>
                                     <a className="text-gray-700 transition hover:text-gray-700/75" href="/contact">
-                                        {" "}
-                                        Kontakt{" "}
+                                        Kontakt
                                     </a>
                                 </li>
-
                                 <li>
                                     <a className="text-gray-700 transition hover:text-gray-700/75" href="/contact">
-                                        {" "}
-                                        Support{" "}
+                                        Support
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-
                 <div className="mt-16 border-t border-gray-100 pt-8">
-                    <p className="text-center text-xs/relaxed text-gray-500">
+                    <p className="text-center text-xs text-gray-500">
                         Eder 2024. Alle Rechte vorbehalten.
                         <br />
                         Erstellt von
                         <a href="#" className="text-gray-700 underline transition hover:text-gray-700/75">
-                            Eder Team Deutschland{" "}
+                            Eder Team Deutschland
                         </a>
                     </p>
                 </div>
