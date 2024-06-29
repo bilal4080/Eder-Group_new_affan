@@ -1,6 +1,8 @@
 "use client";
-import {useState, useEffect} from "react";
-import Link from "next/link"; // Import Link from Next.js
+import {useState} from "react";
+import Link from "next/link";
+import {AiOutlineClose} from "react-icons/ai";
+import {BsMessenger} from "react-icons/bs";
 import Hero from "@/components/Home/Hero";
 import SupplyChain from "@/components/Home/SupplyChain";
 import GlobalTransport from "@/components/Home/GlobalTransport";
@@ -12,41 +14,12 @@ import MapChart from "@/components/Home/MapChart";
 import Section11 from "@/components/Home/Section11";
 
 export default function Home() {
-    const [showPopup, setShowPopup] = useState(false);
-    // const [showWhatsAppPopup, setShowWhatsAppPopup] = useState(false);
+    const [showMessengerPopup, setShowMessengerPopup] = useState(false);
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setShowPopup(true);
-        }, 5000);
-
-        // const hidePopupTimer = setTimeout(() => {
-        //     setShowPopup(false);
-        //     setShowWhatsAppPopup(true);
-        // }, 9000); // 5000ms + 4000ms to show the WhatsApp popup after 4 seconds of showing the first popup
-
-        return () => {
-            clearTimeout(timer);
-            // clearTimeout(hidePopupTimer);
-        };
-    }, []);
-
-    const closePopup = () => {
-        setShowPopup(false);
-        // setShowWhatsAppPopup(true);
+    const openMessenger = (message) => {
+        const url = `https://m.me/theminuseder?ref=${encodeURIComponent(message)}`;
+        window.open(url, "_blank");
     };
-
-    const scheduleMeeting = () => {
-        console.log("Meeting scheduled!");
-        closePopup();
-    };
-
-    // const openWhatsApp = () => {
-    //     const phoneNumber = "YOUR_PHONE_NUMBER"; // Replace with your WhatsApp phone number
-    //     const message = "Hello, I have a question about your services.";
-    //     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    //     window.open(url, "_blank");
-    // };
 
     return (
         <>
@@ -63,33 +36,51 @@ export default function Home() {
             <Section6_1_1 />
             <MapChart />
             <Section11 />
-            {showPopup && (
-                <div className="fixed bottom-0 right-0 m-8">
-                    <div className="bg-white opacity-80 rounded-lg p-8 shadow-lg">
-                        <h2 className="text-2xl font-bold mb-4">Haben Sie eine Diskussion</h2>
-                        <p className="mb-4">Haben Sie eine Frage? Sprechen Sie mit unserem Team</p>
-                        <Link href="/contact">
-                            <button className="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600">
-                                Kontakt
-                            </button>
-                        </Link>
-                        <button onClick={closePopup} className="ml-4 text-gray-600 hover:text-gray-800">
-                            Schließen
-                        </button>
+
+            {showMessengerPopup && (
+                <div className="fixed bottom-20 right-8 bg-white p-4 rounded-lg shadow-lg w-80 border">
+                    <h2 className="text-xl font-bold mb-2">Ein Gespräch beginnen</h2>
+                    <p className="mb-4">Das Team antwortet normalerweise in wenigen Minuten.</p>
+                    <div className="space-y-2">
+                        <div
+                            className="flex items-center bg-blue-100 text-blue-600 p-2 rounded-lg cursor-pointer"
+                            onClick={() => openMessenger("Hallo, ich habe eine Frage zur Softwareentwicklung.")}
+                        >
+                            <BsMessenger className="w-6 h-6 mr-2" />
+                            <div>
+                                <p className="font-semibold">Benötigen Sie Dienstleistungen?</p>
+                                <p className="text-sm">EDER</p>
+                            </div>
+                        </div>
+                        <div
+                            className="flex items-center bg-blue-100 text-blue-600 p-2 rounded-lg cursor-pointer"
+                            onClick={() =>
+                                openMessenger("Hallo, ich habe eine Frage zum Produktdesign und zur Fertigung.")
+                            }
+                        >
+                            <BsMessenger className="w-6 h-6 mr-2" />
+                            <div>
+                                <p className="font-semibold">Suchen Sie ein Lager?</p>
+                                <p className="text-sm">EDER</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             )}
-            {/* {showWhatsAppPopup && (
-                <div className="fixed bottom-0 right-0 m-8 flex items-center">
-                    <button
-                        onClick={openWhatsApp}
-                        className="bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 flex items-center"
-                    >
-                        <AiOutlineWhatsApp className="w-6 h-6 mr-2" />
-                        <span>WhatsApp us</span>
-                    </button>
-                </div>
-            )} */}
+
+            <button
+                onClick={() => setShowMessengerPopup(!showMessengerPopup)}
+                className="fixed bottom-0 right-0 m-8 flex items-center bg-blue-600 text-white p-3 rounded-full shadow-lg"
+            >
+                {showMessengerPopup ? (
+                    <AiOutlineClose className="w-6 h-6" />
+                ) : (
+                    <>
+                        <BsMessenger className="w-6 h-6 mr-2" />
+                        <span>Chatten Sie mit uns</span>
+                    </>
+                )}
+            </button>
         </>
     );
 }
