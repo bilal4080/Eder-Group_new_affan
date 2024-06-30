@@ -192,7 +192,7 @@ const Page = () => {
                 </div>
                 <h1 className="justify-center flex text-xl">STEEL METALS WE HAVE</h1>
                 {filteredItems.length > 0 ? (
-                    <div className="grid grid-cols-6 gap-4 pt-5 ">
+                    <div className="grid grid-cols-6 gap-4 pt-5  pb-5">
                         {filteredItems.map((item, index) => (
                             <div key={index} className="border p-4 rounded-lg flex flex-col items-center">
                                 <img src={item.image} alt={item.name} className="mb-4 h-24 hover:scale-105 " />
@@ -203,6 +203,21 @@ const Page = () => {
                 ) : (
                     <div className="flex justify-center pt-5 text-red-500">No items found</div>
                 )}
+
+                <div className="bg-gray-100 p-8 text-center">
+                    <h2 className="text-2xl font-semibold mb-4 flex justify-center">
+                        Stahl in allen Formen online kaufen
+                    </h2>
+                    <p className="text-gray-700">
+                        Du kannst bei uns nicht nur Stahl in allen erdenklichen Formen online kaufen – mit über 100.000
+                        Artikel führen wir ein einzigartiges Online-Sortiment mit verschiedensten Werkstoffen. In
+                        unserem Sortiment findest du Träger, Voll- & Stabmaterial, Bleche, Formrohre & Profile,
+                        Rundrohre, Rohrverbindungen, Installationssysteme, Armaturen & Pumpen und vieles mehr.
+                    </p>
+                    <p className="text-blue-500 mt-4 flex justify-center">
+                        Entdecke jetzt unser einzigartiges Sortiment!
+                    </p>
+                </div>
                 {/* New section starts here */}
                 <h1 className="justify-center flex text-xl mt-10">ADDITIONAL METALS</h1>
                 {filteredAdditionalItems.length > 0 ? (
