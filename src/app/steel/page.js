@@ -30,54 +30,61 @@ const items = [
         name: "Installationssysteme",
         image: "https://img.directindustry.com/images_di/projects/images-g/new-aluminum-pipe-vulkan-lokring-rohrverbindungen-gmbh-co-kg-18103-9893306.jpg",
     },
+
     {
         name: "Heizkörper",
-        image: "https://img.directindustry.com/images_di/projects/images-g/new-aluminum-pipe-vulkan-lokring-rohrverbindungen-gmbh-co-kg-18103-9893306.jpg",
+        image: "https://traditional-bathrooms.com/tb/wp-content/uploads/2022/06/Gusseisen-Heizkörper-INDUSTRIAL-IND10660.jpg",
     },
     {
         name: "Armaturen & Pumpen",
-        image: "https://img.directindustry.com/images_di/projects/images-g/new-aluminum-pipe-vulkan-lokring-rohrverbindungen-gmbh-co-kg-18103-9893306.jpg",
+        image: "https://wassermeister.net/wp-content/uploads/2021/10/KSB-online.jpg",
     },
+
     {
         name: "Streckmetalle",
-        image: "https://img.directindustry.com/images_di/projects/images-g/new-aluminum-pipe-vulkan-lokring-rohrverbindungen-gmbh-co-kg-18103-9893306.jpg",
+        image: "https://www.metallpfister.ch/img/2p8R1jWYaB/1920x0_ratio/Titel_Streckmetall.jpg?1657028040",
     },
     {
-        name: "Gitter",
-        image: "https://img.directindustry.com/images_di/projects/images-g/new-aluminum-pipe-vulkan-lokring-rohrverbindungen-gmbh-co-kg-18103-9893306.jpg",
+        name: "Glitter",
+        image: "https://gvsystem.co.uk/wp-content/uploads/2022/09/Stainless-Steel-Grids-.jpg",
     },
     {
         name: "Gitterroste",
-        image: "https://img.directindustry.com/images_di/projects/images-g/new-aluminum-pipe-vulkan-lokring-rohrverbindungen-gmbh-co-kg-18103-9893306.jpg",
+        image: "https://i.ebayimg.com/images/g/UA8AAOSw2StgipxA/s-l1200.jpg",
     },
     {
         name: "Laufschienensysteme",
-        image: "https://img.directindustry.com/images_di/projects/images-g/new-aluminum-pipe-vulkan-lokring-rohrverbindungen-gmbh-co-kg-18103-9893306.jpg",
+        image: "https://bilder.baur.de/i/empiriecom/2185873f9e547387f90aae070bfbc24d.jpg?$PL_landscape_hq$",
     },
     {
         name: "Geländersysteme",
-        image: "https://img.directindustry.com/images_di/projects/images-g/new-aluminum-pipe-vulkan-lokring-rohrverbindungen-gmbh-co-kg-18103-9893306.jpg",
+        image: "https://cdn.cloudbf.com/thumb/format/mini_xsize/upfile/100/images/15/20210825143723482.jpg.webp",
     },
     {
-        name: "Autogen-/Pressluftzubehör",
-        image: "https://img.directindustry.com/images_di/projects/images-g/new-aluminum-pipe-vulkan-lokring-rohrverbindungen-gmbh-co-kg-18103-9893306.jpg",
+        name: "Voll-/Stabmaterial",
+        image: "https://www.weldorado.de/media/image/9d/97/3f/552200_24_fq_Gasflaschtrage-Arnitur_600x600.jpg",
     },
     {
-        name: "MIG/MAG, WIG & Plasma",
-        image: "https://img.directindustry.com/images_di/projects/images-g/new-aluminum-pipe-vulkan-lokring-rohrverbindungen-gmbh-co-kg-18103-9893306.jpg",
+        name: "Autogen-/ Pressluft Zubehör",
+        image: "https://www.bucher-stahl.de/fileadmin/user_upload/backgrounds/produkte/header_img/bucher-produkte-bleche-header__2_.jpg",
+    },
+    {
+        name: "MIG / MAG, WIG & Plasma",
+        image: "https://m.media-amazon.com/images/I/718ElMJ9qlL.jpg",
     },
     {
         name: "Schweißzubehör",
-        image: "https://img.directindustry.com/images_di/projects/images-g/new-aluminum-pipe-vulkan-lokring-rohrverbindungen-gmbh-co-kg-18103-9893306.jpg",
+        image: "https://www.poppstar.de/media/b2/e6/ef/1666367032/03916271f86541f88321671f15a1aa50-1010629_1.jpg",
     },
     {
         name: "Arbeitsstoffe & Beizprodukte",
-        image: "https://img.directindustry.com/images_di/projects/images-g/new-aluminum-pipe-vulkan-lokring-rohrverbindungen-gmbh-co-kg-18103-9893306.jpg",
+        image: "https://media.istockphoto.com/id/1170096342/photo/professional-industrial-cleaner-in-protective-uniform-cleaning-floor-of-food-processing-plant.jpg?s=612x612&w=0&k=20&c=MPXg00sFhtJBkadBKVWWrSqAkmeCdatsh5qvkwbFBk8=",
     },
     {
-        name: "Arbeitsschutz",
-        image: "https://img.directindustry.com/images_di/projects/images-g/new-aluminum-pipe-vulkan-lokring-rohrverbindungen-gmbh-co-kg-18103-9893306.jpg",
+        name: "Arbeitsstoffe & Beizprodukte",
+        image: "https://www.lagertechnik-direkt.de/cdn/shop/products/meta-clip-arbeitsschutz-komplettregal-verzinkt-lagertechnik-direkt-1_1024x1024.png?v=1698313473",
     },
+    // Add more items here if needed up to 19 items
 ];
 const additionalItems = [
     {
@@ -116,6 +123,7 @@ const additionalItems = [
         name: "Installationssysteme",
         image: "https://www.infrabuild.com/wp-content/uploads/sites/8/2018/04/CVLX-Saleyard-hero-1.jpg",
     },
+    // Ensure there are 19 items here as well
     {
         name: "Bleche",
         image: "https://t3.ftcdn.net/jpg/03/19/13/14/360_F_319131476_vPBEjt7LLKdDlUJK1LskGOBo3AejUJdG.jpg",
@@ -152,38 +160,15 @@ const additionalItems = [
         name: "Bleche",
         image: "https://t3.ftcdn.net/jpg/03/19/13/14/360_F_319131476_vPBEjt7LLKdDlUJK1LskGOBo3AejUJdG.jpg",
     },
-    {
-        name: "Cortenstahl",
-        image: "https://t3.ftcdn.net/jpg/03/19/13/14/360_F_319131476_vPBEjt7LLKdDlUJK1LskGOBo3AejUJdG.jpg",
-    },
-    {
-        name: "Dekorohre",
-        image: "https://t3.ftcdn.net/jpg/03/19/13/14/360_F_319131476_vPBEjt7LLKdDlUJK1LskGOBo3AejUJdG.jpg",
-    },
-    {
-        name: "Edelstahl",
-        image: "https://t3.ftcdn.net/jpg/03/19/13/14/360_F_319131476_vPBEjt7LLKdDlUJK1LskGOBo3AejUJdG.jpg",
-    },
-    {
-        name: "Flansche",
-        image: "https://t3.ftcdn.net/jpg/03/19/13/14/360_F_319131476_vPBEjt7LLKdDlUJK1LskGOBo3AejUJdG.jpg",
-    },
-    {
-        name: "Gitter",
-        image: "https://t3.ftcdn.net/jpg/03/19/13/14/360_F_319131476_vPBEjt7LLKdDlUJK1LskGOBo3AejUJdG.jpg",
-    },
-    {
-        name: "Hohlprofile / Formrohre",
-        image: "https://t3.ftcdn.net/jpg/03/19/13/14/360_F_319131476_vPBEjt7LLKdDlUJK1LskGOBo3AejUJdG.jpg",
-    },
 ];
-
-const allItems = [...items, ...additionalItems];
 
 const Page = () => {
     const [searchTerm, setSearchTerm] = useState("");
 
-    const filteredItems = allItems.filter((item) => item.name.toLowerCase().includes(searchTerm.toLowerCase()));
+    const filteredItems = items.filter((item) => item.name.toLowerCase().includes(searchTerm.toLowerCase()));
+    const filteredAdditionalItems = additionalItems.filter((item) =>
+        item.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
     return (
         <div className="relative">
@@ -207,10 +192,10 @@ const Page = () => {
                 </div>
                 <h1 className="justify-center flex text-xl">STEEL METALS WE HAVE</h1>
                 {filteredItems.length > 0 ? (
-                    <div className="grid grid-cols-6 gap-4 pt-5">
+                    <div className="grid grid-cols-6 gap-4 pt-5 ">
                         {filteredItems.map((item, index) => (
                             <div key={index} className="border p-4 rounded-lg flex flex-col items-center">
-                                <img src={item.image} alt={item.name} className="mb-4 h-24" />
+                                <img src={item.image} alt={item.name} className="mb-4 h-24 hover:scale-105 " />
                                 <span className="text-center">{item.name}</span>
                             </div>
                         ))}
@@ -220,9 +205,9 @@ const Page = () => {
                 )}
                 {/* New section starts here */}
                 <h1 className="justify-center flex text-xl mt-10">ADDITIONAL METALS</h1>
-                {filteredItems.length > 0 ? (
+                {filteredAdditionalItems.length > 0 ? (
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-2 gap-4 pt-5">
-                        {filteredItems.map((item, index) => (
+                        {filteredAdditionalItems.map((item, index) => (
                             <div
                                 key={index}
                                 className="relative group border p-4 rounded-lg flex flex-col items-center"
