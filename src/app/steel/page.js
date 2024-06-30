@@ -186,45 +186,58 @@ const Page = () => {
     const filteredItems = allItems.filter((item) => item.name.toLowerCase().includes(searchTerm.toLowerCase()));
 
     return (
-        <div className="container mx-auto p-4 pt-32">
-            <div className="mb-4 flex justify-center">
-                <input
-                    type="text"
-                    placeholder="Search..."
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                    className="p-2 border border-gray-300 rounded-md w-full max-w-lg"
-                />
+        <div className="relative">
+            {/* Overlay starts here */}
+            <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
+                <div className="text-center text-white">
+                    <h1 className="text-2xl font-bold mb-4">This page is in development process</h1>
+                    <p>Please be patient....</p>
+                </div>
             </div>
-            <h1 className="justify-center flex text-xl">STEEL METALS WE HAVE</h1>
-            {filteredItems.length > 0 ? (
-                <div className="grid grid-cols-6 gap-4 pt-5">
-                    {filteredItems.map((item, index) => (
-                        <div key={index} className="border p-4 rounded-lg flex flex-col items-center">
-                            <img src={item.image} alt={item.name} className="mb-4 h-24" />
-                            <span className="text-center">{item.name}</span>
-                        </div>
-                    ))}
+            {/* Overlay ends here */}
+            <div className="container mx-auto p-4 pt-32">
+                <div className="mb-4 flex justify-center">
+                    <input
+                        type="text"
+                        placeholder="Search..."
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                        className="p-2 border border-gray-300 rounded-md w-full max-w-lg"
+                    />
                 </div>
-            ) : (
-                <div className="flex justify-center pt-5 text-red-500">No items found</div>
-            )}
-            {/* New section starts here */}
-            <h1 className="justify-center flex text-xl mt-10">ADDITIONAL METALS</h1>
-            {filteredItems.length > 0 ? (
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-2 gap-4 pt-5">
-                    {filteredItems.map((item, index) => (
-                        <div key={index} className="relative group border p-4 rounded-lg flex flex-col items-center">
-                            <img src={item.image} alt={item.name} className="w-full h-48 object-cover mb-4" />
-                            <span className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                {item.name}
-                            </span>
-                        </div>
-                    ))}
-                </div>
-            ) : (
-                <div className="flex justify-center pt-5 text-red-500">No items found</div>
-            )}
+                <h1 className="justify-center flex text-xl">STEEL METALS WE HAVE</h1>
+                {filteredItems.length > 0 ? (
+                    <div className="grid grid-cols-6 gap-4 pt-5">
+                        {filteredItems.map((item, index) => (
+                            <div key={index} className="border p-4 rounded-lg flex flex-col items-center">
+                                <img src={item.image} alt={item.name} className="mb-4 h-24" />
+                                <span className="text-center">{item.name}</span>
+                            </div>
+                        ))}
+                    </div>
+                ) : (
+                    <div className="flex justify-center pt-5 text-red-500">No items found</div>
+                )}
+                {/* New section starts here */}
+                <h1 className="justify-center flex text-xl mt-10">ADDITIONAL METALS</h1>
+                {filteredItems.length > 0 ? (
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-2 gap-4 pt-5">
+                        {filteredItems.map((item, index) => (
+                            <div
+                                key={index}
+                                className="relative group border p-4 rounded-lg flex flex-col items-center"
+                            >
+                                <img src={item.image} alt={item.name} className="w-full h-48 object-cover mb-4" />
+                                <span className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    {item.name}
+                                </span>
+                            </div>
+                        ))}
+                    </div>
+                ) : (
+                    <div className="flex justify-center pt-5 text-red-500">No items found</div>
+                )}
+            </div>
         </div>
     );
 };
