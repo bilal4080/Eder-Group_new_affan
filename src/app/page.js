@@ -54,6 +54,16 @@ export default function Home() {
                         </div>
                         <div
                             className="flex items-center bg-blue-100 text-blue-600 p-2 rounded-lg cursor-pointer"
+                            onClick={() => openMessenger("Hallo, ich habe eine Frage zur Softwareentwicklung.")}
+                        >
+                            <BsMessenger className="w-6 h-6 mr-2" />
+                            <div>
+                                <p className="font-semibold">Sonstiges?</p>
+                                <p className="text-sm">EDER</p>
+                            </div>
+                        </div>
+                        <div
+                            className="flex items-center bg-blue-100 text-blue-600 p-2 rounded-lg cursor-pointer"
                             onClick={() =>
                                 openMessenger("Hallo, ich habe eine Frage zum Produktdesign und zur Fertigung.")
                             }

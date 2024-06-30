@@ -116,8 +116,7 @@ const Header = () => {
             },
             subLinks: [
                 {link: "/tyres", text: "Reifen"},
-                {link: "/notfound", text: "Stahl"},
-                // {link: "/tyres", text: "Reifen"},
+                {link: "/steel", text: "Stahl"},
             ],
         },
     ];
