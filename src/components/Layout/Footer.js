@@ -59,7 +59,7 @@ const Footer = () => {
                         <div className=" text-gray-500 lg:text-md font-medium">
                             <p className="text-gray-900">Kontakt</p>
                             <p>EDER GmbH</p>
-                            <p>Ulmer Landstraße 383, 86391 Stadtbergen</p>
+                            {/* <p>Ulmer Landstraße 383, 86391 Stadtbergen</p> */}
                             <p>Tel #: +49 1777 44 1002</p>
                             <p>E-Mail: kontakt@the-eder.de</p>
                         </div>
