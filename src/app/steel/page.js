@@ -1,6 +1,6 @@
 "use client";
 import React, {useState} from "react";
-
+import Link from "next/link";
 const items = [
     {
         name: "Träger",
@@ -33,7 +33,7 @@ const items = [
 
     {
         name: "Heizkörper",
-        image: "https://traditional-bathrooms.com/tb/wp-content/uploads/2022/06/Gusseisen-Heizkörper-INDUSTRIAL-IND10660.jpg",
+        image: "https://d2t1xqejof9utc.cloudfront.net/screenshots/pics/9503d653f0c53e6d389ffaeb4f0730b3/large.JPG",
     },
     {
         name: "Armaturen & Pumpen",
@@ -125,40 +125,53 @@ const additionalItems = [
     },
     // Ensure there are 19 items here as well
     {
-        name: "Bleche",
-        image: "https://t3.ftcdn.net/jpg/03/19/13/14/360_F_319131476_vPBEjt7LLKdDlUJK1LskGOBo3AejUJdG.jpg",
+        name: "JAKO",
+        image: "https://m.media-amazon.com/images/I/31B+Md1eGCL._AC_UF894,1000_QL80_.jpg",
     },
     {
-        name: "Cortenstahl",
-        image: "https://t3.ftcdn.net/jpg/03/19/13/14/360_F_319131476_vPBEjt7LLKdDlUJK1LskGOBo3AejUJdG.jpg",
+        name: "Kolbenstangen",
+        image: "https://www.stainless-fruechtl.de/wp-content/uploads/2021/12/Kolbenstangen-Exakt-Gerade.jpg",
     },
     {
-        name: "Dekorohre",
-        image: "https://t3.ftcdn.net/jpg/03/19/13/14/360_F_319131476_vPBEjt7LLKdDlUJK1LskGOBo3AejUJdG.jpg",
+        name: "Lochbleche",
+        image: "https://faco-metalltechnik.de/fileadmin/_processed_/3/c/csm_galerieLochblech_Rv_gewalzt_Stahl_1-scaled-800x533_71fff723ff.jpeg",
     },
     {
-        name: "Edelstahl",
-        image: "https://t3.ftcdn.net/jpg/03/19/13/14/360_F_319131476_vPBEjt7LLKdDlUJK1LskGOBo3AejUJdG.jpg",
+        name: "Messing",
+        image: "https://eshop.boellhoff.de/out/pictures/master/product/1/din_84_messing__.jpg",
     },
     {
-        name: "Flansche",
-        image: "https://t3.ftcdn.net/jpg/03/19/13/14/360_F_319131476_vPBEjt7LLKdDlUJK1LskGOBo3AejUJdG.jpg",
+        name: "Nirostick Geländersysteme",
+        image: "https://img.directindustry.com/images_di/photo-mg/30419-13859859.jpg",
     },
     {
-        name: "Gitter",
-        image: "https://t3.ftcdn.net/jpg/03/19/13/14/360_F_319131476_vPBEjt7LLKdDlUJK1LskGOBo3AejUJdG.jpg",
+        name: "Ovalrohre",
+        image: "https://ae01.alicdn.com/kf/S481f717e932241f4987c0f65d26e5c4fl/Aluminum-oval-pipe-30mm-oval-steel-tube-32mm-aluminum-alloy-oval-shape-steel-tubing-40mm-oval.jpg",
     },
     {
-        name: "Hohlprofile / Formrohre",
-        image: "https://t3.ftcdn.net/jpg/03/19/13/14/360_F_319131476_vPBEjt7LLKdDlUJK1LskGOBo3AejUJdG.jpg",
+        name: "Präzisionsrohre",
+        image: "https://www.mst-edelstahlrohr.de/media/image/product/51/lg/nahtlose-praezisionsrohre-en-10216-5-en-10305-1-astm-a269-werkstoff-316l-14404-3-4-x-0065-1905-x-165-mm.jpg",
     },
     {
-        name: "Aluminium",
-        image: "https://t3.ftcdn.net/jpg/03/19/13/14/360_F_319131476_vPBEjt7LLKdDlUJK1LskGOBo3AejUJdG.jpg",
+        name: "Qualitätsstahl / Stahl",
+        image: "https://www.hsm-stahl.de/wp-content/uploads/2023/06/shutterstock_172763705-scaled.jpg",
     },
     {
-        name: "Bleche",
-        image: "https://t3.ftcdn.net/jpg/03/19/13/14/360_F_319131476_vPBEjt7LLKdDlUJK1LskGOBo3AejUJdG.jpg",
+        name: "Rohre ",
+        image: "https://www.coremarkmetals.com/files/image/large/HR_TUBE_RECT_3_X_2_075_3000.jpg",
+    },
+
+    {
+        name: "Streckmetalle",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDEVuFVz0saFOktLGiXgcLEih7I1DihqqeKA&s",
+    },
+    {
+        name: "Träger",
+        image: "https://t3.ftcdn.net/jpg/03/50/13/06/360_F_350130648_UiZz70eBo9KGHDNa9FifTVR2ShMcToHo.jpg",
+    },
+    {
+        name: "U-Profile ",
+        image: "https://swr-balustrade.co.uk/images/contentSlots/Slot-1/OnLevel/productImage-Handrail-U-Profile-SS.jpg",
     },
 ];
 
@@ -192,18 +205,21 @@ const Page = () => {
                 </div>
                 <h1 className="justify-center flex text-xl">STEEL METALS WE HAVE</h1>
                 {filteredItems.length > 0 ? (
-                    <div className="grid grid-cols-6 gap-4 pt-5  pb-5">
+                    <div className="grid grid-cols-6 gap-4 pt-5 pb-5">
                         {filteredItems.map((item, index) => (
-                            <div key={index} className="border p-4 rounded-lg flex flex-col items-center">
-                                <img src={item.image} alt={item.name} className="mb-4 h-24 hover:scale-105 " />
+                            <Link
+                                key={index}
+                                href={`/details_steel?name=${item.name}&image=${encodeURIComponent(item.image)}`}
+                                className="border p-4 rounded-lg flex flex-col items-center"
+                            >
+                                <img src={item.image} alt={item.name} className="mb-4 h-24 hover:scale-105" />
                                 <span className="text-center">{item.name}</span>
-                            </div>
+                            </Link>
                         ))}
                     </div>
                 ) : (
                     <div className="flex justify-center pt-5 text-red-500">No items found</div>
                 )}
-
                 <div className="bg-gray-100 p-8 text-center">
                     <h2 className="text-2xl font-semibold mb-4 flex justify-center">
                         Stahl in allen Formen online kaufen
@@ -218,20 +234,20 @@ const Page = () => {
                         Entdecke jetzt unser einzigartiges Sortiment!
                     </p>
                 </div>
-                {/* New section starts here */}
                 <h1 className="justify-center flex text-xl mt-10">ADDITIONAL METALS</h1>
                 {filteredAdditionalItems.length > 0 ? (
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-2 gap-4 pt-5">
                         {filteredAdditionalItems.map((item, index) => (
-                            <div
+                            <Link
                                 key={index}
+                                href={`/details_steel?name=${item.name}&image=${encodeURIComponent(item.image)}`}
                                 className="relative group border p-4 rounded-lg flex flex-col items-center"
                             >
                                 <img src={item.image} alt={item.name} className="w-full h-48 object-cover mb-4" />
                                 <span className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     {item.name}
                                 </span>
-                            </div>
+                            </Link>
                         ))}
                     </div>
                 ) : (
