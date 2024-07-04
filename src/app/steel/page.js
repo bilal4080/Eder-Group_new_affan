@@ -186,12 +186,12 @@ const Page = () => {
     return (
         <div className="relative">
             {/* Overlay starts here */}
-            <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
+            {/* <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
                 <div className="text-center text-white">
                     <h1 className="text-2xl font-bold mb-4">This page is in development process</h1>
                     <p>Please be patient....</p>
                 </div>
-            </div>
+            </div> */}
             {/* Overlay ends here */}
             <div className="container mx-auto p-4 pt-32">
                 <div className="mb-4 flex justify-center">
@@ -205,7 +205,7 @@ const Page = () => {
                 </div>
                 <h1 className="justify-center flex text-xl">STEEL METALS WE HAVE</h1>
                 {filteredItems.length > 0 ? (
-                    <div className="grid grid-cols-6 gap-4 pt-5 pb-5">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 pt-5 pb-5">
                         {filteredItems.map((item, index) => (
                             <Link
                                 key={index}
