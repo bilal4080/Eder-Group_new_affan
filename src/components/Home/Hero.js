@@ -7,7 +7,7 @@ import {LuMoveLeft, LuMoveRight} from "react-icons/lu";
 const backgrounds = [
     "/hs1bg1.jpeg",
     "/hs1bg3.jpg",
-    "/woman-safety-equipment-work.png",
+    "/—Pngtree—factory scene showcasing an enormous_4090186.jpg",
     "/truck-with-trailer-is-driving-mo.png",
 ]; // Paths to your background images
 const texts = [
@@ -20,8 +20,8 @@ const texts = [
         text: "The increasing demand for logistics outsourcing is driving the rise of third-party logistics companies (3PLs), leading to optimized processes and increased productivity.",
     },
     {
-        heading: "END-TO-END SUPPLY CHAIN <br/> MANAGEMENT",
-        text: "Our tailored industry-specific logistics solutions ensure smooth supply chain operations by carefully examining each step for efficiency and effectiveness to optimize the entire supply process.",
+        heading: "STELL PRODUCTION <br/>WORLD WIDE",
+        text: "Our tailored industry-specific steel production solutions ensure smooth manufacturing operations by carefully examining each step for efficiency and effectiveness to optimize the entire production process",
     },
     {
         heading: "SEAMLESS SHIPMENT TRACKING",
