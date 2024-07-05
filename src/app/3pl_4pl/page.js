@@ -4,24 +4,24 @@ import {FaTruckMoving} from "react-icons/fa";
 const Page = () => {
     const options = [
         {
-            title: "Kostenersparnis und Effizienz",
+            title: "Cost Savings and Efficiency",
             description:
-                "Durch die Auslagerung von Logistikfunktionen wie Transport, Lagerung und Distribution an Eder können Unternehmen erhebliche Kosteneinsparungen erzielen. Unsere 3PL-Dienstleistungen nutzen Skaleneffekte und optimierte Routenplanung, um Transportkosten und Transitzeiten zu reduzieren. Zudem können Unternehmen die Kapitalinvestitionen und Gemeinkosten vermeiden, die mit dem Unterhalt einer eigenen Logistikinfrastruktur verbunden sind.",
+                "By outsourcing logistics functions such as transport, storage, and distribution to Eder, companies can achieve significant cost savings. Our 3PL services leverage economies of scale and optimized route planning to reduce transport costs and transit times. Additionally, companies can avoid capital investments and overhead costs associated with maintaining their own logistics infrastructure.",
         },
         {
-            title: "Skalierbarkeit und Flexibilität",
+            title: "Scalability and Flexibility",
             description:
-                "Unsere 3PL-Dienstleistungen bieten die Skalierbarkeit und Flexibilität, die erforderlich sind, um auf schwankende Marktanforderungen zu reagieren. Ob saisonale Spitzen oder unerwartete Anstiege im Bestellvolumen – Eder kann schnell Ressourcen und Kapazitäten anpassen, um Ihren Bedarf zu decken. Dies stellt sicher, dass Ihre Lieferkette agil bleibt und sich an wechselnde Geschäftsbedingungen anpassen kann, ohne die Servicequalität zu beeinträchtigen.",
+                "Our 3PL services provide the scalability and flexibility needed to respond to fluctuating market demands. Whether it's seasonal peaks or unexpected increases in order volume, Eder can quickly adjust resources and capacities to meet your needs. This ensures that your supply chain remains agile and can adapt to changing business conditions without compromising service quality.",
         },
         {
-            title: "Umfassende Optimierung der Lieferkette",
+            title: "Comprehensive Supply Chain Optimization",
             description:
-                "Eder's 4PL-Dienstleistungen bieten einen ganzheitlichen Ansatz für das Lieferkettenmanagement, indem verschiedene Logistikfunktionen zu einer nahtlosen End-to-End-Lösung integriert werden. Wir bieten strategische Planung und Ausführung der Lieferkette, wobei alle Aktivitäten auf Ihre Geschäftsziele abgestimmt werden, um die Effizienz zu maximieren und die Gesamtkosten zu senken. Diese umfassende Optimierung verbessert die Leistung Ihrer gesamten Lieferkette, nicht nur einzelner Komponenten.",
+                "Eder's 4PL services offer a holistic approach to supply chain management by integrating various logistics functions into a seamless end-to-end solution. We provide strategic planning and execution of the supply chain, aligning all activities with your business goals to maximize efficiency and reduce overall costs. This comprehensive optimization enhances the performance of your entire supply chain, not just individual components.",
         },
         {
-            title: "Fortschrittliche Technologie und Echtzeit-Transparenz",
+            title: "Advanced Technology and Real-Time Transparency",
             description:
-                "Mit unseren 4PL-Dienstleistungen profitieren Unternehmen von fortschrittlicher Technologie und Echtzeit-Transparenz in ihren Lieferkettenoperationen. Eder setzt modernste Datenanalysen und integrierte Systeme ein, um die gesamte Lieferkette zu überwachen und zu verwalten. Diese Echtzeitverfolgung und Transparenz ermöglichen bessere Entscheidungsfindung, proaktives Problemlösen und verbessertes Risikomanagement, was eine widerstandsfähigere und reaktionsfähigere Lieferkette sicherstellt.",
+                "With our 4PL services, businesses benefit from advanced technology and real-time transparency in their supply chain operations. Eder employs state-of-the-art data analytics and integrated systems to monitor and manage the entire supply chain. This real-time tracking and transparency enable better decision-making, proactive problem-solving, and improved risk management, ensuring a more resilient and responsive supply chain.",
         },
     ];
 
@@ -32,52 +32,49 @@ const Page = () => {
                     <h1
                         className="text-2xl lg:text-7xl text-start z-10 text-white  w-full py-2 md:py-16 capitalize min-[1800px]:text-8xl font-semibold leading-6 sm:leading-normal"
                         dangerouslySetInnerHTML={{
-                            __html: "3PL & 4PL VON EDER ",
+                            __html: "3PL & 4PL BY EDER",
                         }}
                     />
                 </div>
-                {/* Schwarze Schattierungsüberlagerung */}
+                {/* Black Shade Overlay */}
                 <div className="absolute inset-0 right-0 left-0 h-full w-full bg-black opacity-50 z-0"></div>
             </section>
             <section className="max-w-screen-2xl flex flex-col gap-2 md:gap-8 py-16 mx-auto px-8">
                 <div className="flex flex-col gap-3 justify-center items-start">
                     <h3 className="text-sm uppercase font-semibold">3PL vs 4PL</h3>
-                    <h2 className="font-semibold text-2xl md:text-4xl">Eder Premium-Dienstleistungen</h2>
+                    <h2 className="font-semibold text-2xl md:text-4xl">Eder Premium Services</h2>
                 </div>
                 <div className="w-full bg-gray-400 mx-auto my-4 h-[0.1px]"></div>
                 <p className="py-5 md:text-lg">
-                    Bei Eder bieten wir sowohl Third-Party-Logistik (3PL) als auch Fourth-Party-Logistik (4PL)
-                    Dienstleistungen an, die jeweils unterschiedliche Stufen des Lieferkettenmanagements abdecken.
-                    Unsere 3PL-Dienstleistungen konzentrieren sich auf das Management spezifischer Logistikfunktionen
-                    wie Transport, Lagerung und Distribution. Als 3PL-Anbieter fungiert Eder als Vermittler, der die
-                    physische Bewegung und Lagerung von Waren übernimmt, während Sie die Kontrolle über Ihre
-                    Lieferkettenstrategie behalten. Dies umfasst ein effizientes Transportmanagement für Luft-, See- und
-                    Landfracht, modernste Lagerhäuser für sichere Lagerung und Bestandsmanagement sowie Expertise in
-                    Zollabfertigung und Compliance, um reibungslose grenzüberschreitende Transaktionen zu gewährleisten.
+                    At Eder, we offer both Third-Party Logistics (3PL) and Fourth-Party Logistics (4PL) services, each
+                    covering different levels of supply chain management. Our 3PL services focus on managing specific
+                    logistics functions such as transport, storage, and distribution. As a 3PL provider, Eder acts as an
+                    intermediary handling the physical movement and storage of goods while you retain control over your
+                    supply chain strategy. This includes efficient transport management for air, sea, and land freight,
+                    state-of-the-art warehouses for secure storage and inventory management, as well as expertise in
+                    customs clearance and compliance to ensure smooth cross-border transactions.
                 </p>
                 <div className="flex gap-4 md:gap-8 h-auto md:flex-row-reverse flex-col">
                     <img src="/air8.png" className="w-full md:w-1/2 h-auto" />
                     <p className="py-5 md:text-lg">
-                        Im Gegensatz dazu bieten unsere 4PL-Dienstleistungen einen umfassenderen und integrierten Ansatz
-                        für das Lieferkettenmanagement. Als 4PL-Anbieter überwacht und optimiert Eder die gesamte
-                        Lieferkette von Anfang bis Ende und fungiert als einzige Anlaufstelle. Dies umfasst
-                        strategisches Lieferkettenmanagement, bei dem wir Logistikfunktionen mit Ihren Geschäftsziele in
-                        Einklang bringen, um optimale Leistung und Kosteneffizienz zu erzielen. Wir nutzen
-                        fortschrittliche Technologie und Datenanalysen, um Echtzeit-Transparenz und Kontrolle über die
-                        Lieferkette zu bieten, was die Entscheidungsfindung und das Risikomanagement verbessert. Darüber
-                        hinaus verwalten wir die Beziehungen zu mehreren Dienstleistern, um eine nahtlose Koordination
-                        und Kommunikation sicherzustellen, und verpflichten uns zu kontinuierlicher Verbesserung und
-                        Innovation durch regelmäßige Bewertung und Optimierung von Lieferkettenprozessen. Während
-                        3PL-Dienstleistungen ideal für Unternehmen sind, die spezifische Logistikoperationen auslagern
-                        möchten, sind 4PL-Dienstleistungen für diejenigen geeignet, die einen ganzheitlichen Ansatz für
-                        das Lieferkettenmanagement suchen, der verschiedene Logistikfunktionen integriert und die
-                        Gesamteffizienz steigert.
+                        In contrast, our 4PL services offer a more comprehensive and integrated approach to supply chain
+                        management. As a 4PL provider, Eder monitors and optimizes the entire supply chain from start to
+                        finish, acting as a single point of contact. This includes strategic supply chain management
+                        where we align logistics functions with your business goals to achieve optimal performance and
+                        cost efficiency. We leverage advanced technology and data analytics to provide real-time
+                        transparency and control over the supply chain, enhancing decision-making and risk management.
+                        Additionally, we manage relationships with multiple service providers to ensure seamless
+                        coordination and communication, committing to continuous improvement and innovation through
+                        regular assessment and optimization of supply chain processes. While 3PL services are ideal for
+                        companies looking to outsource specific logistics operations, 4PL services are suitable for
+                        those seeking a holistic approach to supply chain management that integrates various logistics
+                        functions and enhances overall efficiency.
                     </p>
                 </div>
             </section>
             <section className="max-w-screen-2xl flex flex-col gap-2 md:gap-8 py-16 mx-auto px-8">
                 <h2 className="font-semibold text-2xl md:text-4xl">
-                    WAS SIE MIT <span className="text-orange-600">LOGISTIKGESCHÄFT</span> BEKOMMEN
+                    WHAT YOU GET WITH <span className="text-orange-600">LOGISTICS BUSINESS</span>
                 </h2>
                 <div className="w-full bg-gray-400 mx-auto my-4 h-[0.1px]"></div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-16 p-2 md:p-5">

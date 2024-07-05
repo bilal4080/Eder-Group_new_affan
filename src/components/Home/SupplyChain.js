@@ -12,52 +12,52 @@ const SupplyChain = () => {
         [
             {
                 image: "/image_wKo5sGBx_1718264035623_raw.png",
-                title: "Seefracht",
-                text: "Unsere Seefrachtversanddienste gewährleisten einen effizienten Transport Ihrer Waren zu fernen Stränden mit reibungsloser und schneller Lieferung über weite Meere hinweg.",
+                title: "SEA FREIGHT",
+                text: "Our sea freight shipping services ensure efficient transport of your goods to distant shores with smooth and timely delivery across vast oceans.",
             },
             {
                 image: "/Air Fright.jpg",
-                title: "Luftfracht",
-                text: "Wir bewegen Ihre Fracht schnell und sicher durch unsere umfangreichen Luftfrachtdienste. Ob es sich um eine dringende oder eine entfernte Angelegenheit handelt, wir zeigen Schnelligkeit und Kompetenz.",
+                title: "AIR FREIGHT",
+                text: "We move your cargo quickly and securely through our comprehensive air freight services. Whether it’s an urgent matter or a distant destination, we demonstrate speed and expertise.",
             },
             {
                 image: "/86a86b58-78a6-4249-b438-1973972257c7.png",
-                title: "Zollabfertigung",
-                text: "Erleben Sie schnelle und sichere Luftfrachtdienste für Ihre Sendungen. Ob es sich um eine eilige Lieferung oder ein entferntes Ziel handelt, unsere Dienstleistungen setzen auf Geschwindigkeit und Kompetenz.",
+                title: "CUSTOMS CLEARANCE",
+                text: "Experience fast and secure customs clearance for your shipments. Whether it’s an urgent delivery or a distant target, our services emphasize speed and competence.",
             },
         ],
         [
             {
                 image: "/ground distbition.jpg",
-                title: "Bodendistribution",
-                text: "Schneller und zuverlässiger Landtransport stellt sicher, dass Ihre Waren pünktlich eintreffen. Dies umfasst alle Bereiche, vom Transport um die Ecke bis hin zur landesweiten Lieferung.",
+                title: "GROUND DISTRIBUTION",
+                text: "Fast and reliable ground transportation ensures that your goods arrive on time. This includes all aspects from local deliveries to nationwide distribution.",
             },
             {
                 image: "/Inter Model.jpeg",
-                title: "Intermodal",
-                text: "Profitieren Sie von unseren schnellen und zuverlässigen Landtransportdiensten, die eine rechtzeitige Lieferung Ihrer Waren in allen Bereichen gewährleisten. Von lokalen Lieferungen um die Ecke bis hin zu landesweiten Sendungen sind wir für Sie da.",
+                title: "INTERMODAL",
+                text: "Benefit from our fast and reliable ground transportation services that ensure timely delivery of your goods across all areas. From local deliveries to nationwide shipments, we are here for you.",
             },
             {
                 image: "/H-Improve-Logistics-with-SaaS-Warehouse-Management-Software.jpg",
-                title: "Warehouse Management",
-                text: "Wir bieten umfassende Dienstleistungen für ein besseres Lagermanagement an. Dies verbessert die Lagerung, überprüft den Bestand und optimiert die Abläufe..",
+                title: "WAREHOUSE MANAGEMENT",
+                text: "We offer comprehensive services for improved warehouse management. This enhances storage, checks inventory, and optimizes processes for maximum efficiency.",
             },
         ],
         [
             {
                 image: "/Cold Logistics.jpeg",
-                title: "Kühlkettenlogistik",
-                text: "Entfesseln Sie das Potenzial Ihres Lagers mit unseren umfassenden Managementdienstleistungen. Von der Optimierung der Lagerung bis zur Verwaltung des Bestands optimieren wir die Abläufe für maximale Effizienz",
+                title: "COLD CHAIN LOGISTICS",
+                text: "Unlock the potential of your warehouse with our comprehensive management services. From optimizing storage to inventory management, we streamline processes for maximum efficiency.",
             },
             {
                 image: "/3rd party Logosutcs.jpeg",
-                title: "Logistik von Drittanbietern",
-                text: "Wir sind Experten im Bereich Logistikmanagement, einschließlich Drittanbieterlogistik und Unterstützung der Lieferkette. Mit unseren zuverlässigen Dienstleistungen optimieren wir die Abläufe für maximale Effizienz.",
+                title: "THIRD-PARTY LOGISTICS",
+                text: "We are experts in logistics management, including third-party logistics and supply chain support. Our reliable services optimize processes for maximum efficiency.",
             },
             {
                 image: "/Trans Border.png",
-                title: "Transgrenz-",
-                text: "Unsere umfassenden Dienstleistungen optimieren die grenzüberschreitende Logistik und erleichtern den reibungslosen Transport von Produkten international.",
+                title: "TRANSBORDER",
+                text: "Our comprehensive services streamline transborder logistics, facilitating smooth international transport of products.",
             },
         ],
     ];
@@ -65,96 +65,50 @@ const SupplyChain = () => {
     const smallScreen = [
         {
             image: "/Sea Fright.png",
-            title: "Seefracht",
-            text: "Unsere Seefrachtversanddienste gewährleisten einen effizienten Transport Ihrer Waren zu fernen Stränden mit reibungsloser und schneller Lieferung über weite Meere hinweg.",
+            title: "SEA FREIGHT",
+            text: "Our sea freight shipping services ensure efficient transport of your goods to distant shores with smooth and timely delivery across vast oceans.",
         },
         {
             image: "/Air Fright.jpg",
-            title: "Luftfracht",
-            text: "Wir bewegen Ihre Fracht schnell und sicher durch unsere umfangreichen Luftfrachtdienste. Ob es sich um eine dringende oder eine entfernte Angelegenheit handelt, wir zeigen Schnelligkeit und Kompetenz.",
+            title: "AIR FREIGHT",
+            text: "We move your cargo quickly and securely through our comprehensive air freight services. Whether it’s an urgent matter or a distant destination, we demonstrate speed and expertise.",
         },
         {
             image: "/Custom Clearnce.jpg",
-            title: "Zollabfertigung",
-            text: "Erleben Sie schnelle und sichere Luftfrachtdienste für Ihre Sendungen. Ob es sich um eine eilige Lieferung oder ein entferntes Ziel handelt, unsere Dienstleistungen setzen auf Geschwindigkeit und Kompetenz.",
+            title: "CUSTOMS CLEARANCE",
+            text: "Experience fast and secure customs clearance for your shipments. Whether it’s an urgent delivery or a distant target, our services emphasize speed and competence.",
         },
         {
             image: "/ground distbition.jpg",
-            title: "Bodendistribution",
-            text: "Schneller und zuverlässiger Landtransport stellt sicher, dass Ihre Waren pünktlich eintreffen. Dies umfasst alle Bereiche, vom Transport um die Ecke bis hin zur landesweiten Lieferung.",
+            title: "GROUND DISTRIBUTION",
+            text: "Fast and reliable ground transportation ensures that your goods arrive on time. This includes all aspects from local deliveries to nationwide distribution.",
         },
         {
             image: "/Inter Model.jpeg",
-            title: "Intermodal",
-            text: "Profitieren Sie von unseren schnellen und zuverlässigen Landtransportdiensten, die eine rechtzeitige Lieferung Ihrer Waren in allen Bereichen gewährleisten. Von lokalen Lieferungen um die Ecke bis hin zu landesweiten Sendungen sind wir für Sie da.",
+            title: "INTERMODAL",
+            text: "Benefit from our fast and reliable ground transportation services that ensure timely delivery of your goods across all areas. From local deliveries to nationwide shipments, we are here for you.",
         },
         {
             image: "/warehousemanagement.png",
-            title: "Warehouse Management",
-            text: "Wir bieten umfassende Dienstleistungen für ein besseres Lagermanagement an. Dies verbessert die Lagerung, überprüft den Bestand und optimiert die Abläufe..",
+            title: "WAREHOUSE MANAGEMENT",
+            text: "We offer comprehensive services for improved warehouse management. This enhances storage, checks inventory, and optimizes processes for maximum efficiency.",
         },
         {
             image: "/Cold Logistics.jpeg",
-            title: "Kühlkettenlogistik",
-            text: "Entfesseln Sie das Potenzial Ihres Lagers mit unseren umfassenden Managementdienstleistungen. Von der Optimierung der Lagerung bis zur Verwaltung des Bestands optimieren wir die Abläufe für maximale Effizienz",
+            title: "COLD CHAIN LOGISTICS",
+            text: "Unlock the potential of your warehouse with our comprehensive management services. From optimizing storage to inventory management, we streamline processes for maximum efficiency.",
         },
         {
             image: "/3rd party Logosutcs.jpeg",
-            title: "Logistik von Drittanbietern",
-            text: "Wir sind Experten im Bereich Logistikmanagement, einschließlich Drittanbieterlogistik und Unterstützung der Lieferkette. Mit unseren zuverlässigen Dienstleistungen optimieren wir die Abläufe für maximale Effizienz.",
+            title: "THIRD-PARTY LOGISTICS",
+            text: "We are experts in logistics management, including third-party logistics and supply chain support. Our reliable services optimize processes for maximum efficiency.",
         },
         {
             image: "/Trans Border.png",
-            title: "Transgrenz-",
-            text: "Unsere umfassenden Dienstleistungen optimieren die grenzüberschreitende Logistik und erleichtern den reibungslosen Transport von Produkten international.",
+            title: "TRANSBORDER",
+            text: "Our comprehensive services streamline transborder logistics, facilitating smooth international transport of products.",
         },
     ];
-    //     {
-    //         image: "/Sea Fright.png",
-    //         title: "Sea Freight",
-    //         text: "Shipping services for ocean cargo ensure your items are moved smoothly and swiftly across enormous seas to touch distant beaches.",
-    //     },
-    //     {
-    //         image: "/Air Fright.jpg",
-    //         title: "Air Freight",
-    //         text: "We move your cargo fast and safely through our wide-ranging air services. Be it an urgent or a distant affair, we demonstrate quickness and competence.",
-    //     },
-    //     {
-    //         image: "/Custom Clearnce.jpg",
-    //         title: "Customs Clearance",
-    //         text: "We provide a service that guards against any hitches in customs clearance. It helps your business enlargement.",
-    //     },
-    //     {
-    //         image: "/ground distbition.jpg",
-    //         title: "Ground Distribution",
-    //         text: "Quick and reliable land transport makes sure your goods arrive on time. This covers all areas, from delivering around the corner to across the nation.",
-    //     },
-    //     {
-    //         image: "/Inter Model.jpeg",
-    //         title: "Intermodal",
-    //         text: "Dive into the busy world of shipping with our wide-ranging services. We smoothly tie together all travel modes, so your products reach their destination effectively.",
-    //     },
-    //     {
-    //         image: "/warehousemanagement.png",
-    //         title: "Warehouse Management",
-    //         text: "We offer comprehensive services for better warehouse management. This enhances storage, checks inventory, and streamlines operations.",
-    //     },
-    //     {
-    //         image: "/Cold Logistics.jpeg",
-    //         title: "Cold Chain Logistics",
-    //         text: "We provide all-inclusive services for proficient cold chain logistics control. This guarantees the quality of goods needing certain temperatures throughout their entire supply journey.",
-    //     },
-    //     {
-    //         image: "/3rd party Logosutcs.jpeg",
-    //         title: "Logistics of Third Parties",
-    //         text: "We simply make things work. From dealing with third-party logistics to backing up your supply chain, our services are reliable and streamline.",
-    //     },
-    //     {
-    //         image: "/Trans Border.png",
-    //         title: "Transborder",
-    //         text: "We provide numerous services that make cross-border logistics a breeze. This ensures products move across borders without a hitch.",
-    //     },
-    // ];
 
     useEffect(() => {
         const handleResize = () => {
@@ -186,7 +140,7 @@ const SupplyChain = () => {
         <>
             <div data-aos="flip-up" className="mx-auto text-center my-24">
                 <h1 className="my-3 text-2xl lg:text-6xl capitalize min-[1800px]:text-7xl font-semibold">
-                    Unsere wertvollen Dienstleistungen
+                    Our valuable services
                 </h1>
             </div>
             <div className={`relative gap-6 min-[786px]:flex hidden items-start mx-auto px-8 w-[97%] h-[35vw]`}>

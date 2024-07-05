@@ -1,25 +1,26 @@
 import React from "react";
 import {FaTruckMoving} from "react-icons/fa";
+
 const options = [
     {
-        title: " Strategische Hafenstandorte und Netzwerkzugang",
+        title: "Strategic Port Locations and Network Access",
         description:
-            "Die Eder bietet Zugang zu einem Netzwerk strategisch gelegener Häfen, das eine effiziente und rechtzeitige Bewegung von Waren weltweit ermöglicht. Unsere langjährigen Beziehungen zu Hafenbehörden und Terminalbetreibern gewährleisten reibungslose Abläufe und eine bevorzugte Abwicklung Ihrer Sendungen. Dieses umfangreiche Netzwerk reduziert die Transitzeiten und verbessert die Konnektivität, was es Ihnen ermöglicht, wichtige Märkte effektiver zu erreichen.",
+            "Eder provides access to a network of strategically located ports facilitating efficient and timely movement of goods worldwide. Our longstanding relationships with port authorities and terminal operators ensure smooth operations and preferential handling of your shipments. This extensive network reduces transit times and enhances connectivity, enabling you to reach key markets more effectively.",
     },
     {
-        title: " Effiziente Zollabfertigung und Compliance",
+        title: "Efficient Customs Clearance and Compliance",
         description:
-            "Die Komplexität der Zollvorschriften zu bewältigen, kann herausfordernd sein. Die Hafenlösungen der Eder umfassen umfassende Zollabfertigungsdienstleistungen, um sicherzustellen, dass Ihre Sendungen allen erforderlichen Vorschriften und Dokumentationsanforderungen entsprechen. Unser erfahrenes Team übernimmt alle Aspekte des Zollprozesses und reduziert das Risiko von Verzögerungen, Geldstrafen und anderen mit der Einhaltung verbundenen Problemen, wodurch ein reibungsloser Warenfluss durch die Häfen sichergestellt wird.",
+            "Managing the complexity of customs regulations can be challenging. Eder's port solutions include comprehensive customs clearance services to ensure your shipments comply with all required regulations and documentation requirements. Our experienced team manages all aspects of the customs process, reducing the risk of delays, penalties, and other compliance-related issues, ensuring a smooth flow of goods through the ports.",
     },
     {
-        title: "Effiziente Frachtabwicklung und Lagerung",
+        title: "Efficient Freight Handling and Storage",
         description:
-            "Unsere Hafenlösungen umfassen fortschrittliche Frachtabfertigungs- und Lagerdienstleistungen, wobei modernste Ausrüstung und Einrichtungen eingesetzt werden, um Ihre Waren präzise und sorgfältig zu verwalten. Die Eder bietet sichere, flexible Lageroptionen an Hafenstandorten, die eine effiziente Lagerung, Konsolidierung und De-Konsolidierung von Fracht ermöglichen. Diese optimierte Abwicklung reduziert das Risiko von Schäden, verbessert die Umlaufzeiten und steigert insgesamt die Effizienz der gesamten Lieferkette.",
+            "Our port solutions include advanced freight handling and storage services utilizing state-of-the-art equipment and facilities to manage your goods accurately and carefully. Eder offers secure, flexible storage options at port locations enabling efficient cargo storage, consolidation, and deconsolidation. This optimized handling reduces the risk of damage, improves turnaround times, and enhances overall supply chain efficiency.",
     },
     {
-        title: "Integrierte Technologie und Echtzeit-Tracking",
+        title: "Integrated Technology and Real-Time Tracking",
         description:
-            "Die Eder nutzt integrierte Technologielösungen, um eine Echtzeit-Sichtbarkeit und Nachverfolgung Ihrer Sendungen durch die Häfen zu ermöglichen. Unsere fortschrittlichen Systeme ermöglichen es Ihnen, den Status und den Standort Ihrer Fracht in jeder Phase des Hafenabfertigungsprozesses zu überwachen. Diese Transparenz ermöglicht eine bessere Planung und Koordination, proaktive Problemlösung und verbesserte Entscheidungsfindung, so dass Ihre Lieferkette reaktionsschnell und effizient bleibt",
+            "Eder utilizes integrated technology solutions to provide real-time visibility and tracking of your shipments through the ports. Our advanced systems allow you to monitor the status and location of your cargo at every phase of the port clearance process. This transparency enables better planning and coordination, proactive issue resolution, and improved decision-making, keeping your supply chain responsive and efficient.",
     },
 ];
 
@@ -30,7 +31,7 @@ const Page = () => {
                 <div className="w-full  flex justify-start  max-w-screen-2xl mx-auto px-8">
                     <h1
                         className="text-2xl lg:text-7xl text-start z-10 text-white w-full  py-2 md:py-16 capitalize min-[1800px]:text-8xl font-semibold leading-6 sm:leading-normal"
-                        dangerouslySetInnerHTML={{__html: "Hafenlogistik: YOUR <br/> Lieferkette in Bewegung"}}
+                        dangerouslySetInnerHTML={{__html: "Port Logistics: YOUR <br/> Supply Chain in Motion"}}
                     />
                 </div>
                 {/* Black Shade Overlay */}
@@ -38,46 +39,41 @@ const Page = () => {
             </section>
             <section className="max-w-screen-2xl flex flex-col gap-2 md:gap-8 py-16 mx-auto px-8">
                 <div className=" flex flex-col gap-3 justify-center items-start">
-                    <h3 className="text-sm uppercase font-semibold">Lieferkettenlösungen </h3>
-                    <h2 className="font-semibold text-2xl md:text-4xl ">Hafenlogistik</h2>
+                    <h3 className="text-sm uppercase font-semibold">Supply Chain Solutions </h3>
+                    <h2 className="font-semibold text-2xl md:text-4xl ">Port Logistics</h2>
                 </div>
                 <div className={" w-full bg-gray-400 mx-auto my-4 h-[0.1px]"}></div>
                 <p className="py-5 md:text-lg">
-                    Die Hafenlogistikdienstleistungen, die von der Eder angeboten werden, spielen eine entscheidende
-                    Rolle bei der Förderung des globalen Handels und des Handels. Häfen dienen als wichtige Drehscheiben
-                    für den Warenverkehr und verbinden Hersteller, Lieferanten und Verbraucher auf verschiedenen
-                    Kontinenten miteinander. Die Eder erkennt die Bedeutung effizienter und zuverlässiger Hafenlogistik
-                    für einen reibungslosen Warenfluss und die Optimierung der Lieferkettenprozesse. Bei der Eder sind
-                    unsere Hafenlogistikdienstleistungen darauf ausgerichtet, die vielfältigen Bedürfnisse unserer
-                    Kunden zu erfüllen, angefangen von multinationalen Unternehmen bis hin zu kleinen und
-                    mittelständischen Unternehmen. Wir bieten eine umfassende Palette von Dienstleistungen, die auf die
-                    einzigartigen Anforderungen jedes Kunden zugeschnitten sind, und gewährleisten so einen
-                    reibungslosen und kosteneffizienten Betrieb.
+                    The port logistics services offered by Eder play a crucial role in promoting global trade and
+                    commerce. Ports serve as vital hubs for the movement of goods, connecting manufacturers, suppliers,
+                    and consumers across continents. Eder recognizes the importance of efficient and reliable port
+                    logistics for smooth flow of goods and optimization of supply chain processes. At Eder, our port
+                    logistics services are designed to meet the diverse needs of our customers, ranging from
+                    multinational corporations to small and medium-sized enterprises. We offer a comprehensive range of
+                    services tailored to the unique requirements of each client, ensuring smooth and cost-effective
+                    operations.
                 </p>
                 <div className="flex gap-4 md:gap-8 h-auto md:flex-row-reverse flex-col">
                     <img src="/port_logistics2.jpeg" className=" w-full md:w-1/2 h-auto" />
                     <p className="py-5 md:text-lg">
-                        Ein wichtiger Aspekt unserer Hafenlogistikdienstleistungen ist die effiziente Frachtabwicklung.
-                        Wir verfügen über hochmoderne Einrichtungen und Ausrüstungen, um eine Vielzahl von Frachtgütern
-                        zu handhaben, einschließlich Container, Massengüter und Spezialgüter. Unsere qualifizierten
-                        Mitarbeiter und die fortschrittliche Technologie ermöglichen es uns, Frachtströme effizient zu
-                        verwalten, was zu minimalen Umlaufzeiten und maximaler Produktivität führt. Neben der
-                        Frachtabwicklung bieten wir eine Reihe von Mehrwertdiensten an, um die Effizienz der
-                        Hafenbetriebe zu steigern. Dazu gehören Lagerhaltung und Distribution, Zollabfertigung,
-                        Spedition und Transportdienstleistungen. Unser integrierter Ansatz ermöglicht es uns,
-                        End-to-End-Lösungen anzubieten, die die Lieferkettenprozesse optimieren und konkrete Vorteile
-                        für unsere Kunden bringen. Darüber hinaus verstehen wir die Bedeutung von Compliance und
-                        Risikomanagement in den Hafenbetrieben. Unser Expertenteam bleibt stets über die neuesten
-                        Vorschriften und branchenüblichen Praktiken informiert, um sicherzustellen, dass die Sendungen
-                        unserer Kunden allen relevanten Gesetzen und Vorschriften entsprechen. Wir implementieren auch
-                        robuste Risikomanagementstrategien, um potenzielle Störungen zu minimieren und die Lieferketten
-                        unserer Kunden abzusichern.
+                        An important aspect of our port logistics services is efficient freight handling. We have
+                        state-of-the-art facilities and equipment to handle a variety of cargo, including containers,
+                        bulk goods, and specialty items. Our skilled staff and advanced technology enable us to manage
+                        cargo flows efficiently, resulting in minimal turnaround times and maximum productivity. In
+                        addition to freight handling, we offer a range of value-added services to enhance port
+                        operations. These include storage and distribution, customs clearance, freight forwarding, and
+                        transportation services. Our integrated approach allows us to offer end-to-end solutions that
+                        optimize supply chain processes and deliver tangible benefits to our customers. Furthermore, we
+                        understand the importance of compliance and risk management in port operations. Our expert team
+                        stays informed about the latest regulations and industry practices to ensure our customers'
+                        shipments comply with all relevant laws and regulations. We also implement robust risk
+                        management strategies to minimize potential disruptions and secure our customers' supply chains.
                     </p>
                 </div>
             </section>
             <section className="max-w-screen-2xl flex flex-col gap-2 md:gap-8 py-16 mx-auto px-8">
                 <h2 className="font-semibold text-2xl md:text-4xl  ">
-                    Was Sie mit einem <span className=" text-orange-600">Logistikunternehmen erhalten</span>
+                    What You Get with a <span className=" text-orange-600">Logistics Company</span>
                 </h2>
                 <div className={" w-full bg-gray-400 mx-auto my-4 h-[0.1px]"}></div>
                 <div className=" grid grid-cols-1 md:grid-cols-2 gap-16 p-2 md:p-5">

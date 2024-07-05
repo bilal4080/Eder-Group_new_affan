@@ -3,45 +3,43 @@ import React, {useState} from "react";
 import Link from "next/link";
 const items = [
     {
-        name: "Träger",
+        name: "Supports",
         image: "https://www.metallparadies.de/images/product_images/original_images/stahl-traegerprofil-b-1300.jpg",
     },
     {
-        name: "Voll-/Stabmaterial",
+        name: "Solid/Rod Material",
         image: "https://semigent.hu/storage/uploads/images/8466993b3b6a4cffb73fce0d33cd641e.jpg",
     },
     {
-        name: "Bleche",
+        name: "Sheets",
         image: "https://www.bucher-stahl.de/fileadmin/user_upload/backgrounds/produkte/header_img/bucher-produkte-bleche-header__2_.jpg",
     },
     {
-        name: "Formrohre & Profile",
+        name: "Hollow Sections & Profiles",
         image: "https://www.brr.ch/thumbor/rdPpftbbZ4qQpfJT4ZOLW2EY8Oc=/filters:cachevalid(2021-04-14T20:44:16.233813):strip_icc():strip_exif()/cms/Shop/Headerbilder/sh_10_formrohre-hohlprofile.png",
     },
     {
-        name: "Rundrohre",
+        name: "Round Tubes",
         image: "https://www.opo.de/medias/52.080.89-90-xl.jpg?context=bWFzdGVyfFByb2R1Y3RJbWFnZXN8MTI3ODIwfGltYWdlL2pwZWd8YURCbUwyZ3hOaTg0T0RJd056QXpNak15TURNd0x6VXlMakE0TUM0NE9TMDVNQzE0YkM1cWNHY3wwOGJkZDg5MTAwNmI5NGZkNmMzMDk2M2E5N2VjOWJkZjEyZmI4Zjg1ZWIzNGY4NTI1M2RhNTJlNmFlNzkyYzRj",
     },
     {
-        name: "Rohrverbindungen",
+        name: "Pipe Connections",
         image: "https://img.directindustry.com/images_di/projects/images-g/new-aluminum-pipe-vulkan-lokring-rohrverbindungen-gmbh-co-kg-18103-9893306.jpg",
     },
     {
-        name: "Installationssysteme",
+        name: "Installation Systems",
         image: "https://img.directindustry.com/images_di/projects/images-g/new-aluminum-pipe-vulkan-lokring-rohrverbindungen-gmbh-co-kg-18103-9893306.jpg",
     },
-
     {
-        name: "Heizkörper",
+        name: "Radiators",
         image: "https://d2t1xqejof9utc.cloudfront.net/screenshots/pics/9503d653f0c53e6d389ffaeb4f0730b3/large.JPG",
     },
     {
-        name: "Armaturen & Pumpen",
+        name: "Fittings & Pumps",
         image: "https://wassermeister.net/wp-content/uploads/2021/10/KSB-online.jpg",
     },
-
     {
-        name: "Streckmetalle",
+        name: "Expanded Metals",
         image: "https://www.metallpfister.ch/img/2p8R1jWYaB/1920x0_ratio/Titel_Streckmetall.jpg?1657028040",
     },
     {
@@ -49,39 +47,39 @@ const items = [
         image: "https://gvsystem.co.uk/wp-content/uploads/2022/09/Stainless-Steel-Grids-.jpg",
     },
     {
-        name: "Gitterroste",
+        name: "Gratings",
         image: "https://i.ebayimg.com/images/g/UA8AAOSw2StgipxA/s-l1200.jpg",
     },
     {
-        name: "Laufschienensysteme",
+        name: "Running Rail Systems",
         image: "https://bilder.baur.de/i/empiriecom/2185873f9e547387f90aae070bfbc24d.jpg?$PL_landscape_hq$",
     },
     {
-        name: "Geländersysteme",
+        name: "Balustrade Systems",
         image: "https://cdn.cloudbf.com/thumb/format/mini_xsize/upfile/100/images/15/20210825143723482.jpg.webp",
     },
     {
-        name: "Voll-/Stabmaterial",
+        name: "Solid/Rod Material",
         image: "https://www.weldorado.de/media/image/9d/97/3f/552200_24_fq_Gasflaschtrage-Arnitur_600x600.jpg",
     },
     {
-        name: "Autogen-/ Pressluft Zubehör",
+        name: "Autogenous/Air Accessories",
         image: "https://www.bucher-stahl.de/fileadmin/user_upload/backgrounds/produkte/header_img/bucher-produkte-bleche-header__2_.jpg",
     },
     {
-        name: "MIG / MAG, WIG & Plasma",
+        name: "MIG / MAG, TIG & Plasma",
         image: "https://m.media-amazon.com/images/I/718ElMJ9qlL.jpg",
     },
     {
-        name: "Schweißzubehör",
+        name: "Welding Accessories",
         image: "https://www.poppstar.de/media/b2/e6/ef/1666367032/03916271f86541f88321671f15a1aa50-1010629_1.jpg",
     },
     {
-        name: "Arbeitsstoffe & Beizprodukte",
+        name: "Work Materials & Pickling Products",
         image: "https://media.istockphoto.com/id/1170096342/photo/professional-industrial-cleaner-in-protective-uniform-cleaning-floor-of-food-processing-plant.jpg?s=612x612&w=0&k=20&c=MPXg00sFhtJBkadBKVWWrSqAkmeCdatsh5qvkwbFBk8=",
     },
     {
-        name: "Arbeitsstoffe & Beizprodukte",
+        name: "Work Materials & Pickling Products",
         image: "https://www.lagertechnik-direkt.de/cdn/shop/products/meta-clip-arbeitsschutz-komplettregal-verzinkt-lagertechnik-direkt-1_1024x1024.png?v=1698313473",
     },
     // Add more items here if needed up to 19 items
@@ -92,35 +90,35 @@ const additionalItems = [
         image: "https://t3.ftcdn.net/jpg/03/19/13/14/360_F_319131476_vPBEjt7LLKdDlUJK1LskGOBo3AejUJdG.jpg",
     },
     {
-        name: "Bleche",
+        name: "Sheets",
         image: "https://www.metallwelt.at/fileadmin/content/produktbilder/01_Stahlbleche_DSC_5040.jpg",
     },
     {
-        name: "Cortenstahl",
+        name: "Corten Steel",
         image: "https://t3.ftcdn.net/jpg/02/84/28/52/360_F_284285205_j8ew2fNsdEsPoPHnd8GtAiXZVjlK9kHj.jpg",
     },
     {
-        name: "Dekorohre",
+        name: "Decorative Pipes",
         image: "https://www.schmiedekult.de/media/image/product/12889/lg/edelstahlrohr-geschweisst-424-x-2mm-guete-14301-in-240-korn-geschliffen-bis-3000mm-laenge.jpg",
     },
     {
-        name: "Edelstahl",
+        name: "Stainless Steel",
         image: "https://www.batzerstahl.de/images/edelstahl-uebersicht-batzerstahl-Fotolia_132614358_XS.jpg",
     },
     {
-        name: "Flansche",
+        name: "Flanges",
         image: "https://yenaengineering.nl/wp-content/uploads/2022/09/image-27.png",
     },
     {
-        name: "Gitter",
+        name: "Grids",
         image: "https://www.kso-beizerei.de/wp-content/uploads/2022/07/gitter.jpg",
     },
     {
-        name: "Hohlprofile / Formrohre",
+        name: "Hollow Profiles / Structural Pipes",
         image: "https://www.ewth.at/media/8c/9b/9b/1594715718/Stahl.jpg",
     },
     {
-        name: "Installationssysteme",
+        name: "Installation Systems",
         image: "https://www.infrabuild.com/wp-content/uploads/sites/8/2018/04/CVLX-Saleyard-hero-1.jpg",
     },
     // Ensure there are 19 items here as well
@@ -129,48 +127,48 @@ const additionalItems = [
         image: "https://m.media-amazon.com/images/I/31B+Md1eGCL._AC_UF894,1000_QL80_.jpg",
     },
     {
-        name: "Kolbenstangen",
+        name: "Piston Rods",
         image: "https://www.stainless-fruechtl.de/wp-content/uploads/2021/12/Kolbenstangen-Exakt-Gerade.jpg",
     },
     {
-        name: "Lochbleche",
+        name: "Perforated Sheets",
         image: "https://faco-metalltechnik.de/fileadmin/_processed_/3/c/csm_galerieLochblech_Rv_gewalzt_Stahl_1-scaled-800x533_71fff723ff.jpeg",
     },
     {
-        name: "Messing",
+        name: "Brass",
         image: "https://eshop.boellhoff.de/out/pictures/master/product/1/din_84_messing__.jpg",
     },
     {
-        name: "Nirostick Geländersysteme",
+        name: "Nirostick Balustrade Systems",
         image: "https://img.directindustry.com/images_di/photo-mg/30419-13859859.jpg",
     },
     {
-        name: "Ovalrohre",
+        name: "Oval Tubes",
         image: "https://ae01.alicdn.com/kf/S481f717e932241f4987c0f65d26e5c4fl/Aluminum-oval-pipe-30mm-oval-steel-tube-32mm-aluminum-alloy-oval-shape-steel-tubing-40mm-oval.jpg",
     },
     {
-        name: "Präzisionsrohre",
+        name: "Precision Tubes",
         image: "https://www.mst-edelstahlrohr.de/media/image/product/51/lg/nahtlose-praezisionsrohre-en-10216-5-en-10305-1-astm-a269-werkstoff-316l-14404-3-4-x-0065-1905-x-165-mm.jpg",
     },
     {
-        name: "Qualitätsstahl / Stahl",
+        name: "Quality Steel / Steel",
         image: "https://www.hsm-stahl.de/wp-content/uploads/2023/06/shutterstock_172763705-scaled.jpg",
     },
     {
-        name: "Rohre ",
+        name: "Tubes",
         image: "https://www.coremarkmetals.com/files/image/large/HR_TUBE_RECT_3_X_2_075_3000.jpg",
     },
 
     {
-        name: "Streckmetalle",
+        name: "Expanded Metals",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDEVuFVz0saFOktLGiXgcLEih7I1DihqqeKA&s",
     },
     {
-        name: "Träger",
+        name: "Supports",
         image: "https://t3.ftcdn.net/jpg/03/50/13/06/360_F_350130648_UiZz70eBo9KGHDNa9FifTVR2ShMcToHo.jpg",
     },
     {
-        name: "U-Profile ",
+        name: "U-Profiles",
         image: "https://swr-balustrade.co.uk/images/contentSlots/Slot-1/OnLevel/productImage-Handrail-U-Profile-SS.jpg",
     },
 ];
@@ -221,18 +219,14 @@ const Page = () => {
                     <div className="flex justify-center pt-5 text-red-500">No items found</div>
                 )}
                 <div className="bg-gray-100 p-8 text-center">
-                    <h2 className="text-2xl font-semibold mb-4 flex justify-center">
-                        Stahl in allen Formen online kaufen
-                    </h2>
+                    <h2 className="text-2xl font-semibold mb-4 flex justify-center">Buy Steel in All Shapes Online</h2>
                     <p className="text-gray-700">
-                        Du kannst bei uns nicht nur Stahl in allen erdenklichen Formen online kaufen – mit über 100.000
-                        Artikel führen wir ein einzigartiges Online-Sortiment mit verschiedensten Werkstoffen. In
-                        unserem Sortiment findest du Träger, Voll- & Stabmaterial, Bleche, Formrohre & Profile,
-                        Rundrohre, Rohrverbindungen, Installationssysteme, Armaturen & Pumpen und vieles mehr.
+                        Not only can you buy steel in all imaginable forms from us online – with over 100,000 items, we
+                        offer a unique online range of various materials. In our assortment, you will find supports,
+                        solid & rod material, sheets, hollow sections & profiles, round tubes, pipe connections,
+                        installation systems, fittings & pumps, and much more.
                     </p>
-                    <p className="text-blue-500 mt-4 flex justify-center">
-                        Entdecke jetzt unser einzigartiges Sortiment!
-                    </p>
+                    <p className="text-blue-500 mt-4 flex justify-center">Discover our unique range now!</p>
                 </div>
                 <h1 className="justify-center flex text-xl mt-10">ADDITIONAL METALS</h1>
                 {filteredAdditionalItems.length > 0 ? (

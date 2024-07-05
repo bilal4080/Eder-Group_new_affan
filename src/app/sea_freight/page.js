@@ -4,24 +4,24 @@ import {FaTruckMoving} from "react-icons/fa";
 const Page = () => {
     const options = [
         {
-            title: "Umfassendes globales Netzwerk",
+            title: "Comprehensive Global Network",
             description:
-                "Mit dinem umfassenden globalen Netzwerk bietet die EDer eine breite Palette von Logistiklösungen, die darauf ausgerichtet sind, die weltweiten Versandanforderungen unserer Kunden zu erfüllen. Durch strategische Partnerschaften und eine weitreichende Präsenz in wichtigen Handelshäfen sind wir in der Lage, eine nahtlose Verbindung zwischen verschiedenen Standorten herzustellen und effiziente Transportlösungen anzubieten. Unser Netzwerk ermöglicht es uns, flexibel auf die Bedürfnisse unserer Kunden einzugehen und maßgeschneiderte Lösungen anzubieten, die sowohl kosteneffizient als auch zuverlässig sind.",
+                "With our comprehensive global network, Eder offers a wide range of logistics solutions designed to meet the worldwide shipping requirements of our customers. Through strategic partnerships and extensive presence in key trading ports, we are able to establish seamless connections between different locations and provide efficient transport solutions. Our network allows us to flexibly respond to our customers' needs and offer tailored solutions that are both cost-effective and reliable.",
         },
         {
-            title: "Flexible Versandoptionen",
+            title: "Flexible Shipping Options",
             description:
-                "Wir derstehen, dass verschiedene Unternehmen unterschiedliche Versandbedürfnisse haben. Aus diesem Grund bietet die EDer eine Reihe von flexiblen Versandoptionen, einschließlich Full Container Load (FCL) und Less than Container Load (LCL) Dienstleistungen. Ob Sie große Mengen an Waren haben oder kleinere Sendungen, wir können unsere Dienstleistungen an Ihre spezifischen Anforderungen anpassen. Unser Ziel ist es, kostengünstige Lösungen anzubieten, die die Effizienz maximieren und die Kosten für unsere Kunden minimieren.",
+                "We understand that different businesses have different shipping needs. That's why Eder offers a range of flexible shipping options, including Full Container Load (FCL) and Less than Container Load (LCL) services. Whether you have large quantities of goods or smaller shipments, we can tailor our services to meet your specific requirements. Our goal is to provide cost-effective solutions that maximize efficiency and minimize costs for our customers.",
         },
         {
-            title: "Fortgeschrittene Tracking- und Transparenzfunktionen",
+            title: "Advanced Tracking and Transparency Features",
             description:
-                "In ddr heutigen schnelllebigen Welt ist es entscheidend, Echtzeitinformationen über Ihre Sendung zu haben. Die EDer setzt fortschrittliche Tracking-Technologien ein, die eine vollständige Transparenz und Echtzeit-Updates über den Status Ihrer Fracht bieten. Dies ermöglicht es Ihnen, den Fortschritt Ihrer Sendung zu jedem Zeitpunkt ihrer Reise zu überwachen, und gibt Ihnen Sicherheit und die Möglichkeit, effektiver zu planen.",
+                "In today's fast-paced world, having real-time information about your shipment is crucial. Eder employs advanced tracking technologies that provide complete transparency and real-time updates on the status of your cargo. This allows you to monitor the progress of your shipment at any point in its journey, giving you peace of mind and the ability to plan more effectively.",
         },
         {
-            title: " Betonung von Sicherheit und Einhaltung",
+            title: "Emphasis on Security and Compliance",
             description:
-                "Sichdrheit und Einhaltung stehen im Mittelpunkt unserer Seefrachtdienste. Die EDer hält sich an die höchsten Branchenstandards und -vorschriften, um sicherzustellen, dass Ihre Fracht mit größter Sorgfalt behandelt wird. Unser Team von Experten ist mit den internationalen Versandvorschriften und bewährten Verfahren bestens vertraut und stellt sicher, dass alle erforderlichen Dokumente und Sicherheitsprotokolle vorhanden sind. Diese Verpflichtung zur Sicherheit und Einhaltung minimiert das Risiko von Verzögerungen, Bußgeldern oder anderen Problemen und gewährleistet eine reibungslose Versanderfahrung.",
+                "Security and compliance are at the heart of our sea freight services. Eder adheres to the highest industry standards and regulations to ensure that your cargo is handled with the utmost care. Our team of experts is well-versed in international shipping regulations and best practices, ensuring that all necessary documents and security protocols are in place. This commitment to security and compliance minimizes the risk of delays, fines, or other issues, ensuring a smooth shipping experience.",
         },
     ];
 
@@ -31,7 +31,7 @@ const Page = () => {
                 <div className="w-full flex justify-start max-w-screen-2xl mx-auto px-8">
                     <h1
                         className="text-2xl lg:text-7xl text-start z-10 text-white w-full py-2 md:py-16 capitalize min-[1800px]:text-8xl font-semibold leading-6 sm:leading-normal"
-                        dangerouslySetInnerHTML={{__html: "Seefracht  <br/> Lieferkette in Bewegung"}}
+                        dangerouslySetInnerHTML={{__html: "Sea Freight <br/> Supply Chain in Motion"}}
                     />
                 </div>
                 {/* Black Shade Overlay */}
@@ -39,38 +39,36 @@ const Page = () => {
             </section>
             <section className="max-w-screen-2xl flex flex-col gap-2 md:gap-8 py-16 mx-auto px-8">
                 <div className="flex flex-col gap-3 justify-center items-start">
-                    <h3 className="text-sm uppercase font-semibold">Seefrachtdienste </h3>
-                    <h2 className="font-semibold text-2xl md:text-4xl">Seefracht </h2>
+                    <h3 className="text-sm uppercase font-semibold">Sea Freight Services</h3>
+                    <h2 className="font-semibold text-2xl md:text-4xl">Sea Freight</h2>
                 </div>
                 <div className="w-full bg-gray-400 mx-auto my-4 h-[0.1px]"></div>
                 <p className="py-5 md:text-lg">
-                    Bei der Eder bieten unsere Seefrachtdienste zuverlässige und kostengünstige Lösungen für den
-                    Transport von Gütern weltweit. Durch Nutzung eines umfangreichen Netzwerks von internationalen
-                    Versandpartnern und strategisch günstig gelegenen Häfen gewährleisten wir eine effiziente und
-                    rechtzeitige Lieferung Ihrer Fracht. Unsere umfassenden Seefrachtdienstleistungen umfassen Full
-                    Container Load (FCL), Less than Container Load (LCL), Stückgut- und Projektfrachtbearbeitung.
+                    At Eder, our sea freight services offer reliable and cost-effective solutions for transporting goods
+                    globally. By leveraging an extensive network of international shipping partners and strategically
+                    located ports, we ensure efficient and timely delivery of your cargo. Our comprehensive sea freight
+                    services include Full Container Load (FCL), Less than Container Load (LCL), break-bulk, and project
+                    cargo handling.
                 </p>
                 <div className="flex gap-4 md:gap-8 h-auto md:flex-row-reverse flex-col">
                     <img src="/sea1.jpg.png" className="w-full md:w-1/2 h-auto" />
                     <p className="py-5 md:text-lg">
-                        Bei der Eder haben unsere Seefrachtdienste Sicherheit, Einhaltung gesetzlicher Vorschriften und
-                        Echtzeit-Tracking als oberste Priorität, um den sicheren und reibungslosen internationalen
-                        Versand Ihrer Waren zu gewährleisten. Durch Nutzung unseres umfangreichen Netzwerks globaler
-                        Versandpartner und strategisch günstig gelegener Häfen bieten wir kostengünstige Full Container
-                        Load (FCL) und Less than Container Load (LCL) Lösungen, die auf Ihre individuellen Anforderungen
-                        zugeschnitten sind. Unser Expertenteam widmet sich der Handhabung Ihrer Fracht mit größter
-                        Sorgfalt und Effizienz, um pünktliche Lieferungen zu gewährleisten und etwaige Unterbrechungen
-                        zu minimieren. Indem wir uns auf Zuverlässigkeit konzentrieren und fortschrittliche
-                        Tracking-Technologien nutzen, navigiert die Eder durch die Komplexitäten der Seefrachtlogistik
-                        und bietet Ihnen Ruhe und außergewöhnlichen Service. Ganz gleich, ob Sie große Mengen oder
-                        kleinere Sendungen versenden müssen, vertrauen Sie der Eder, um Ihre Fracht sicher und effizient
-                        weltweit zu befördern.
+                        At Eder, our sea freight services prioritize security, compliance, and real-time tracking to
+                        ensure the safe and smooth international shipping of your goods. By leveraging our extensive
+                        network of global shipping partners and strategically located ports, we offer cost-effective
+                        Full Container Load (FCL) and Less than Container Load (LCL) solutions tailored to your
+                        individual requirements. Our expert team is dedicated to handling your cargo with utmost care
+                        and efficiency, ensuring timely deliveries and minimizing any disruptions. Focusing on
+                        reliability and utilizing advanced tracking technologies, Eder navigates the complexities of sea
+                        freight logistics, providing you with peace of mind and exceptional service. Whether you need to
+                        ship large quantities or smaller consignments, trust Eder to transport your cargo safely and
+                        efficiently worldwide.
                     </p>
                 </div>
             </section>
             <section className="max-w-screen-2xl flex flex-col gap-2 md:gap-8 py-16 mx-auto px-8">
                 <h2 className="font-semibold text-2xl md:text-4xl">
-                    WAS SIE BEKOMMEN MIT <span className="text-orange-600">Logistikgeschäft</span>
+                    WHAT YOU GET WITH <span className="text-orange-600">Logistics Business</span>
                 </h2>
                 <div className="w-full bg-gray-400 mx-auto my-4 h-[0.1px]"></div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-16 p-2 md:p-5">

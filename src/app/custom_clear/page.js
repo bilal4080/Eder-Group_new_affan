@@ -4,24 +4,24 @@ import {FaTruckMoving} from "react-icons/fa";
 const Page = () => {
     const options = [
         {
-            title: "Expertise in globaler Handelskonformitäte",
+            title: "Expertise in Global Trade Compliance",
             description:
-                "Bei der Eder verfügen wir über ein engagiertes Team von Fachleuten, die mit den globalen Handelsvorschriften und Compliance-Richtlinien bestens vertraut sind. Unsere Expertise gewährleistet, dass Ihre Sendungen den internationalen Gesetzen entsprechen und das Risiko von Verzögerungen und Geldstrafen minimiert wird. Durch die ständige Aktualisierung mit den neuesten Änderungen in Handelspolitiken helfen wir, den Zollabfertigungsprozess für alle Arten von Waren zu optimieren.",
+                "At Eder, we have a dedicated team of professionals well-versed in global trade regulations and compliance guidelines. Our expertise ensures that your shipments comply with international laws, minimizing the risk of delays and fines. By staying up-to-date with the latest changes in trade policies, we help optimize the customs clearance process for all types of goods.",
         },
         {
-            title: " Umfassendes Dokumentenmanagement ",
+            title: "Comprehensive Document Management",
             description:
-                "Wir kümmern uns um alle erforderlichen Unterlagen und Dokumente, die für die Zollabfertigung benötigt werden, einschließlich Import-/Exportdeklarationen, Rechnungen und Ursprungszeugnisse. Unser akribischer Ansatz minimiert Fehler und beschleunigt den Genehmigungsprozess. Dieses gründliche Dokumentenmanagement gewährleistet einen reibungslosen und effizienten Transit Ihrer Fracht und verringert die Wahrscheinlichkeit von zollbedingten Störungen.",
+                "We handle all the necessary paperwork and documents required for customs clearance, including import/export declarations, invoices, and certificates of origin. Our meticulous approach minimizes errors and speeds up the approval process. This thorough document management ensures smooth and efficient transit of your cargo, reducing the likelihood of customs-related disruptions.",
         },
         {
-            title: "Effiziente Zollmaklerdienste",
+            title: "Efficient Customs Brokerage Services",
             description:
-                "Die Eder bietet effiziente Zollmaklerdienste an, um den Zollabfertigungsprozess zu beschleunigen. Unsere erfahrenen Makler haben enge Beziehungen zu Zollbeamten und ein tiefes Verständnis der Verfahrensanforderungen. Dies ermöglicht es uns, schnell durch komplexe Zollvorschriften zu navigieren und Ihre Waren umgehend zu klären, damit sie rechtzeitig ihr Ziel erreichen.",
+                "Eder offers efficient customs brokerage services to expedite the customs clearance process. Our experienced brokers have close relationships with customs officials and a deep understanding of procedural requirements. This allows us to navigate complex customs regulations quickly and clear your goods promptly, ensuring timely delivery.",
         },
         {
-            title: "Maßgeschneiderte Lösungen für vielfältige Branchen",
+            title: "Tailored Solutions for Diverse Industries",
             description:
-                "Die Eder bietet maßgeschneiderte Luftfrachtlösungen, um Ihren einzigartigen Versandanforderungen gerecht zu werden. Ob Sie eine Expresslieferung benötigen, temperaturgesteuerten Transport wünschen oder übergroße Fracht versenden möchten, unser Expertenteam wird einen individuellen Plan entwerfen, der genau auf Ihre spezifischen Anforderungen zugeschnitten ist. Dieser personalisierte Ansatz gewährleistet, dass Ihre Fracht mit größter Sorgfalt und Präzision behandelt wird und somit Sicherheit und Effizienz optimiert werden.",
+                "Eder provides customized air freight solutions to meet your unique shipping needs. Whether you require express delivery, temperature-controlled transport, or oversized cargo shipment, our expert team will design a personalized plan tailored to your specific requirements. This personalized approach ensures that your cargo is handled with utmost care and precision, optimizing safety and efficiency.",
         },
     ];
 
@@ -32,7 +32,7 @@ const Page = () => {
                     <h1
                         className="text-2xl lg:text-7xl text-start z-10 text-white w-full py-2 md:py-16 capitalize min-[1800px]:text-8xl font-semibold leading-6 sm:leading-normal"
                         dangerouslySetInnerHTML={{
-                            __html: "ZOLLABFERTIGUNG NACH MASS: <br/> IHRE LIFERKETTE IN BEWEGUNG ",
+                            __html: "CUSTOMS CLEARANCE TAILORED: <br/> YOUR SUPPLY CHAIN IN MOTION ",
                         }}
                     />
                 </div>
@@ -41,35 +41,33 @@ const Page = () => {
             </section>
             <section className="max-w-screen-2xl flex flex-col gap-2 md:gap-8 py-16 mx-auto px-8">
                 <div className="flex flex-col gap-3 justify-center items-start">
-                    <h3 className="text-sm uppercase font-semibold">Zollabfertigung</h3>
-                    <h2 className="font-semibold text-2xl md:text-4xl">Zollabfertigung</h2>
+                    <h3 className="text-sm uppercase font-semibold">Customs Clearance</h3>
+                    <h2 className="font-semibold text-2xl md:text-4xl">Customs Clearance</h2>
                 </div>
                 <div className="w-full bg-gray-400 mx-auto my-4 h-[0.1px]"></div>
                 <p className="py-5 md:text-lg">
-                    Die Eder hat sich auf die Bereitstellung nahtloser Zollabfertigungsdienstleistungen spezialisiert,
-                    die den komplexen Anforderungen des internationalen Handels gerecht werden. Unser Team von Experten
-                    gewährleistet die Einhaltung globaler Handelsvorschriften, verwaltet alle Dokumente und arbeitet mit
-                    Zollbehörden zusammen, um die reibungslose Bewegung Ihrer Waren zu erleichtern. Durch Nutzung
-                    unseres umfangreichen Wissens und unserer etablierten Beziehungen bieten wir effiziente
-                    Zollabfertigungsdienste, die dazu beitragen, Verzögerungen zu minimieren und Kosten zu senken.
+                    Eder specializes in providing seamless customs clearance services that meet the complex requirements
+                    of international trade. Our team of experts ensures compliance with global trade regulations,
+                    manages all documents, and collaborates with customs authorities to facilitate the smooth movement
+                    of your goods. By leveraging our extensive knowledge and established relationships, we offer
+                    efficient customs clearance services that help minimize delays and reduce costs.
                 </p>
                 <div className="flex gap-4 md:gap-8 h-auto md:flex-row-reverse flex-col">
                     <img src="/air3.png" className="w-full md:w-1/2 h-auto" />
                     <p className="py-5 md:text-lg">
-                        Unsere maßgeschneiderten Lösungen richten sich an vielfältige Branchen und berücksichtigen, dass
-                        jeder Sektor einzigartige Anforderungen hat. Ob es sich um sensible Gesundheitsprodukte,
-                        komplexe Fertigungskomponenten oder hochwertige Einzelhandelsartikel handelt, wir bieten
-                        maßgeschneiderte Unterstützung, um sicherzustellen, dass Ihre Sendungen alle erforderlichen
-                        Vorschriften erfüllen. Mit der Eder können Sie sicher sein, dass Ihre Waren mit größter Sorgfalt
-                        und Präzision behandelt werden, von der Dokumentation bis zur endgültigen Lieferung. Unser
-                        Streben nach Exzellenz und unser tiefes Verständnis der Zollabfertigungsumgebung machen uns zum
-                        bevorzugten Partner für Unternehmen, die ihre globale Lieferkette optimieren möchten.
+                        Our tailored solutions cater to diverse industries, recognizing that each sector has unique
+                        requirements. Whether it's sensitive healthcare products, complex manufacturing components, or
+                        high-value retail items, we provide customized support to ensure your shipments meet all
+                        necessary regulations. With Eder, you can be confident that your goods are handled with the
+                        utmost care and precision, from documentation to final delivery. Our commitment to excellence
+                        and deep understanding of the customs clearance environment make us the preferred partner for
+                        companies looking to optimize their global supply chain.
                     </p>
                 </div>
             </section>
             <section className="max-w-screen-2xl flex flex-col gap-2 md:gap-8 py-16 mx-auto px-8">
                 <h2 className="font-semibold text-2xl md:text-4xl">
-                    WAS SIE BEKOMMEN MIT <span className="text-orange-600">Logistikgeschäft</span>
+                    WHAT YOU GET WITH <span className="text-orange-600">Logistics Business</span>
                 </h2>
                 <div className="w-full bg-gray-400 mx-auto my-4 h-[0.1px]"></div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-16 p-2 md:p-5">

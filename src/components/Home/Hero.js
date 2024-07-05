@@ -12,20 +12,20 @@ const backgrounds = [
 ]; // Paths to your background images
 const texts = [
     {
-        heading: "Next-Gen Logistiklösungen",
-        text: "Logistikdienstleistungen bieten umfassende Lösungen für das Supply-Chain-Management und gewährleisten nahtlosen Transport und Lieferung vom Werk bis zum Endkunden. Die Eder  bietet den besten Service in Deutschland ",
+        heading: "NEXT-GEN LOGISTICS SOLUTIONS",
+        text: "Logistics services offer comprehensive solutions for supply chain management and ensure seamless transport and delivery from the factory to the end customer. The Eder offers the best service in Germany.",
     },
     {
-        heading: "Expansion des 3PL-Marktes<br/>Lösungen",
-        text: "Die zunehmende Nachfrage nach Logistik-Outsourcing treibt den Aufstieg von Drittanbieter-Logistikunternehmen (3PLs) voran, was zu optimierten Prozessen und gesteigerter Produktivität führt.",
+        heading: "EXPANSION OF THE 3PL MARKET<br/>SOLUTIONS",
+        text: "The increasing demand for logistics outsourcing is driving the rise of third-party logistics companies (3PLs), leading to optimized processes and increased productivity.",
     },
     {
-        heading: "End-to-End-Management der <br/> Lieferkette.",
-        text: "Unsere maßgeschneiderten branchenspezifischen Logistiklösungen garantieren reibungslose Abläufe in der Lieferkette, indem wir jeden Schritt sorgfältig auf Effizienz und Wirksamkeit prüfen, um den gesamten Versorgungsprozess zu optimieren",
+        heading: "END-TO-END SUPPLY CHAIN <br/> MANAGEMENT",
+        text: "Our tailored industry-specific logistics solutions ensure smooth supply chain operations by carefully examining each step for efficiency and effectiveness to optimize the entire supply process.",
     },
     {
-        heading: "Nahtlose Sendungsverfolgung",
-        text: "Erleben Sie die Bequemlichkeit und Einfachheit unseres Buchungs- und Sendungsverfolgungsservices. Buchen Sie Sendungen mühelos und überwachen Sie ihre Reise mit Echtzeit-Tracking.",
+        heading: "SEAMLESS SHIPMENT TRACKING",
+        text: "Experience the convenience and simplicity of our booking and shipment tracking service. Book shipments effortlessly and monitor their journey with real-time tracking.",
     },
 ];
 
@@ -74,8 +74,12 @@ export default function Hero() {
                         <a href="https://www.instagram.com/edergmbh/" target="_blank" rel="noopener noreferrer">
                             <FaInstagram className="cursor-pointer" />
                         </a>
-                        <FaXTwitter className=" cursor-pointer" />
-                        <FaLinkedinIn className=" cursor-pointer" />
+                        <a href="https://x.com/edergmbh01" target="_blank" rel="noopener noreferrer">
+                            <FaXTwitter className=" cursor-pointer" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/edergmbh/" target="_blank" rel="noopener noreferrer">
+                            <FaLinkedinIn className=" cursor-pointer" />
+                        </a>
                     </li>
                 </section>
                 <div className="relative px-8 w-full py-6 sm:py-24 ">

@@ -1,5 +1,5 @@
 "use client";
-import {useState} from "react";
+import React, {useState} from "react";
 import Link from "next/link";
 import {AiOutlineClose} from "react-icons/ai";
 import {BsMessenger} from "react-icons/bs";
@@ -39,38 +39,38 @@ export default function Home() {
 
             {showMessengerPopup && (
                 <div className="fixed bottom-20 right-8 bg-white p-4 rounded-lg shadow-lg w-80 border">
-                    <h2 className="text-xl font-bold mb-2">Ein Gespräch beginnen</h2>
-                    <p className="mb-4">Das Team antwortet normalerweise in wenigen Minuten.</p>
+                    <h2 className="text-xl font-bold mb-2">Start a Conversation</h2>
+                    <p className="mb-4">The team typically responds in a few minutes.</p>
                     <div className="space-y-2">
                         <div
                             className="flex items-center bg-blue-100 text-blue-600 p-2 rounded-lg cursor-pointer"
-                            onClick={() => openMessenger("Hallo, ich habe eine Frage zur Softwareentwicklung.")}
+                            onClick={() => openMessenger("Hello, I have a question about software development.")}
                         >
                             <BsMessenger className="w-6 h-6 mr-2" />
                             <div>
-                                <p className="font-semibold">Benötigen Sie Dienstleistungen?</p>
+                                <p className="font-semibold">Need services?</p>
                                 <p className="text-sm">EDER</p>
                             </div>
                         </div>
                         <div
                             className="flex items-center bg-blue-100 text-blue-600 p-2 rounded-lg cursor-pointer"
-                            onClick={() => openMessenger("Hallo, ich habe eine Frage zur Softwareentwicklung.")}
+                            onClick={() => openMessenger("Hello, I have a general question.")}
                         >
                             <BsMessenger className="w-6 h-6 mr-2" />
                             <div>
-                                <p className="font-semibold">Sonstiges?</p>
+                                <p className="font-semibold">Something else?</p>
                                 <p className="text-sm">EDER</p>
                             </div>
                         </div>
                         <div
                             className="flex items-center bg-blue-100 text-blue-600 p-2 rounded-lg cursor-pointer"
                             onClick={() =>
-                                openMessenger("Hallo, ich habe eine Frage zum Produktdesign und zur Fertigung.")
+                                openMessenger("Hello, I have a question about product design and manufacturing.")
                             }
                         >
                             <BsMessenger className="w-6 h-6 mr-2" />
                             <div>
-                                <p className="font-semibold">Suchen Sie ein Lager?</p>
+                                <p className="font-semibold">Looking for a warehouse?</p>
                                 <p className="text-sm">EDER</p>
                             </div>
                         </div>
@@ -87,7 +87,7 @@ export default function Home() {
                 ) : (
                     <>
                         <BsMessenger className="w-6 h-6 mr-2" />
-                        <span>Chatten Sie mit uns</span>
+                        <span>Chat with us</span>
                     </>
                 )}
             </button>

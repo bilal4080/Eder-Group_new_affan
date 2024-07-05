@@ -4,24 +4,24 @@ import {FaTruckMoving} from "react-icons/fa";
 const Page = () => {
     const options = [
         {
-            title: "Nahtloser grenzüberschreitender Transport",
+            title: "Seamless Cross-Border Transport",
             description:
-                "Eder bietet nahtlose grenzüberschreitende Transportdienstleistungen, die die Komplexität des internationalen Versands vereinfachen. Unsere Expertise in der grenzüberschreitenden Logistik gewährleistet, dass Ihre Waren effizient zwischen Ländern transportiert werden und dabei mühelos durch Zollvorschriften und Grenzkontrollen navigieren. Wir kümmern uns um alle Aspekte des grenzüberschreitenden Transports, von der Dokumentation und Einhaltung bis hin zum Transport und zur Lieferung, um einen reibungslosen und problemlosen Prozess sicherzustellen.",
+                "Eder offers seamless cross-border transport services that simplify the complexity of international shipping. Our expertise in cross-border logistics ensures efficient transportation of your goods between countries, effortlessly navigating customs regulations and border controls. We take care of all aspects of cross-border transport, from documentation and compliance to transport and delivery, ensuring a smooth and hassle-free process.",
         },
         {
-            title: "Expertise in Zoll und Einhaltung",
+            title: "Customs and Compliance Expertise",
             description:
-                "Unser Team von Zoll-Experten ist versiert in den Vorschriften und Anforderungen verschiedener Länder. Wir bieten umfassende Zollabfertigungsdienstleistungen und stellen sicher, dass alle erforderlichen Dokumente korrekt ausgefüllt und eingereicht werden. Diese Expertise minimiert das Risiko von Verzögerungen und Strafen und hilft dabei, dass Ihre Sendungen schnell und effizient den Zoll passieren. Mit Eder können Sie sicher sein, dass Ihre Waren allen internationalen Handelsgesetzen und -vorschriften entsprechen.",
+                "Our team of customs experts is well-versed in the regulations and requirements of various countries. We provide comprehensive customs clearance services and ensure that all necessary documents are filled out and submitted correctly. This expertise minimizes the risk of delays and penalties, helping your shipments pass through customs quickly and efficiently. With Eder, you can be assured that your goods comply with all international trade laws and regulations.",
         },
         {
-            title: "Zuverlässige und sichere Transportlösungen",
+            title: "Reliable and Secure Transport Solutions",
             description:
-                "Wir bieten zuverlässige und sichere Transportlösungen für Ihre grenzüberschreitenden Sendungen. Unsere fortschrittlichen Tracking-Systeme bieten Echtzeit-Sichtbarkeit über den Status Ihrer Sendungen und ermöglichen es Ihnen, ihren Fortschritt jederzeit zu überwachen. Wir setzen auch strenge Sicherheitsmaßnahmen ein, um Ihre Waren während des Transports zu schützen und sicher an ihr Ziel zu bringen. Unser Engagement für Zuverlässigkeit und Sicherheit macht uns zu einem vertrauenswürdigen Partner für den grenzüberschreitenden Transport.",
+                "We offer reliable and secure transport solutions for your cross-border shipments. Our advanced tracking systems provide real-time visibility into the status of your shipments, allowing you to monitor their progress at any time. We also implement strict security measures to protect your goods during transport and ensure they reach their destination safely. Our commitment to reliability and security makes us a trusted partner for cross-border transport.",
         },
         {
-            title: "Maßgeschneiderte grenzüberschreitende Lösungen",
+            title: "Customized Cross-Border Solutions",
             description:
-                "Bei Eder verstehen wir, dass jedes Unternehmen einzigartige Anforderungen an die grenzüberschreitende Logistik hat. Wir bieten maßgeschneiderte grenzüberschreitende Lösungen, die auf Ihre spezifischen Anforderungen zugeschnitten sind. Ob Sie einen beschleunigten Versand, eine spezialisierte Handhabung für empfindliche Waren oder Unterstützung bei komplexen Zollverfahren benötigen, unser Team arbeitet eng mit Ihnen zusammen, um eine Lösung zu entwickeln, die Ihren Bedürfnissen entspricht. Unser individueller Ansatz stellt sicher, dass Ihre grenzüberschreitende Logistik effizient, kosteneffektiv und auf Ihre betrieblichen Ziele ausgerichtet ist.",
+                "At Eder, we understand that every business has unique requirements for cross-border logistics. We offer customized cross-border solutions tailored to meet your specific needs. Whether you need expedited shipping, specialized handling for sensitive goods, or assistance with complex customs procedures, our team works closely with you to develop a solution that meets your requirements. Our personalized approach ensures that your cross-border logistics are efficient, cost-effective, and aligned with your operational goals.",
         },
     ];
 
@@ -32,7 +32,7 @@ const Page = () => {
                     <h1
                         className="text-2xl lg:text-7xl text-start z-10 text-white  w-full py-2 md:py-16 capitalize min-[1800px]:text-8xl font-semibold leading-6 sm:leading-normal"
                         dangerouslySetInnerHTML={{
-                            __html: "GRENZÜBERSCHREITENDE DIENSTLEISTUNGEN VON Eder",
+                            __html: "CROSS-BORDER SERVICES FROM Eder",
                         }}
                     />
                 </div>
@@ -41,42 +41,39 @@ const Page = () => {
             </section>
             <section className="max-w-screen-2xl flex flex-col gap-2 md:gap-8 py-16 mx-auto px-8">
                 <div className="flex flex-col gap-3 justify-center items-start">
-                    <h3 className="text-sm uppercase font-semibold">Grenzüberschreitende Dienstleistungen von Eder</h3>
-                    <h2 className="font-semibold text-2xl md:text-4xl">Grenzüberschreitend</h2>
+                    <h3 className="text-sm uppercase font-semibold">Cross-Border Services from Eder</h3>
+                    <h2 className="font-semibold text-2xl md:text-4xl">Cross-Border</h2>
                 </div>
                 <div className="w-full bg-gray-400 mx-auto my-4 h-[0.1px]"></div>
                 <p className="py-5 md:text-lg">
-                    Eder ist auf die Bereitstellung umfassender grenzüberschreitender Dienstleistungen spezialisiert,
-                    die den internationalen Versand optimieren und die Komplexität der grenzüberschreitenden Logistik
-                    vereinfachen. Unsere nahtlosen Transportlösungen gewährleisten, dass Ihre Waren effizient die
-                    Grenzen überqueren, und erleichtern die Navigation durch Zollvorschriften und Grenzkontrollen. Indem
-                    wir alle Aspekte des grenzüberschreitenden Transports, von der Dokumentation und Einhaltung bis hin
-                    zum Transport und zur Lieferung, abdecken, bieten wir eine problemlose Erfahrung für Ihre
-                    internationalen Sendungen.
+                    Eder specializes in providing comprehensive cross-border services that optimize international
+                    shipping and simplify the complexity of cross-border logistics. Our seamless transport solutions
+                    ensure efficient crossing of borders for your goods, facilitating navigation through customs
+                    regulations and border controls. By covering all aspects of cross-border transport, from
+                    documentation and compliance to transport and delivery, we offer a seamless experience for your
+                    international shipments.
                 </p>
                 <div className="flex gap-4 md:gap-8 h-auto md:flex-row-reverse flex-col">
                     <img src="/air7.png" className="w-full md:w-1/2 h-auto" />
                     <p className="py-5 md:text-lg">
-                        Unser Team von Zoll-Experten beherrscht die komplizierten Vorschriften und Anforderungen
-                        verschiedener Länder. Wir bieten umfassende Zollabfertigungsdienstleistungen und stellen sicher,
-                        dass alle erforderlichen Dokumente korrekt ausgefüllt und zeitnah eingereicht werden. Diese
-                        Expertise minimiert das Risiko von Verzögerungen und Strafen und ermöglicht es Ihren Sendungen,
-                        den Zoll schnell und effizient zu passieren. Mit Eder können Sie sicher sein, dass Ihre Waren
-                        allen internationalen Handelsgesetzen und -vorschriften entsprechen. Zuverlässigkeit und
-                        Sicherheit stehen im Mittelpunkt unserer grenzüberschreitenden Dienstleistungen. Unsere
-                        fortschrittlichen Tracking-Systeme bieten Echtzeit-Sichtbarkeit über den Status Ihrer Sendungen
-                        und geben Ihnen Sicherheit und Kontrolle über Ihre Lieferkette. Wir setzen auch strenge
-                        Sicherheitsmaßnahmen ein, um Ihre Waren während des Transports zu schützen und sicher an ihr
-                        Ziel zu bringen. Unser Engagement für zuverlässige und sichere Transportlösungen macht uns zu
-                        einem bevorzugten Partner für Unternehmen, die sich mit grenzüberschreitender Logistik befassen.
-                        Eder bietet maßgeschneiderte grenzüberschreitende Lösungen, die den einzigartigen Anforderungen
-                        Ihres Unternehmens gerecht werden.
+                        Our team of customs experts is proficient in the complex regulations and requirements of various
+                        countries. We provide comprehensive customs clearance services and ensure that all necessary
+                        documents are filled out correctly and submitted promptly. This expertise minimizes the risk of
+                        delays and penalties, allowing your shipments to pass through customs quickly and efficiently.
+                        With Eder, you can be confident that your goods comply with all international trade laws and
+                        regulations. Reliability and security are at the heart of our cross-border services. Our
+                        advanced tracking systems provide real-time visibility into the status of your shipments, giving
+                        you confidence and control over your supply chain. We also implement rigorous security measures
+                        to protect your goods during transport and ensure their safe delivery to their destination. Our
+                        commitment to reliable and secure transport solutions makes us a preferred partner for
+                        businesses engaged in cross-border logistics. Eder offers customized cross-border solutions
+                        tailored to meet the unique requirements of your business.
                     </p>
                 </div>
             </section>
             <section className="max-w-screen-2xl flex flex-col gap-2 md:gap-8 py-16 mx-auto px-8">
                 <h2 className="font-semibold text-2xl md:text-4xl">
-                    WAS SIE MIT DEM <span className="text-orange-600">LOGISTIKGESCHÄFT ERHALTEN</span>
+                    WHAT YOU GET WITH THE <span className="text-orange-600">LOGISTICS BUSINESS</span>
                 </h2>
                 <div className="w-full bg-gray-400 mx-auto my-4 h-[0.1px]"></div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-16 p-2 md:p-5">

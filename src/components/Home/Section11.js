@@ -8,35 +8,35 @@ const Section11 = () => {
         setActiveIndex(activeIndex === index ? null : index);
     };
 
-    // Define your FAQ data as an array of objectsHäufig gestellte Fragen
+    // Define your FAQ data as an array of objects
     const faqs = [
         {
-            question: "Was ist die Eder?",
-            answer: "Die EDER GmbH ist ein Großhandels, Einfuhr, Ausfuhr und Speditionsunternehmen. Es befasst sich mit dem Export von Stahl, Metallen, Automobilteilen und Reifen aus Deutschland in die ganze Welt.Die EDER GmbH ist ein Großhandels, Einfuhr, Ausfuhr und Speditionsunternehmen. Es befasst sich mit dem Export von Stahl, Metallen, Automobilteilen und Reifen aus Deutschland in die ganze Welt.",
+            question: "What is Eder?",
+            answer: "Eder GmbH is a wholesale, import, export, and logistics company. It deals with exporting steel, metals, automotive parts, and tires from Germany to the world. Eder GmbH is a wholesale, import, export, and logistics company. It deals with exporting steel, metals, automotive parts, and tires from Germany to the world.",
         },
         {
-            question: "Wie trägt die Eder zur Steigerung der Produktivität bei?",
-            answer: "Die Eder automatisiert wiederkehrende Aufgaben, optimiert Arbeitsabläufe und liefert wertvolle Erkenntnisse durch Datenanalyse, was Unternehmen ermöglicht, effizienter und effektiver zu arbeiten. Durch die Reduzierung manueller Arbeit und die Optimierung von Prozessen ermöglicht die Eder den Mitarbeitern, sich auf Aufgaben mit höherem Mehrwert zu konzentrieren, indem sie Zeit freisetzt.",
+            question: "How does Eder contribute to increasing productivity?",
+            answer: "Eder automates repetitive tasks, optimizes workflows, and provides valuable insights through data analysis, enabling businesses to operate more efficiently and effectively. By reducing manual work and optimizing processes, Eder enables employees to focus on higher-value tasks, freeing up time.",
         },
         {
-            question: "Kann die Eder mit unserem Unternehmen wachsen, wenn es sich entwickelt?",
-            answer: "Ja, die Eder ist darauf ausgelegt, sich mit Ihrem Unternehmen zu skalieren. Egal, ob Sie ein kleines Startup oder ein großes Unternehmen sind, die Eder kann Ihr Wachstum und Ihre sich entwickelnden Bedürfnisse berücksichtigen. Ihre modulare Architektur und skalierbare Infrastruktur gewährleisten, dass sie auch bei der Expansion Ihres Unternehmens eine zuverlässige und effiziente Lösung bleibt.",
+            question: "Can Eder scale with our company as it grows?",
+            answer: "Yes, Eder is designed to scale with your company. Whether you are a small startup or a large enterprise, Eder can accommodate your growth and evolving needs. Its modular architecture and scalable infrastructure ensure that it remains a reliable and efficient solution even as your business expands.",
         },
         {
-            question: "Welche spezifischen Logistikdienstleistungen bietet die Eder an?",
-            answer: "Die Eder bietet eine breite Palette von Logistikdienstleistungen, die auf die vielfältigen Bedürfnisse von Unternehmen zugeschnitten sind. Diese Dienstleistungen können Frachtabfertigung, Lagerhaltung, Bestandsmanagement, Transportlösungen, Zollabfertigung und letzte Meile Lieferung umfassen.",
+            question: "What specific logistics services does Eder offer?",
+            answer: "Eder offers a wide range of logistics services tailored to diverse business needs. These services may include freight forwarding, warehousing, inventory management, transportation solutions, customs clearance, and last-mile delivery.",
         },
         {
-            question: "Wie gewährleistet die Eder rechtzeitige und effiziente Lieferungen?",
-            answer: "Die Eder nutzt fortschrittliche Logistiktechnologie und strategische Partnerschaften, um Lieferwege zu optimieren, Transittzeiten zu minimieren und die Effizienz zu maximieren. Zusätzlich überwacht unser Team von Logistikexperten Sendungen in jeder Phase genau, um eine rechtzeitige Lieferung und Kundenzufriedenheit sicherzustellen.",
+            question: "How does Eder ensure timely and efficient deliveries?",
+            answer: "Eder leverages advanced logistics technology and strategic partnerships to optimize delivery routes, minimize transit times, and maximize efficiency. In addition, our team of logistics experts closely monitors shipments at every stage to ensure timely delivery and customer satisfaction.",
         },
         {
-            question: "Ist die Eder in der Lage, internationale Logistikabläufe zu bewältigen?",
-            answer: "Ja, die Eder ist auf Lösungen für Inlands- und internationale Logistik spezialisiert. Egal, ob Sie Waren lokal oder über Grenzen hinweg versenden, die Eder verfügt über die Expertise und Ressourcen, um Ihre Logistikbedürfnisse effizient und effektiv zu verwalten.",
+            question: "Is Eder capable of handling international logistics operations?",
+            answer: "Yes, Eder specializes in solutions for domestic and international logistics. Whether you are shipping goods locally or across borders, Eder has the expertise and resources to efficiently manage your logistics needs.",
         },
         {
-            question: "Wie kann ich mit den Logistikdienstleistungen der Eder beginnen?",
-            answer: "Der Einstieg bei der Eder ist einfach! Kontaktieren Sie einfach unser Team, um Ihre Logistikbedürfnisse und -ziele zu besprechen. Wir werden eng mit Ihnen zusammenarbeiten, um eine maßgeschneiderte Logistiklösung zu entwickeln, die Ihren Anforderungen entspricht und Ihre Erwartungen übertrifft. Kontaktieren Sie uns noch heute, um mehr darüber zu erfahren, wie die Eder Ihre Logistikbedürfnisse unterstützen kann.",
+            question: "How can I get started with Eder's logistics services?",
+            answer: "Getting started with Eder is easy! Simply contact our team to discuss your logistics needs and goals. We will work closely with you to develop a customized logistics solution that meets your requirements and exceeds your expectations. Contact us today to learn more about how Eder can support your logistics needs.",
         },
         // Add more FAQ objects as needed
     ];
@@ -44,8 +44,6 @@ const Section11 = () => {
     return (
         <section className="py-24">
             <div className="mx-auto max-w-[80%] px-4 sm:px-6 lg:px-8">
-                {" "}
-                {/* Adjusted max-w-[80%] */}
                 <div className="mb-16">
                     <h2 className="text-4xl font-manrope text-center font-bold text-gray-900 leading-[3.25rem]">
                         Frequently asked questions

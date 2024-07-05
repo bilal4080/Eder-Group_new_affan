@@ -52,7 +52,7 @@ const Header = () => {
 
     const headerItems = [
         {
-            heading: "Lösungen für die Lieferkette",
+            heading: "Supply Chain Solutions",
             state: subSCSMenu1,
             func: (data) => {
                 setISubMenu1(false);
@@ -63,14 +63,14 @@ const Header = () => {
                 setSubSCSMenu1(data);
             },
             subLinks: [
-                {link: "/industry_solutions", text: "Branchenlösungen"},
-                {link: "/port_logistics", text: "Hafenlogistik"},
-                {link: "/offshore_logistics", text: "Offshore-Logistik"},
-                {link: "/commodity_logistics", text: "Warenlogistik"},
+                {link: "/industry_solutions", text: "Industry Solutions"},
+                {link: "/port_logistics", text: "Port Logistics"},
+                {link: "/offshore_logistics", text: "Offshore Logistics"},
+                {link: "/commodity_logistics", text: "Commodity Logistics"},
             ],
         },
         {
-            heading: "Dienstleistungen",
+            heading: "Services",
             state: subSMenu1,
             func: (data) => {
                 setISubMenu1(false);
@@ -81,17 +81,17 @@ const Header = () => {
                 setSubSCSMenu1(false);
             },
             subLinks: [
-                {link: "/sea_freight", text: "Seefracht"},
-                {link: "/air_freight", text: "Luftfracht"},
-                {link: "/custom_clear", text: "Zollabfertigung"},
-                {link: "/ground_dist", text: "Bodendistribution"},
+                {link: "/sea_freight", text: "Sea Freight"},
+                {link: "/air_freight", text: "Air Freight"},
+                {link: "/custom_clear", text: "Custom Clearance"},
+                {link: "/ground_dist", text: "Ground Distribution"},
                 {link: "/inter_model", text: "Intermodal"},
-                {link: "/ware_house", text: "Lagerhaltung"},
-                {link: "/trans_border", text: "Transgrenz"},
+                {link: "/ware_house", text: "Warehouse"},
+                {link: "/trans_border", text: "Cross-border"},
             ],
         },
         {
-            heading: "E-Commerce-Lösungen",
+            heading: "E-Commerce Solutions",
             state: subECSMenu1,
             func: (data) => {
                 setISubMenu1(false);
@@ -104,7 +104,7 @@ const Header = () => {
             subLinks: [{link: "/3pl_4pl", text: "3PL vs. 4PL"}],
         },
         {
-            heading: "Exporte",
+            heading: "Exports",
             state: subWSMenu1,
             func: (data) => {
                 setISubMenu1(false);
@@ -115,8 +115,8 @@ const Header = () => {
                 setSubSCSMenu1(false);
             },
             subLinks: [
-                {link: "/tyres", text: "Reifen"},
-                {link: "/steel", text: "Stahl"},
+                {link: "/tyres", text: "Tyres"},
+                {link: "/steel", text: "Steel"},
             ],
         },
     ];
@@ -268,7 +268,7 @@ const Header = () => {
                                     className="tracking-wide py-2 px-5 rounded-md sm:px-8 bg-transparent outline-none capitalize transition-all hover:shadow-blue"
                                     onClick={closeMenu}
                                 >
-                                    Kontakt
+                                    Contact
                                 </Link>
                             </div>
                         </nav>

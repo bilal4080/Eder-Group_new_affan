@@ -1,59 +1,60 @@
 "use client";
 
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 const products = [
     {
         id: 1,
-        name: "Vorschweissflansche PN16",
+        name: "Pre-welded flanges PN16",
         imageUrl: "https://www.vhg-gruppe.de/wordpress/wp-content/uploads/DIN-2633.png",
     },
     {
         id: 2,
-        name: "Vorschweissflansche PN40",
+        name: "Pre-welded flanges PN40",
         imageUrl: "https://protubo.biz/media/image/03/89/c6/DIN_EN_1092-1_TYP11_DN150_PN10_600x600.jpg",
     },
     {
         id: 3,
-        name: "Blindflansche PN16",
+        name: "Blind flanges PN16",
         imageUrl: "https://protubo.biz/media/image/03/89/c6/DIN_EN_1092-1_TYP11_DN150_PN10_600x600.jpg",
     },
     {
         id: 4,
-        name: "Edelstahl Vorschweissflansche",
+        name: "Stainless Steel Pre-welded flanges",
         imageUrl: "https://www.heco.de/webservice/pictures/articlegroup/1559457.png",
     },
     {
         id: 5,
-        name: "Vorschweissflansche PN6",
+        name: "Pre-welded flanges PN6",
         imageUrl:
             "https://www.flanschen-fitting-shop.de/59-tm_large_default/vorschweissflansch-pn6-din2631-1080-rst37-2.jpg",
     },
     {
         id: 6,
-        name: "Edelstahl Vorschweissflansche PN16 1.4571 / 1.4404",
+        name: "Stainless Steel Pre-welded flanges PN16 1.4571 / 1.4404",
         imageUrl: "https://www.heco.de/webservice/pictures/articlegroup/1559666.png",
     },
     {
         id: 7,
-        name: "Edelstahl Vorschweissbördel gepresst V4A",
+        name: "Stainless Steel Pre-welded press-formed V4A",
         imageUrl: "https://www.zickwolff.de/media/image/cc/d7/42/V-Flansch-71-PN40-4loch_600x600.jpg",
     },
-    {id: 8, name: "Blindflansche PN40", imageUrl: "https://www.heco.de/webservice/pictures/articlegroup/320829.png"},
+    {id: 8, name: "Blind flanges PN40", imageUrl: "https://www.heco.de/webservice/pictures/articlegroup/320829.png"},
     {
         id: 9,
-        name: "Edelstahl Vorschweissbördel gepresst V2A",
+        name: "Stainless Steel Pre-welded press-formed V2A",
         imageUrl: "https://i.ebayimg.com/images/g/qPEAAOSwXExhsNO7/s-l500.jpg",
     },
     {
         id: 10,
-        name: "Gewindeflanche",
+        name: "Threaded flanges",
         imageUrl: "https://www.schwarte-shop.de/media/i/p/popup/tempswgewindeflansch321.jpg",
     },
 ];
 
 const Page = () => {
     const [selectedProducts, setSelectedProducts] = useState([]);
+    const [showLoader, setShowLoader] = useState(false);
 
     const handleSelect = (product) => {
         setSelectedProducts((prevSelectedProducts) => {
@@ -65,14 +66,28 @@ const Page = () => {
         });
     };
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const windowHeight = window.innerHeight;
+            const scrollY = window.scrollY || window.pageYOffset;
+            const documentHeight = document.documentElement.scrollHeight;
+
+            if (windowHeight + scrollY >= documentHeight) {
+                setShowLoader(true);
+            } else {
+                setShowLoader(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
         <div className="pt-24 text-black container mx-auto px-4 md:px-0">
-            <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
-                <div className="text-center text-white">
-                    <h1 className="text-2xl font-bold mb-4">This page is in development process</h1>
-                    <p>Please be patient....</p>
-                </div>
-            </div>
             <h1 className="text-2xl font-bold mb-6 flex justify-center">Products</h1>
             <ul className="flex flex-col gap-4">
                 {products.map((product) => (
@@ -99,6 +114,15 @@ const Page = () => {
                             </li>
                         ))}
                     </ul>
+                </div>
+            )}
+            {showLoader && (
+                <div className="flex items-center justify-center my-8">
+                    <div
+                        className="w-24 h-24 border-8 border-black rounded-full animate-spin"
+                        style={{borderTopColor: "transparent"}}
+                    ></div>
+                    <p className="ml-4 text-gray-700">Data Coming Soon...</p>
                 </div>
             )}
         </div>
