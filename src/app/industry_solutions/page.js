@@ -1,7 +1,8 @@
 import React from "react";
 import {FaTruckMoving} from "react-icons/fa";
 import {MdOutlineLocalShipping} from "react-icons/md";
-
+import Link from "next/link";
+import {FaArrowRight} from "react-icons/fa";
 const options = [
     {
         title: "Tailored Expertise and Specialized Handling",
@@ -24,8 +25,14 @@ const options = [
             "Our industry solutions are scalable and flexible, allowing you to adapt to changing market conditions and business requirements. Whether you are expanding into new markets, launching new products, or experiencing seasonal demand fluctuations, Eder can adjust resources and capacities accordingly. This scalability ensures that your supply chain remains resilient and responsive, supporting your growth and operational agility.",
     },
 ];
-
+// const incotermsData = {
+//     EXW: "EXW stands for Ex Works, which means that the seller has fulfilled their obligation to deliver when the goods are made available at their premises (i.e., works, factory, warehouse, etc.) to the buyer.",
+//     FCA: "FCA stands for Free Carrier, which means that the seller delivers the goods to the carrier or another person nominated by the buyer at the seller’s premises or another named place.",
+//     FAS: "FAS stands for Free Alongside Ship, which means that the seller delivers when the goods are placed alongside the vessel (e.g., on a quay or a barge) nominated by the buyer at the named port of shipment.",
+//     // Add similar entries for other INCOTERMS...
+// };
 const Page = () => {
+    // const [selectedTerm, setSelectedTerm] = useState("EXW");
     return (
         <>
             <section className="w-full relative xl:min-h-[70vh] min-h-[50vh] bg-[url('/industry_solution.jpeg')] flex justify-center items-center bg-cover bg-center">
@@ -88,6 +95,17 @@ const Page = () => {
                             </div>
                         </div>
                     ))}
+                </div>
+                <div className="text-center my-8">
+                    <h2 className="font-semibold text-2xl md:text-4xl">
+                        HOW TO USE INCOTERMS RULES <span className="text-orange-600">COMMON SHIPPING TERMS 2024</span>
+                    </h2>
+                    <Link href="/incoterms" passHref>
+                        <button className="inline-flex items-center mt-4 bg-orange-500 text-white font-semibold py-2 px-4 rounded hover:bg-orange-600 transition duration-300">
+                            Learn More
+                            <FaArrowRight className="ml-2" />
+                        </button>
+                    </Link>
                 </div>
             </section>
         </>
