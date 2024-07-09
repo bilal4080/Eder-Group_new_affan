@@ -8,7 +8,7 @@ const backgrounds = [
     "/hs1bg1.jpeg",
     "/—Pngtree—factory scene showcasing an enormous_4090186.jpg",
     "/hs1bg3.jpg",
-    "/truck-with-trailer-is-driving-mo.png",
+    "/welding-work-with-metal-construction-busy-metal-factory.jpg",
 ]; // Paths to your background images
 const texts = [
     {
@@ -26,8 +26,8 @@ const texts = [
     },
 
     {
-        heading: "SEAMLESS SHIPMENT TRACKING",
-        text: "Experience the convenience and simplicity of our booking and shipment tracking service. Book shipments effortlessly and monitor their journey with real-time tracking.",
+        heading: "STELL PRODUCTION & DISTRIBUTION",
+        text: "Experience the convenience and simplicity of our production and distribution. Book shipments effortlessly and monitor their journey with real-time tracking.",
     },
 ];
 
