@@ -91,10 +91,12 @@ const Page = () => {
     }, []);
 
     const handleSendEmail = () => {
-        const emailBody = `Email: ${email}\n\nDescription: ${description}`;
-        window.location.href = `mailto:example@example.com?subject=Selected Products&body=${encodeURIComponent(
-            emailBody
-        )}`;
+        const subject = "Selected Products";
+        const emailBody = `Email: ${email}\n\nDescription: ${description}\n\nProducts:\n${selectedProducts
+        .map((p) => p.name)
+        .join("\n")}`;
+        const mailToLink = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+        window.location.href = mailToLink;
     };
 
     const openModal = () => {
