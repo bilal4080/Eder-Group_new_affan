@@ -6,8 +6,8 @@ import {FaFacebookF, FaInstagram, FaLinkedinIn, FaXTwitter} from "react-icons/fa
 import {LuMoveLeft, LuMoveRight} from "react-icons/lu";
 const backgrounds = [
     "/hs1bg1.jpeg",
-    "/hs1bg3.jpg",
     "/—Pngtree—factory scene showcasing an enormous_4090186.jpg",
+    "/hs1bg3.jpg",
     "/truck-with-trailer-is-driving-mo.png",
 ]; // Paths to your background images
 const texts = [
@@ -15,14 +15,16 @@ const texts = [
         heading: "NEXT-GEN LOGISTICS SOLUTIONS",
         text: "Logistics services offer comprehensive solutions for supply chain management and ensure seamless transport and delivery from the factory to the end customer. The Eder offers the best service in Germany.",
     },
-    {
-        heading: "EXPANSION OF THE 3PL MARKET<br/>SOLUTIONS",
-        text: "The increasing demand for logistics outsourcing is driving the rise of third-party logistics companies (3PLs), leading to optimized processes and increased productivity.",
-    },
+
     {
         heading: "STELL PRODUCTION <br/>WORLD WIDE",
         text: "Our tailored industry-specific steel production solutions ensure smooth manufacturing operations by carefully examining each step for efficiency and effectiveness to optimize the entire production process",
     },
+    {
+        heading: "EXPANSION OF THE 3PL MARKET<br/>SOLUTIONS",
+        text: "The increasing demand for logistics outsourcing is driving the rise of third-party logistics companies (3PLs), leading to optimized processes and increased productivity.",
+    },
+
     {
         heading: "SEAMLESS SHIPMENT TRACKING",
         text: "Experience the convenience and simplicity of our booking and shipment tracking service. Book shipments effortlessly and monitor their journey with real-time tracking.",
