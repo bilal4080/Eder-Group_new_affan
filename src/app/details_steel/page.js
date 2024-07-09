@@ -91,11 +91,14 @@ const Page = () => {
     }, []);
 
     const handleSendEmail = () => {
+        const toEmail = "kontakt@the-eder.de"; // Replace with your email address
         const subject = "Selected Products";
         const emailBody = `Email: ${email}\n\nDescription: ${description}\n\nProducts:\n${selectedProducts
         .map((p) => p.name)
         .join("\n")}`;
-        const mailToLink = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+        const mailToLink = `mailto:${toEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+            emailBody
+        )}`;
         window.location.href = mailToLink;
     };
 
