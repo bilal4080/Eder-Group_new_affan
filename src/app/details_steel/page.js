@@ -135,7 +135,7 @@ const Page = () => {
                             </li>
                         ))}
                     </ul>
-                    <button onClick={openModal} className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg">
+                    <button onClick={openModal} className="mt-4 px-4 py-2 bg-orange-500 text-white rounded-lg">
                         Next
                     </button>
                 </div>
@@ -146,7 +146,7 @@ const Page = () => {
                         className="w-24 h-24 border-8 border-black rounded-full animate-spin"
                         style={{borderTopColor: "transparent"}}
                     ></div>
-                    <p className="ml-4 text-gray-700">Data Coming Soon...</p>
+                    <p className="ml-4 text-gray-700">More Products Coming Soon...</p>
                 </div>
             )}
             {showModal && (
