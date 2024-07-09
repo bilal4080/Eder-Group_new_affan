@@ -55,14 +55,18 @@ const products = [
 const Page = () => {
     const [selectedProducts, setSelectedProducts] = useState([]);
     const [showLoader, setShowLoader] = useState(false);
+    const [showModal, setShowModal] = useState(false);
+    const [email, setEmail] = useState("");
+    const [description, setDescription] = useState("");
 
     const handleSelect = (product) => {
         setSelectedProducts((prevSelectedProducts) => {
-            if (prevSelectedProducts.includes(product)) {
-                return prevSelectedProducts.filter((p) => p.id !== product.id);
-            } else {
-                return [...prevSelectedProducts, product];
-            }
+            const isSelected = prevSelectedProducts.includes(product);
+            const updatedProducts = isSelected
+                ? prevSelectedProducts.filter((p) => p.id !== product.id)
+                : [...prevSelectedProducts, product];
+            setDescription(updatedProducts.map((p) => p.name).join("\n"));
+            return updatedProducts;
         });
     };
 
@@ -85,6 +89,18 @@ const Page = () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
+
+    const handleSendEmail = () => {
+        const emailBody = `Email: ${email}\n\nDescription: ${description}`;
+        window.location.href = `mailto:example@example.com?subject=Selected Products&body=${encodeURIComponent(
+            emailBody
+        )}`;
+    };
+
+    const openModal = () => {
+        setDescription(selectedProducts.map((p) => p.name).join("\n"));
+        setShowModal(true);
+    };
 
     return (
         <div className="pt-24 text-black container mx-auto px-4 md:px-0">
@@ -114,6 +130,9 @@ const Page = () => {
                             </li>
                         ))}
                     </ul>
+                    <button onClick={openModal} className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg">
+                        Next
+                    </button>
                 </div>
             )}
             {showLoader && (
@@ -123,6 +142,42 @@ const Page = () => {
                         style={{borderTopColor: "transparent"}}
                     ></div>
                     <p className="ml-4 text-gray-700">Data Coming Soon...</p>
+                </div>
+            )}
+            {showModal && (
+                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                    <div className="bg-white p-8 rounded-lg shadow-lg w-full md:w-1/2 lg:w-1/3">
+                        <h2 className="text-xl font-bold mb-4">Selected Products</h2>
+                        <div className="mb-4">
+                            <label className="block text-gray-700">Email</label>
+                            <input
+                                type="email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                className="w-full p-2 border border-gray-300 rounded-lg"
+                                placeholder="Enter your email"
+                            />
+                        </div>
+                        <div className="mb-4">
+                            <label className="block text-gray-700">Description</label>
+                            <textarea
+                                value={description}
+                                onChange={(e) => setDescription(e.target.value)}
+                                className="w-full p-2 border border-gray-300 rounded-lg"
+                                rows="4"
+                                placeholder="Enter a description"
+                            ></textarea>
+                        </div>
+                        <button onClick={handleSendEmail} className="mt-4 px-4 py-2 bg-green-500 text-white rounded-lg">
+                            Send Email
+                        </button>
+                        <button
+                            onClick={() => setShowModal(false)}
+                            className="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg ml-2"
+                        >
+                            Close
+                        </button>
+                    </div>
                 </div>
             )}
         </div>
