@@ -48,20 +48,11 @@ export default function Home() {
                         >
                             <BsMessenger className="w-6 h-6 mr-2" />
                             <div>
-                                <p className="font-semibold">Need services?</p>
-                                <p className="text-sm">EDER</p>
+                                <p className="font-semibold">Need Steel Products?</p>
+                                <p className="text-sm">Premium Steel Products</p>
                             </div>
                         </div>
-                        <div
-                            className="flex items-center bg-blue-100 text-blue-600 p-2 rounded-lg cursor-pointer"
-                            onClick={() => openMessenger("Hello, I have a general question.")}
-                        >
-                            <BsMessenger className="w-6 h-6 mr-2" />
-                            <div>
-                                <p className="font-semibold">Something else?</p>
-                                <p className="text-sm">EDER</p>
-                            </div>
-                        </div>
+
                         <div
                             className="flex items-center bg-blue-100 text-blue-600 p-2 rounded-lg cursor-pointer"
                             onClick={() =>
@@ -71,7 +62,17 @@ export default function Home() {
                             <BsMessenger className="w-6 h-6 mr-2" />
                             <div>
                                 <p className="font-semibold">Looking for a warehouse?</p>
-                                <p className="text-sm">EDER</p>
+                                <p className="text-sm">Book a space</p>
+                            </div>
+                        </div>
+                        <div
+                            className="flex items-center bg-blue-100 text-blue-600 p-2 rounded-lg cursor-pointer"
+                            onClick={() => openMessenger("Hello, I have a general question.")}
+                        >
+                            <BsMessenger className="w-6 h-6 mr-2" />
+                            <div>
+                                <p className="font-semibold">Something else?</p>
+                                <p className="text-sm">EDER Support</p>
                             </div>
                         </div>
                     </div>
