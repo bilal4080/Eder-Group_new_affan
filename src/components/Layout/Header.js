@@ -115,7 +115,7 @@ const Header = () => {
                 setSubSCSMenu1(false);
             },
             subLinks: [
-                {link: "/tyres", text: "Tyres"},
+                // {link: "/tyres", text: "Tyres"},
                 {link: "/steel", text: "Steel"},
             ],
         },
