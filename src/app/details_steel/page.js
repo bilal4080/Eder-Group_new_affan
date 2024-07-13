@@ -140,7 +140,7 @@ const Page = () => {
                     </button>
                 </div>
             )}
-            {showLoader && (
+            {/* {showLoader && (
                 <div className="flex items-center justify-center my-8">
                     <div
                         className="w-24 h-24 border-8 border-black rounded-full animate-spin"
@@ -148,7 +148,7 @@ const Page = () => {
                     ></div>
                     <p className="ml-4 text-gray-700">More Products Coming Soon...</p>
                 </div>
-            )}
+            )} */}
             {showModal && (
                 <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
                     <div className="bg-white p-8 rounded-lg shadow-lg w-full md:w-1/2 lg:w-1/3">
