@@ -110,6 +110,7 @@ const Page = () => {
     return (
         <div className="pt-24 text-black container mx-auto px-4 md:px-0">
             <h1 className="text-2xl font-bold mb-6 flex justify-center">Products</h1>
+
             <ul className="flex flex-col gap-4">
                 {products.map((product) => (
                     <li key={product.id} className="flex items-center p-4 border border-gray-300 rounded-lg">
@@ -127,6 +128,7 @@ const Page = () => {
             {selectedProducts.length > 0 && (
                 <div className="fixed top-0 right-0 p-4 bg-white shadow-lg w-full h-1/3 md:w-64 md:h-full overflow-y-auto pt-24 md:pt-24">
                     <h2 className="text-xl font-bold mb-4">Selected Products</h2>
+
                     <ul>
                         {selectedProducts.map((product) => (
                             <li key={product.id} className="flex items-center p-2 border-b border-gray-300">
@@ -153,7 +155,8 @@ const Page = () => {
                 <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
                     <div className="bg-white p-8 rounded-lg shadow-lg w-full md:w-1/2 lg:w-1/3">
                         <h2 className="text-xl font-bold mb-4">Selected Products</h2>
-                        <div className="mb-4">
+                        <p>Its just a Query Send to our Support you dn't need to pay </p>
+                        <div className="pt-3">
                             <label className="block text-gray-700">Email</label>
                             <input
                                 type="email"

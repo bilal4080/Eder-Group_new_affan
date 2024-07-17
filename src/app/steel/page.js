@@ -213,7 +213,16 @@ const Page = () => {
     );
 
     return (
-        <div className="relative">
+        <div className="relative p-4 pt-32">
+            <div className="mb-4 flex justify-center">
+                <input
+                    type="text"
+                    placeholder="Search..."
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                    className="p-2 border border-gray-300 rounded-md w-full max-w-lg"
+                />
+            </div>
             {/* Overlay starts here */}
             {/* <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
                 <div className="text-center text-white">
@@ -222,17 +231,52 @@ const Page = () => {
                 </div>
             </div> */}
             {/* Overlay ends here */}
-            <div className="container mx-auto p-4 pt-32">
-                <div className="mb-4 flex justify-center">
-                    <input
-                        type="text"
-                        placeholder="Search..."
-                        value={searchTerm}
-                        onChange={(e) => setSearchTerm(e.target.value)}
-                        className="p-2 border border-gray-300 rounded-md w-full max-w-lg"
-                    />
+
+            <div className="container mx-auto ">
+                <div className="p-8">
+                    <h2 className="text-2xl font-bold mb-4">What are your benefits with us you may ask</h2>
+                    <ul className="list-none space-y-4">
+                        <li className="flex items-start">
+                            <span className="text-green-500 mr-2">✔️</span>
+                            <span className="text-gray-700">
+                                You will save time, effort, and be able to cut costs – through our many years of
+                                extensive experience in sourcing
+                            </span>
+                        </li>
+                        <li className="flex items-start">
+                            <span className="text-green-500 mr-2">✔️</span>
+                            <span className="text-gray-700">
+                                You will be able to concentrate more on your core business again – through the
+                                high-quality standards of the EDER GmbH
+                            </span>
+                        </li>
+                        <li className="flex items-start">
+                            <span className="text-green-500 mr-2">✔️</span>
+                            <span className="text-gray-700">
+                                You will have more opportunities for your sales team – through our wide network of
+                                possibilities
+                            </span>
+                        </li>
+                    </ul>
+                    <p className="mt-4 font-bold">
+                        Let’s talk today about how your business can benefit from our services.
+                    </p>
+
+                    <h3 className="text-xl font-bold mt-8">EDER Steel core products</h3>
+                    <p className="mt-4 text-gray-700">
+                        EDER has everything you need, from stainless steel coils or sheets in various grades like 304,
+                        304L, 316, 316L, 321 or 409, 420, 430, 439, 441. If you don’t see what you want, just let us
+                        know and we’ll get it for you!
+                    </p>
+
+                    <h3 className="text-xl font-bold mt-8">How to order?</h3>
+                    <p className="mt-4 text-gray-700">
+                        We have millions of Products, you just need to select the items you need and send us Query
+                        through email, our Suport will reach you as soon as possible. In this stage you dont need to pay
+                        any amount
+                    </p>
                 </div>
-                <h1 className="justify-center flex text-xl">STEEL METALS WE HAVE</h1>
+                <h1 className="justify-center flex text-xl font-bold '">Steel Metals we have</h1>
                 {filteredItems.length > 0 ? (
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 pt-5 pb-5">
                         {filteredItems.map((item, index) => (
@@ -278,20 +322,20 @@ const Page = () => {
                 ) : (
                     <div className="flex justify-center pt-5 text-red-500">No items found</div>
                 )}
-            </div>
-            <div className="py-12">
-                <h2 className="text-3xl font-bold text-center mb-8">Your Benefits in the EDER Online Shop</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {features.map((feature, index) => (
-                        <div
-                            key={index}
-                            className="flex flex-col items-center text-center p-4 border rounded-lg shadow-lg"
-                        >
-                            {feature.icon}
-                            <h3 className="text-xl font-semibold mt-4">{feature.title}</h3>
-                            <p className="mt-2">{feature.description}</p>
-                        </div>
-                    ))}
+                <div className="py-12">
+                    <h2 className="text-3xl font-bold text-center mb-8">Your Benefits in the EDER Online Shop</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {features.map((feature, index) => (
+                            <div
+                                key={index}
+                                className="flex flex-col items-center text-center p-4 border rounded-lg shadow-lg"
+                            >
+                                {feature.icon}
+                                <h3 className="text-xl font-semibold mt-4">{feature.title}</h3>
+                                <p className="mt-2">{feature.description}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
