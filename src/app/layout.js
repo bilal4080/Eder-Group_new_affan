@@ -21,7 +21,7 @@ export const metadata = {
 export default function RootLayout({children}) {
     return (
         <html lang="de">
-            <GoogleAnalytics measurementId="G-EXBDF9M53M" />
+            <GoogleAnalytics measurementId="G-TR230NE73T" />
             <link rel="icon" href="/playstore.ico" sizes="any" />
             <body className={`${outfit.className} overflow-x-hidden`}>
                 <GlobalStateProvider>
