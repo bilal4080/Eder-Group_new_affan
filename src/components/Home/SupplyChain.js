@@ -6,7 +6,6 @@ import {LuMoveLeft, LuMoveRight} from "react-icons/lu";
 const SupplyChain = () => {
     const [chunkIndex, setChunkIndex] = useState(0);
 
-    // Define your data with each item having a route/path
     const data = [
         {
             image: "/image_wKo5sGBx_1718264035623_raw.png",
@@ -64,7 +63,6 @@ const SupplyChain = () => {
         },
     ];
 
-    // Function to handle click on scroll buttons
     const handleScroll = (direction) => {
         if (direction === "left") {
             setChunkIndex((prevIndex) => Math.max(prevIndex - 1, 0));
@@ -73,20 +71,19 @@ const SupplyChain = () => {
         }
     };
 
-    // Calculate the current chunk of data to display
     const currentDataChunk = data.slice(chunkIndex * 3, chunkIndex * 3 + 3);
 
     return (
         <>
-            <div className="mx-auto text-center my-24">
+            <div className="mx-auto text-center my-6 md:my-24">
                 <h1 className="my-3 text-2xl lg:text-6xl capitalize min-[1800px]:text-7xl font-semibold">
                     Our valuable services
                 </h1>
             </div>
-            <div className="relative mx-auto px-8 w-[97%]">
+            <div className="relative mx-auto px-2 md:px-8 w-full md:w-[97%]">
                 <div className="flex flex-col gap-6 md:flex-row md:gap-0 overflow-hidden relative">
                     {/* Slider container */}
-                    <div className="flex gap-6 md:overflow-hidden relative w-full">
+                    <div className="flex gap-2 md:gap-6 md:overflow-hidden relative w-full">
                         {currentDataChunk.map((item, index) => (
                             <div
                                 key={index}
@@ -94,7 +91,7 @@ const SupplyChain = () => {
                             >
                                 {/* Link to navigate to each item's route */}
                                 <Link href={item.route} passHref>
-                                    <div className="h-72 w-full md:h-72 relative cursor-pointer">
+                                    <div className="h-52 md:h-72 relative cursor-pointer">
                                         <Image
                                             layout="fill"
                                             objectFit="cover"
@@ -104,19 +101,20 @@ const SupplyChain = () => {
                                         />
                                     </div>
                                 </Link>
-                                <div className="p-4">
-                                    <h4 className="text-2xl md:text-3xl font-semibold capitalize">{item.title}</h4>
-                                    <p className="text-sm md:text-lg capitalize">{item.text}</p>
+                                <div className="p-2 md:p-4">
+                                    <h4 className="text-xl md:text-3xl font-semibold capitalize">{item.title}</h4>
+                                    <p className="text-xs md:text-lg capitalize">{item.text}</p>
                                 </div>
                             </div>
                         ))}
                     </div>
 
                     {/* Navigation buttons */}
-                    <div className="absolute left-2  top-1/4  transform -translate-y-1/2 flex items-center">
+                    {/* Navigation buttons */}
+                    <div className="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 flex items-center">
                         <button
                             onClick={() => handleScroll("left")}
-                            className={`p-3 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition-colors duration-300 ${
+                            className={`p-2 md:p-3 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition-colors duration-300 ${
                                 chunkIndex === 0 ? "opacity-0 pointer-events-none" : ""
                             }`}
                         >
@@ -124,10 +122,10 @@ const SupplyChain = () => {
                         </button>
                     </div>
 
-                    <div className="absolute right-2 top-1/4 transform -translate-y-1/2 flex items-center">
+                    <div className="absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 flex items-center">
                         <button
                             onClick={() => handleScroll("right")}
-                            className={`p-3 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition-colors duration-300 ${
+                            className={`p-2 md:p-3 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition-colors duration-300 ${
                                 chunkIndex === Math.ceil(data.length / 3) - 1 ? "opacity-0 pointer-events-none" : ""
                             }`}
                         >
