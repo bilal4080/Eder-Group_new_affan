@@ -5,11 +5,14 @@ import LogoVPN from "../../../public/Logo.png";
 import Image from "next/image";
 import {SlArrowDown} from "react-icons/sl";
 import Link from "next/link";
+import axios from "axios";
 
 const Header = () => {
     const [activeLink, setActiveLink] = useState(null);
     const [scrollActive, setScrollActive] = useState(false);
     const [open, setOpen] = useState(false);
+    const [language, setLanguage] = useState("en");
+    const [translatedContent, setTranslatedContent] = useState({});
     const [subSCSMenu1, setSubSCSMenu1] = useState(null);
     const [subSMenu1, setSSubMenu1] = useState(null);
     const [subECSMenu1, setECSSubMenu1] = useState(null);
@@ -40,6 +43,14 @@ const Header = () => {
         });
     }, []);
 
+    useEffect(() => {
+        const storedLanguage = localStorage.getItem("preferredLanguage");
+        if (storedLanguage) {
+            setLanguage(storedLanguage);
+            translatePage(storedLanguage);
+        }
+    }, []);
+
     const closeMenu = () => {
         setOpen(false);
         setSubSCSMenu1(false);
@@ -50,6 +61,53 @@ const Header = () => {
         setWSSubMenu1(false);
     };
 
+    const translatePage = async (targetLang) => {
+        try {
+            const elementsToTranslate = document.querySelectorAll("[data-translate]");
+            const textToTranslate = Array.from(elementsToTranslate).map((el) => el.innerText);
+
+            const response = await axios.post(
+                "https://translation.googleapis.com/language/translate/v2",
+                {
+                    q: textToTranslate,
+                    target: targetLang,
+                    format: "text",
+                },
+                {
+                    params: {
+                        key: "AIzaSyBNTVvm6VfDGZNOvoRWYQLrYN8YMFPmq9c", // Replace with your actual API key
+                    },
+                }
+            );
+
+            const translations = response.data.data.translations;
+            elementsToTranslate.forEach((el, index) => {
+                el.innerText = translations[index].translatedText;
+            });
+
+            setLanguage(targetLang);
+            localStorage.setItem("preferredLanguage", targetLang);
+        } catch (error) {
+            console.error("Error translating page:", error.response?.data || error.message);
+        }
+    };
+
+    const toggleLanguage = () => {
+        const newLang = language === "en" ? "de" : "en";
+        if (newLang === "de" && language === "en") {
+            // Call the function when switching to "GER"
+            switchToGerman();
+        }
+        setLanguage(newLang); // Update the language state
+        translatePage(newLang); // Call your existing function to handle translation
+    };
+    const LanguageSwitcher = () => {
+        const [language, setLanguage] = useState("en");
+    };
+    const switchToGerman = () => {
+        // Your logic for switching to German
+        console.log("Switched to German");
+    };
     const headerItems = [
         {
             heading: "Supply Chain Solutions",
@@ -114,10 +172,7 @@ const Header = () => {
                 setSSubMenu1(false);
                 setSubSCSMenu1(false);
             },
-            subLinks: [
-                // {link: "/tyres", text: "Tyres"},
-                {link: "/steel", text: "Steel"},
-            ],
+            subLinks: [{link: "/steel", text: "Steel"}],
         },
     ];
 
@@ -202,7 +257,7 @@ const Header = () => {
                                         </>
                                     ) : (
                                         <>
-                                            <div className={`px-4 py-2 mx-2 cursor-pointer relative animation-hover`}>
+                                            <div className="px-4 py-2 mx-2 cursor-pointer relative animation-hover">
                                                 <div
                                                     onClick={() => item.func(!item.state)}
                                                     onMouseEnter={() => item.func(!item.state)}
@@ -270,16 +325,39 @@ const Header = () => {
                                 >
                                     Contact
                                 </Link>
+
+                                <div className="flex items-center space-x-2">
+                                    <button
+                                        onClick={toggleLanguage}
+                                        className={`relative flex items-center w-20 h-10 rounded-full transition-all duration-300 ${
+                                            language === "en" ? "bg-orange-500" : "bg-orange-300"
+                                        }`}
+                                    >
+                                        <span
+                                            className={`absolute left-2 text-white text-sm font-semibold transition-opacity duration-300 ${
+                                                language === "en" ? "opacity-100" : "opacity-0"
+                                            }`}
+                                        >
+                                            ENG
+                                        </span>
+                                        <span
+                                            className={`absolute right-2 text-white text-sm font-semibold transition-opacity duration-300 ${
+                                                language === "en" ? "opacity-0" : "opacity-100"
+                                            }`}
+                                        >
+                                            GER
+                                        </span>
+                                        <div
+                                            className={`absolute top-1 w-8 h-8 bg-white rounded-full transform transition-transform duration-300 ${
+                                                language === "en" ? "translate-x-10" : "translate-x-0"
+                                            }`}
+                                        />
+                                    </button>
+                                </div>
                             </div>
                         </nav>
                     </div>
                 </div>
-                <div
-                    className={
-                        "w-[95vw] hidden xl:block bg-gray-400 mx-auto" +
-                        (scrollActive ? "hidden h-0" : " block h-[0.1px]")
-                    }
-                ></div>
             </header>
         </>
     );

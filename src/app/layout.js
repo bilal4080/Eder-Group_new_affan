@@ -32,6 +32,3 @@ export default function RootLayout({children}) {
         </html>
     );
 }
-//G-TR230NE73T
-//AW-10841270925
-///
