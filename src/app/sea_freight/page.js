@@ -1,6 +1,7 @@
 import React from "react";
 import {FaTruckMoving} from "react-icons/fa";
-
+import Link from "next/link";
+import {FaArrowRight} from "react-icons/fa";
 const Page = () => {
     const options = [
         {
@@ -83,6 +84,17 @@ const Page = () => {
                             </div>
                         </div>
                     ))}
+                </div>
+                <div className="text-center my-8">
+                    <h2 className="font-semibold text-2xl md:text-4xl">
+                        HOW TO USE INCOTERMS RULES <span className="text-orange-600">COMMON SHIPPING TERMS 2024</span>
+                    </h2>
+                    <Link href="/incoterms" passHref>
+                        <button className="inline-flex items-center mt-4 bg-orange-500 text-white font-semibold py-2 px-4 rounded hover:bg-orange-600 transition duration-300">
+                            Learn More
+                            <FaArrowRight className="ml-2" />
+                        </button>
+                    </Link>
                 </div>
             </section>
         </>
