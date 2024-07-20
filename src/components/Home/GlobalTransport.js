@@ -23,13 +23,19 @@ const GlobalTransport = () => {
                 </div>
                 <div className="sm:w-1/2 my-3 md:my-0 relative">
                     <div className="rounded-full absolute w-12 h-12 z-0 -left-4 -top-3 animate-pulse"></div>
-                    <div className=" gap-3 hidden md:flex items-center text-sm uppercase font-semibold my-5">
+                    <div
+                        data-translate
+                        className=" gap-3 hidden md:flex items-center text-sm uppercase font-semibold my-5"
+                    >
                         <span className="w-6 h-[2px] bg-blue-500"></span>OUR GLOBAL TRANSPORTATION
                     </div>
-                    <h1 className="font-semibold text-2xl md:text-4xl min-[1800px]:text-7xl relative text-darken lg:pr-10">
+                    <h1
+                        data-translate
+                        className="font-semibold text-2xl md:text-4xl min-[1800px]:text-7xl relative text-darken lg:pr-10"
+                    >
                         Seamless global transport solutions.
                     </h1>
-                    <p className="py-5 lg:pr-32 md:text-lg">
+                    <p data-translate className="py-5 lg:pr-32 md:text-lg">
                         Discover first-class logistics solutions with our extensive service portfolio, which covers 3PL,
                         4PL, freight handling and multimodal transportation. We offer global Connectivity for your
                         freight, backed by innovation and reliability, and ensure fast and safe deliveries, every time.

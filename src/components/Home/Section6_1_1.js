@@ -22,15 +22,22 @@ const Section6_1_1 = () => {
                         className="h-full w-auto rounded-md"
                         alt="Your Alt Text"
                     />
-                    <h1 className="font-semibold text-2xl text-white md:text-3xl min-[1800px]:text-4xl relative text-darken lg:pr-10">
+                    <h1
+                        data-translate
+                        className="font-semibold text-2xl text-white md:text-3xl min-[1800px]:text-4xl relative text-darken lg:pr-10"
+                    >
                         Delivering Trust <br />
-                        <span className="text-xl text-white md:text-2xl min-[1800px]:text-3xl">
+                        <span data-translate className="text-xl text-white md:text-2xl min-[1800px]:text-3xl">
                             Secure Logistics Solutions
                         </span>
                     </h1>
                 </div>
                 <button className={`bg-white flex items-center px-8 py-4 gap-3 my-8 cursor-pointer w-auto`}>
-                    <Link href="/custom_clear" className="text-xl lg:text-2xl text-black capitalize font-semibold">
+                    <Link
+                        data-translate
+                        href="/custom_clear"
+                        className="text-xl lg:text-2xl text-black capitalize font-semibold"
+                    >
                         Check Now
                     </Link>
                     <GoArrowUpRight size={25} className="mt-2 font-extralight" color="black" />

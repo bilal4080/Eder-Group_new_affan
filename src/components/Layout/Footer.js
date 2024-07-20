@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
                 <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
                     <div className="lg:col-span-1 text-center lg:text-left">
-                        <p className="text-gray-500 lg:text-lg">
+                        <p data-translate className="text-gray-500 lg:text-lg">
                             Unauthorized use, reproduction, or distribution of copyrighted material from Eder is
                             strictly prohibited and may result in legal action.
                         </p>
@@ -17,7 +17,10 @@ const Footer = () => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <span className="sr-only"> Facebook </span>
+                                <span data-translate className="sr-only">
+                                    {" "}
+                                    Facebook{" "}
+                                </span>
                                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path
                                         fillRule="evenodd"
@@ -32,7 +35,10 @@ const Footer = () => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <span className="sr-only"> Instagram </span>
+                                <span data-translate className="sr-only">
+                                    {" "}
+                                    Instagram{" "}
+                                </span>
                                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path
                                         fillRule="evenodd"
@@ -47,7 +53,10 @@ const Footer = () => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <span className="sr-only"> Twitter </span>
+                                <span data-translate className="sr-only">
+                                    {" "}
+                                    Twitter{" "}
+                                </span>
                                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                                 </svg>
@@ -57,80 +66,135 @@ const Footer = () => {
                     </div>
                     <div className="lg:col-span-1 text-center lg:text-left">
                         <div className=" text-gray-500 lg:text-md font-medium">
-                            <p className="text-gray-900">Contact</p>
-                            <p>EDER GmbH</p>
+                            <p data-translate className="text-gray-900">
+                                Contact
+                            </p>
+                            <p data-translate>EDER GmbH</p>
                             {/* <p>Ulmer Landstraße 383, 86391 Stadtbergen</p> */}
-                            <p>Phone #: +49 1777 44 1002</p>
-                            <p>Email: kontakt@the-eder.de</p>
+                            <p data-translate>Phone #: +49 1777 44 1002</p>
+                            <p data-translate>Email: kontakt@the-eder.de</p>
                         </div>
                     </div>
 
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 text-center lg:text-left">
                         <div>
-                            <strong className="font-medium text-gray-900"> Services </strong>
+                            <strong data-translate className="font-medium text-gray-900">
+                                {" "}
+                                Services{" "}
+                            </strong>
                             <ul className="mt-6 space-y-1">
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="/3pl_4pl">
+                                    <a
+                                        data-translate
+                                        className="text-gray-700 transition hover:text-gray-700/75"
+                                        href="/3pl_4pl"
+                                    >
                                         3PL
                                     </a>
                                 </li>
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="/trans_border">
+                                    <a
+                                        data-translate
+                                        className="text-gray-700 transition hover:text-gray-700/75"
+                                        href="/trans_border"
+                                    >
                                         Trans Border
                                     </a>
                                 </li>
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="/air_freight">
+                                    <a
+                                        data-translate
+                                        className="text-gray-700 transition hover:text-gray-700/75"
+                                        href="/air_freight"
+                                    >
                                         Air Freight
                                     </a>
                                 </li>
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="/sea_freight">
+                                    <a
+                                        data-translate
+                                        className="text-gray-700 transition hover:text-gray-700/75"
+                                        href="/sea_freight"
+                                    >
                                         Sea Freight
                                     </a>
                                 </li>
                             </ul>
                         </div>
                         <div>
-                            <strong className="font-medium text-gray-900"> About Us </strong>
+                            <strong data-translate className="font-medium text-gray-900">
+                                {" "}
+                                About Us{" "}
+                            </strong>
                             <ul className="mt-6 space-y-1">
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="about_us">
+                                    <a
+                                        data-translate
+                                        className="text-gray-700 transition hover:text-gray-700/75"
+                                        href="about_us"
+                                    >
                                         About Us
                                     </a>
                                 </li>
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="#">
+                                    <a
+                                        data-translate
+                                        className="text-gray-700 transition hover:text-gray-700/75"
+                                        href="#"
+                                    >
                                         Careers
                                     </a>
                                 </li>
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="#">
+                                    <a
+                                        data-translate
+                                        className="text-gray-700 transition hover:text-gray-700/75"
+                                        href="#"
+                                    >
                                         History
                                     </a>
                                 </li>
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="#">
+                                    <a
+                                        data-translate
+                                        className="text-gray-700 transition hover:text-gray-700/75"
+                                        href="#"
+                                    >
                                         Our Team
                                     </a>
                                 </li>
                             </ul>
                         </div>
                         <div>
-                            <strong className="font-medium text-gray-900"> Support </strong>
+                            <strong data-translate className="font-medium text-gray-900">
+                                {" "}
+                                Support{" "}
+                            </strong>
                             <ul className="mt-6 space-y-1">
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="#">
+                                    <a
+                                        data-translate
+                                        className="text-gray-700 transition hover:text-gray-700/75"
+                                        href="#"
+                                    >
                                         FAQs
                                     </a>
                                 </li>
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="/contact">
+                                    <a
+                                        data-translate
+                                        className="text-gray-700 transition hover:text-gray-700/75"
+                                        href="/contact"
+                                    >
                                         Contact
                                     </a>
                                 </li>
                                 <li>
-                                    <a className="text-gray-700 transition hover:text-gray-700/75" href="/contact">
+                                    <a
+                                        data-translate
+                                        className="text-gray-700 transition hover:text-gray-700/75"
+                                        href="/contact"
+                                    >
                                         Support
                                     </a>
                                 </li>
@@ -139,11 +203,15 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="mt-16 border-t border-gray-100 pt-8">
-                    <p className="text-center text-xs text-gray-500">
+                    <p data-translate className="text-center text-xs text-gray-500">
                         Eder 2024. All rights reserved.
                         <br />
                         Created by
-                        <a href="#" className="text-gray-700 underline transition hover:text-gray-700/75">
+                        <a
+                            data-translate
+                            href="#"
+                            className="text-gray-700 underline transition hover:text-gray-700/75"
+                        >
                             Eder Team Germany
                         </a>
                     </p>

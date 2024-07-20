@@ -12,13 +12,19 @@ const Section4 = () => {
             >
                 <div className="sm:w-1/2 relative">
                     <div className="rounded-full absolute w-12 h-12 z-0 -left-4 -top-3 animate-pulse"></div>
-                    <div className="gap-3 items-center hidden md:flex text-sm uppercase font-semibold my-5">
-                        <span className="w-6 h-[2px] bg-blue-500"></span>OUR 3PL AND 4PL SOLUTIONS
+                    <div
+                        data-translate
+                        className="gap-3 items-center hidden md:flex text-sm uppercase font-semibold my-5"
+                    >
+                        <span data-translate className="w-6 h-[2px] bg-blue-500"></span>OUR 3PL AND 4PL SOLUTIONS
                     </div>
-                    <h1 className="font-semibold text-2xl uppercase md:text-4xl min-[1800px]:text-7xl relative text-darken lg:pr-10">
+                    <h1
+                        data-translate
+                        className="font-semibold text-2xl uppercase md:text-4xl min-[1800px]:text-7xl relative text-darken lg:pr-10"
+                    >
                         3pl & 4pl
                     </h1>
-                    <p className="py-5 lg:pr-32 md:text-lg">
+                    <p data-translate className="py-5 lg:pr-32 md:text-lg">
                         Efficient supply chain management thrives when it works seamlessly with solutions for
                         Third-party logistics (3PL) and fourth-party logistics (4PL) are connected. The integration
                         These services optimize every aspect, from procurement to distribution, and improves inventory

@@ -76,7 +76,7 @@ const SupplyChain = () => {
     return (
         <>
             <div className="mx-auto text-center my-6 md:my-24">
-                <h1 className="my-3 text-2xl lg:text-6xl capitalize min-[1800px]:text-7xl font-semibold">
+                <h1 data-translate className="my-3 text-2xl lg:text-6xl capitalize min-[1800px]:text-7xl font-semibold">
                     Our valuable services
                 </h1>
             </div>
@@ -102,8 +102,12 @@ const SupplyChain = () => {
                                     </div>
                                 </Link>
                                 <div className="p-2 md:p-4">
-                                    <h4 className="text-xl md:text-3xl font-semibold capitalize">{item.title}</h4>
-                                    <p className="text-xs md:text-lg capitalize">{item.text}</p>
+                                    <h4 data-translate className="text-xl md:text-3xl font-semibold capitalize">
+                                        {item.title}
+                                    </h4>
+                                    <p data-translate className="text-xs md:text-lg capitalize">
+                                        {item.text}
+                                    </p>
                                 </div>
                             </div>
                         ))}

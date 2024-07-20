@@ -45,7 +45,10 @@ const Section11 = () => {
         <section className="py-24">
             <div className="mx-auto max-w-[80%] px-4 sm:px-6 lg:px-8">
                 <div className="mb-16">
-                    <h2 className="text-4xl font-manrope text-center font-bold text-gray-900 leading-[3.25rem]">
+                    <h2
+                        data-translate
+                        className="text-4xl font-manrope text-center font-bold text-gray-900 leading-[3.25rem]"
+                    >
                         Frequently asked questions
                     </h2>
                 </div>
@@ -65,7 +68,7 @@ const Section11 = () => {
                                 aria-controls={`basic-collapse-${index}-with-icon`}
                                 onClick={() => toggleAccordion(index)}
                             >
-                                <h5>{faq.question}</h5>
+                                <h5 data-translate>{faq.question}</h5>
                                 <svg
                                     className={`w-6 h-6 text-gray-900 transition duration-500 block ${
                                         activeIndex === index
@@ -107,7 +110,9 @@ const Section11 = () => {
                                 aria-labelledby={`basic-heading-${index}`}
                                 style={{maxHeight: activeIndex === index ? "250px" : "0"}}
                             >
-                                <p className="text-base text-gray-900 font-normal leading-6">{faq.answer}</p>
+                                <p data-translate className="text-base text-gray-900 font-normal leading-6">
+                                    {faq.answer}
+                                </p>
                             </div>
                         </div>
                     ))}
