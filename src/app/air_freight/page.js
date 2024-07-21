@@ -30,6 +30,7 @@ const Page = () => {
             <section className="w-full relative xl:min-h-[70vh] min-h-[50vh] bg-[url('/air.png')] flex justify-center items-center bg-cover bg-center">
                 <div className="w-full flex justify-start max-w-screen-2xl mx-auto px-8">
                     <h1
+                        data-translate
                         className="text-2xl lg:text-7xl text-start z-10 text-white w-full py-2 md:py-16 capitalize min-[1800px]:text-8xl font-semibold leading-6 sm:leading-normal"
                         dangerouslySetInnerHTML={{__html: "AIR FREIGHT: YOUR <br/> Supply Chain in Motion"}}
                     />
@@ -39,11 +40,15 @@ const Page = () => {
             </section>
             <section className="max-w-screen-2xl flex flex-col gap-2 md:gap-8 py-16 mx-auto px-8">
                 <div className="flex flex-col gap-3 justify-center items-start">
-                    <h3 className="text-sm uppercase font-semibold">Air Freight Services</h3>
-                    <h2 className="font-semibold text-2xl md:text-4xl">Air Freight</h2>
+                    <h3 data-translate className="text-sm uppercase font-semibold">
+                        Air Freight Services
+                    </h3>
+                    <h2 data-translate className="font-semibold text-2xl md:text-4xl">
+                        Air Freight
+                    </h2>
                 </div>
                 <div className="w-full bg-gray-400 mx-auto my-4 h-[0.1px]"></div>
-                <p className="py-5 md:text-lg">
+                <p data-translate className="py-5 md:text-lg">
                     At Eder, our air freight services offer fast and reliable transport solutions for your time-critical
                     shipments. By leveraging an extensive network of global airline partners and advanced logistics
                     technology, we ensure your cargo reaches its destination quickly and safely. Our comprehensive air
@@ -53,7 +58,7 @@ const Page = () => {
                 </p>
                 <div className="flex gap-4 md:gap-8 h-auto md:flex-row-reverse flex-col">
                     <img src="/air2.png" className="w-full md:w-1/2 h-auto" />
-                    <p className="py-5 md:text-lg">
+                    <p data-translate className="py-5 md:text-lg">
                         Our air freight services offer fast, reliable, and efficient transport solutions for your
                         time-critical shipments. We understand the crucial importance of fast deliveries in today's
                         global market, therefore we utilize an extensive network of premier global airline partners and
@@ -69,7 +74,7 @@ const Page = () => {
                 </div>
             </section>
             <section className="max-w-screen-2xl flex flex-col gap-2 md:gap-8 py-16 mx-auto px-8">
-                <h2 className="font-semibold text-2xl md:text-4xl">
+                <h2 data-translate className="font-semibold text-2xl md:text-4xl">
                     WHAT YOU GET WITH <span className="text-orange-600">Logistics Business</span>
                 </h2>
                 <div className="w-full bg-gray-400 mx-auto my-4 h-[0.1px]"></div>
@@ -80,8 +85,12 @@ const Page = () => {
                                 <FaTruckMoving size={30} className="text-white" />
                             </div>
                             <div className="flex flex-col gap-2 pl-6 sm:pl-12 items-start justify-center">
-                                <h2 className="font-semibold text-2xl md:text-4xl">{option.title}</h2>
-                                <p className="py-5 md:text-lg">{option.description}</p>
+                                <h2 data-translate className="font-semibold text-2xl md:text-4xl">
+                                    {option.title}
+                                </h2>
+                                <p data-translate className="py-5 md:text-lg">
+                                    {option.description}
+                                </p>
                             </div>
                         </div>
                     ))}

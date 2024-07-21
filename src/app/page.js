@@ -39,8 +39,12 @@ export default function Home() {
 
             {showMessengerPopup && (
                 <div className="fixed bottom-20 right-8 bg-white p-4 rounded-lg shadow-lg w-80 border">
-                    <h2 className="text-xl font-bold mb-2">Start a Conversation</h2>
-                    <p className="mb-4">The team typically responds in a few minutes.</p>
+                    <h2 data-translate className="text-xl font-bold mb-2">
+                        Start a Conversation
+                    </h2>
+                    <p data-translate className="mb-4">
+                        The team typically responds in a few minutes.
+                    </p>
                     <div className="space-y-2">
                         <div
                             className="flex items-center bg-blue-100 text-blue-600 p-2 rounded-lg cursor-pointer"
@@ -48,8 +52,12 @@ export default function Home() {
                         >
                             <BsMessenger className="w-6 h-6 mr-2" />
                             <div>
-                                <p className="font-semibold">Need Steel Products?</p>
-                                <p className="text-sm">Premium Steel Products</p>
+                                <p data-translate className="font-semibold">
+                                    Need Steel Products?
+                                </p>
+                                <p data-translate className="text-sm">
+                                    Premium Steel Products
+                                </p>
                             </div>
                         </div>
 
@@ -61,8 +69,12 @@ export default function Home() {
                         >
                             <BsMessenger className="w-6 h-6 mr-2" />
                             <div>
-                                <p className="font-semibold">Looking for a warehouse?</p>
-                                <p className="text-sm">Book a space</p>
+                                <p data-translate className="font-semibold">
+                                    Looking for a warehouse?
+                                </p>
+                                <p data-translate className="text-sm">
+                                    Book a space
+                                </p>
                             </div>
                         </div>
                         <div
@@ -71,8 +83,12 @@ export default function Home() {
                         >
                             <BsMessenger className="w-6 h-6 mr-2" />
                             <div>
-                                <p className="font-semibold">Something else?</p>
-                                <p className="text-sm">EDER Support</p>
+                                <p data-translate className="font-semibold">
+                                    Something else?
+                                </p>
+                                <p data-translate className="text-sm">
+                                    EDER Support
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -88,7 +104,7 @@ export default function Home() {
                 ) : (
                     <>
                         <BsMessenger className="w-6 h-6 mr-2" />
-                        <span>Chat with us</span>
+                        <span data-translate>Chat with us</span>
                     </>
                 )}
             </button>

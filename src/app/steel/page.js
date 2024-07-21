@@ -216,6 +216,7 @@ const Page = () => {
         <div className="relative p-4 pt-32">
             <div className="mb-4 flex justify-center">
                 <input
+                    data-translate
                     type="text"
                     placeholder="Search..."
                     value={searchTerm}
@@ -234,49 +235,57 @@ const Page = () => {
 
             <div className="container mx-auto ">
                 <div className="p-8">
-                    <h2 className="text-2xl font-bold mb-4">What are your benefits with us you may ask</h2>
+                    <h2 data-translate className="text-2xl font-bold mb-4">
+                        What are your benefits with us you may ask
+                    </h2>
                     <ul className="list-none space-y-4">
                         <li className="flex items-start">
                             <span className="text-green-500 mr-2">✔️</span>
-                            <span className="text-gray-700">
+                            <span data-translate className="text-gray-700">
                                 You will save time, effort, and be able to cut costs – through our many years of
                                 extensive experience in sourcing
                             </span>
                         </li>
                         <li className="flex items-start">
                             <span className="text-green-500 mr-2">✔️</span>
-                            <span className="text-gray-700">
+                            <span data-translate className="text-gray-700">
                                 You will be able to concentrate more on your core business again – through the
                                 high-quality standards of the EDER GmbH
                             </span>
                         </li>
                         <li className="flex items-start">
                             <span className="text-green-500 mr-2">✔️</span>
-                            <span className="text-gray-700">
+                            <span data-translateclassName="text-gray-700">
                                 You will have more opportunities for your sales team – through our wide network of
                                 possibilities
                             </span>
                         </li>
                     </ul>
-                    <p className="mt-4 font-bold">
+                    <p data-translate className="mt-4 font-bold">
                         Let’s talk today about how your business can benefit from our services.
                     </p>
 
-                    <h3 className="text-xl font-bold mt-8">EDER Steel core products</h3>
-                    <p className="mt-4 text-gray-700">
+                    <h3 data-translate className="text-xl font-bold mt-8">
+                        EDER Steel core products
+                    </h3>
+                    <p data-translate className="mt-4 text-gray-700">
                         EDER has everything you need, from stainless steel coils or sheets in various grades like 304,
                         304L, 316, 316L, 321 or 409, 420, 430, 439, 441. If you don’t see what you want, just let us
                         know and we’ll get it for you!
                     </p>
 
-                    <h3 className="text-xl font-bold mt-8">How to order?</h3>
-                    <p className="mt-4 text-gray-700">
+                    <h3 data-translate className="text-xl font-bold mt-8">
+                        How to order?
+                    </h3>
+                    <p data-translate className="mt-4 text-gray-700">
                         We have millions of Products, you just need to select the items you need and send us Query
                         through email, our Suport will reach you as soon as possible. In this stage you dont need to pay
                         any amount
                     </p>
                 </div>
-                <h1 className="justify-center flex text-xl font-bold '">Steel Metals we have</h1>
+                <h1 data-translate className="justify-center flex text-xl font-bold '">
+                    Steel Metals we have
+                </h1>
                 {filteredItems.length > 0 ? (
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 pt-5 pb-5">
                         {filteredItems.map((item, index) => (
@@ -286,7 +295,9 @@ const Page = () => {
                                 className="border p-4 rounded-lg flex flex-col items-center"
                             >
                                 <img src={item.image} alt={item.name} className="mb-4 h-24 hover:scale-105" />
-                                <span className="text-center">{item.name}</span>
+                                <span data-translate className="text-center">
+                                    {item.name}
+                                </span>
                             </Link>
                         ))}
                     </div>
@@ -294,16 +305,22 @@ const Page = () => {
                     <div className="flex justify-center pt-5 text-red-500">No items found</div>
                 )}
                 <div className="bg-gray-100 p-8 text-center">
-                    <h2 className="text-2xl font-semibold mb-4 flex justify-center">Buy Steel in All Shapes Online</h2>
-                    <p className="text-gray-700">
+                    <h2 data-translate className="text-2xl font-semibold mb-4 flex justify-center">
+                        Buy Steel in All Shapes Online
+                    </h2>
+                    <p data-translate className="text-gray-700">
                         Not only can you buy steel in all imaginable forms from us online – with over 100,000 items, we
                         offer a unique online range of various materials. In our assortment, you will find supports,
                         solid & rod material, sheets, hollow sections & profiles, round tubes, pipe connections,
                         installation systems, fittings & pumps, and much more.
                     </p>
-                    <p className="text-blue-500 mt-4 flex justify-center">Discover our unique range now!</p>
+                    <p data-translate className="text-blue-500 mt-4 flex justify-center">
+                        Discover our unique range now!
+                    </p>
                 </div>
-                <h1 className="justify-center flex text-xl mt-10">ADDITIONAL METALS</h1>
+                <h1 data-translate className="justify-center flex text-xl mt-10">
+                    ADDITIONAL METALS
+                </h1>
                 {filteredAdditionalItems.length > 0 ? (
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-2 gap-4 pt-5">
                         {filteredAdditionalItems.map((item, index) => (
@@ -313,7 +330,10 @@ const Page = () => {
                                 className="relative group border p-4 rounded-lg flex flex-col items-center"
                             >
                                 <img src={item.image} alt={item.name} className="w-full h-48 object-cover mb-4" />
-                                <span className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span
+                                    data-translate
+                                    className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                                >
                                     {item.name}
                                 </span>
                             </Link>
@@ -323,7 +343,9 @@ const Page = () => {
                     <div className="flex justify-center pt-5 text-red-500">No items found</div>
                 )}
                 <div className="py-12">
-                    <h2 className="text-3xl font-bold text-center mb-8">Your Benefits in the EDER Online Shop</h2>
+                    <h2 data-translate className="text-3xl font-bold text-center mb-8">
+                        Your Benefits in the EDER Online Shop
+                    </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {features.map((feature, index) => (
                             <div
@@ -331,8 +353,12 @@ const Page = () => {
                                 className="flex flex-col items-center text-center p-4 border rounded-lg shadow-lg"
                             >
                                 {feature.icon}
-                                <h3 className="text-xl font-semibold mt-4">{feature.title}</h3>
-                                <p className="mt-2">{feature.description}</p>
+                                <h3 data-translate className="text-xl font-semibold mt-4">
+                                    {feature.title}
+                                </h3>
+                                <p data-translate className="mt-2">
+                                    {feature.description}
+                                </p>
                             </div>
                         ))}
                     </div>

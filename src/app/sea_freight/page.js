@@ -31,6 +31,7 @@ const Page = () => {
             <section className="w-full relative xl:min-h-[70vh] min-h-[50vh] bg-[url('/Sea-Freight.jpg')] flex justify-center items-center bg-cover bg-center">
                 <div className="w-full flex justify-start max-w-screen-2xl mx-auto px-8">
                     <h1
+                        data-translate
                         className="text-2xl lg:text-7xl text-start z-10 text-white w-full py-2 md:py-16 capitalize min-[1800px]:text-8xl font-semibold leading-6 sm:leading-normal"
                         dangerouslySetInnerHTML={{__html: "Sea Freight <br/> Supply Chain in Motion"}}
                     />
@@ -40,11 +41,15 @@ const Page = () => {
             </section>
             <section className="max-w-screen-2xl flex flex-col gap-2 md:gap-8 py-16 mx-auto px-8">
                 <div className="flex flex-col gap-3 justify-center items-start">
-                    <h3 className="text-sm uppercase font-semibold">Sea Freight Services</h3>
-                    <h2 className="font-semibold text-2xl md:text-4xl">Sea Freight</h2>
+                    <h3 data-translate className="text-sm uppercase font-semibold">
+                        Sea Freight Services
+                    </h3>
+                    <h2 data-translate className="font-semibold text-2xl md:text-4xl">
+                        Sea Freight
+                    </h2>
                 </div>
                 <div className="w-full bg-gray-400 mx-auto my-4 h-[0.1px]"></div>
-                <p className="py-5 md:text-lg">
+                <p data-translate className="py-5 md:text-lg">
                     At Eder, our sea freight services offer reliable and cost-effective solutions for transporting goods
                     globally. By leveraging an extensive network of international shipping partners and strategically
                     located ports, we ensure efficient and timely delivery of your cargo. Our comprehensive sea freight
@@ -53,7 +58,7 @@ const Page = () => {
                 </p>
                 <div className="flex gap-4 md:gap-8 h-auto md:flex-row-reverse flex-col">
                     <img src="/sea1.jpg.png" className="w-full md:w-1/2 h-auto" />
-                    <p className="py-5 md:text-lg">
+                    <p data-translate className="py-5 md:text-lg">
                         At Eder, our sea freight services prioritize security, compliance, and real-time tracking to
                         ensure the safe and smooth international shipping of your goods. By leveraging our extensive
                         network of global shipping partners and strategically located ports, we offer cost-effective
@@ -68,7 +73,7 @@ const Page = () => {
                 </div>
             </section>
             <section className="max-w-screen-2xl flex flex-col gap-2 md:gap-8 py-16 mx-auto px-8">
-                <h2 className="font-semibold text-2xl md:text-4xl">
+                <h2 data-translate className="font-semibold text-2xl md:text-4xl">
                     WHAT YOU GET WITH <span className="text-orange-600">Logistics Business</span>
                 </h2>
                 <div className="w-full bg-gray-400 mx-auto my-4 h-[0.1px]"></div>
@@ -86,11 +91,14 @@ const Page = () => {
                     ))}
                 </div>
                 <div className="text-center my-8">
-                    <h2 className="font-semibold text-2xl md:text-4xl">
+                    <h2 data-translate className="font-semibold text-2xl md:text-4xl">
                         HOW TO USE INCOTERMS RULES <span className="text-orange-600">COMMON SHIPPING TERMS 2024</span>
                     </h2>
                     <Link href="/incoterms" passHref>
-                        <button className="inline-flex items-center mt-4 bg-orange-500 text-white font-semibold py-2 px-4 rounded hover:bg-orange-600 transition duration-300">
+                        <button
+                            data-translate
+                            className="inline-flex items-center mt-4 bg-orange-500 text-white font-semibold py-2 px-4 rounded hover:bg-orange-600 transition duration-300"
+                        >
                             Learn More
                             <FaArrowRight className="ml-2" />
                         </button>

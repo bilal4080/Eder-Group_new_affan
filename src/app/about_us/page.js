@@ -9,8 +9,10 @@ const Page = () => {
                     <img src="/about.jpg" alt="About us" className="rounded-lg shadow-lg" />
                 </div>
                 <div className="lg:w-1/2 lg:pl-8 pt-14 lg:pt-0">
-                    <h2 className="text-3xl font-bold mb-4">About Our Company</h2>
-                    <p className="text-lg leading-relaxed">
+                    <h2 data-translate className="text-3xl font-bold mb-4">
+                        About Our Company
+                    </h2>
+                    <p data-translate className="text-lg leading-relaxed">
                         At Eder, we specialize in providing seamless transportation and logistics solutions tailored to
                         your business needs. With a commitment to reliability, efficiency, and customer satisfaction, we
                         ensure that your goods reach their destination safely and on time, every time. Our dedicated
@@ -43,8 +45,10 @@ const Page = () => {
                         </svg>
                     </div>
                     <div>
-                        <h3 className="text-xl font-bold mb-2">Our Team</h3>
-                        <p className="text-lg">
+                        <h3 data-translate className="text-xl font-bold mb-2">
+                            Our Team
+                        </h3>
+                        <p data-translate className="text-lg">
                             Fully trained and highly skilled personnel with expert knowledge work in flexible
                             environments.
                         </p>
@@ -70,8 +74,10 @@ const Page = () => {
                         </svg>
                     </div>
                     <div>
-                        <h3 className="text-xl font-bold mb-2">CEO</h3>
-                        <p className="text-lg">
+                        <h3 data-translate className="text-xl font-bold mb-2">
+                            CEO
+                        </h3>
+                        <p data-translate className="text-lg">
                             Meet CEO Affan Dawood, a logistics expert with 20 years of industry experience.
                         </p>
                     </div>
@@ -96,8 +102,12 @@ const Page = () => {
                         </svg>
                     </div>
                     <div>
-                        <h3 className="text-xl font-bold mb-2">Warehouses</h3>
-                        <p className="text-lg">A broad network of warehouses worldwide to streamline your solutions.</p>
+                        <h3 data-translate className="text-xl font-bold mb-2">
+                            Warehouses
+                        </h3>
+                        <p data-translate className="text-lg">
+                            A broad network of warehouses worldwide to streamline your solutions.
+                        </p>
                     </div>
                 </div>
             </div>
