@@ -140,9 +140,9 @@ const Footer = () => {
                                     <a
                                         data-translate
                                         className="text-gray-700 transition hover:text-gray-700/75"
-                                        href="#"
+                                        href="imprint"
                                     >
-                                        Careers
+                                        Imprint
                                     </a>
                                 </li>
                                 <li>
