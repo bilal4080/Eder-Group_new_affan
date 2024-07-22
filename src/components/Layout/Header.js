@@ -6,12 +6,13 @@ import Image from "next/image";
 import {SlArrowDown} from "react-icons/sl";
 import Link from "next/link";
 import axios from "axios";
+import {uselangaugestore} from "@/Store";
 
 const Header = () => {
     const [activeLink, setActiveLink] = useState(null);
     const [scrollActive, setScrollActive] = useState(false);
     const [open, setOpen] = useState(false);
-    const [language, setLanguage] = useState("en");
+    // const [language, setLanguage] = useState("en");
     const [subSCSMenu1, setSubSCSMenu1] = useState(null);
     const [subSMenu1, setSSubMenu1] = useState(null);
     const [subECSMenu1, setECSSubMenu1] = useState(null);
@@ -19,6 +20,7 @@ const Header = () => {
     const [subIMenu1, setISubMenu1] = useState(null);
     const [subWSMenu1, setWSSubMenu1] = useState(null);
     const [scrollDownActive, setScrollDownActive] = useState(false);
+    const {language, updatelangauge} = uselangaugestore();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -42,13 +44,13 @@ const Header = () => {
         });
     }, []);
 
-    useEffect(() => {
-        const storedLanguage = localStorage.getItem("preferredLanguage");
-        if (storedLanguage) {
-            setLanguage(storedLanguage);
-            translatePage(storedLanguage);
-        }
-    }, []);
+    // useEffect(() => {
+    //     const storedLanguage = localStorage.getItem("preferredLanguage");
+    //     if (storedLanguage) {
+    //         // setLanguage(storedLanguage);
+    //         translatePage(storedLanguage);
+    //     }
+    // }, []);
 
     const closeMenu = () => {
         setOpen(false);
@@ -60,41 +62,75 @@ const Header = () => {
         setWSSubMenu1(false);
     };
 
-    const translatePage = async (targetLang) => {
-        try {
-            const elementsToTranslate = document.querySelectorAll("[data-translate]");
-            const textToTranslate = Array.from(elementsToTranslate).map((el) => el.innerText);
+    useEffect(() => {
+        const translatePage = async () => {
+            try {
+                const elementsToTranslate = document.querySelectorAll("[data-translate]");
+                const textToTranslate = Array.from(elementsToTranslate).map((el) => el.innerText);
 
-            const response = await axios.post(
-                "https://translation.googleapis.com/language/translate/v2",
-                {
-                    q: textToTranslate,
-                    target: targetLang,
-                    format: "text",
-                },
-                {
-                    params: {
-                        key: "AIzaSyBNTVvm6VfDGZNOvoRWYQLrYN8YMFPmq9c", // Replace with your actual API key
+                const response = await axios.post(
+                    "https://translation.googleapis.com/language/translate/v2",
+                    {
+                        q: textToTranslate,
+                        target: language,
+                        format: "text",
                     },
-                }
-            );
+                    {
+                        params: {
+                            key: "AIzaSyBNTVvm6VfDGZNOvoRWYQLrYN8YMFPmq9c", // Replace with your actual API key
+                        },
+                    }
+                );
 
-            const translations = response.data.data.translations;
-            elementsToTranslate.forEach((el, index) => {
-                el.innerText = translations[index].translatedText;
-            });
+                const translations = response.data.data.translations;
+                elementsToTranslate.forEach((el, index) => {
+                    el.innerText = translations[index].translatedText;
+                });
 
-            setLanguage(targetLang);
-            localStorage.setItem("preferredLanguage", targetLang);
-        } catch (error) {
-            console.error("Error translating page:", error.response?.data || error.message);
-        }
-    };
+                // setLanguage(language);
+                // localStorage.setItem("preferredLanguage", language);
+            } catch (error) {
+                console.error("Error translating page:", error.response?.data || error.message);
+            }
+        };
+
+        translatePage();
+    }, [language]);
+    // const translatePage = async (targetLang) => {
+    //     try {
+    //         const elementsToTranslate = document.querySelectorAll("[data-translate]");
+    //         const textToTranslate = Array.from(elementsToTranslate).map((el) => el.innerText);
+
+    //         const response = await axios.post(
+    //             "https://translation.googleapis.com/language/translate/v2",
+    //             {
+    //                 q: textToTranslate,
+    //                 target: targetLang,
+    //                 format: "text",
+    //             },
+    //             {
+    //                 params: {
+    //                     key: "AIzaSyBNTVvm6VfDGZNOvoRWYQLrYN8YMFPmq9c", // Replace with your actual API key
+    //                 },
+    //             }
+    //         );
+
+    //         const translations = response.data.data.translations;
+    //         elementsToTranslate.forEach((el, index) => {
+    //             el.innerText = translations[index].translatedText;
+    //         });
+
+    //         setLanguage(targetLang);
+    //         localStorage.setItem("preferredLanguage", targetLang);
+    //     } catch (error) {
+    //         console.error("Error translating page:", error.response?.data || error.message);
+    //     }
+    // };
 
     const toggleLanguage = () => {
         const newLang = language === "en" ? "de" : "en";
-        setLanguage(newLang);
-        translatePage(newLang);
+        updatelangauge(newLang);
+        // translatePage(newLang);
     };
 
     const headerItems = [
