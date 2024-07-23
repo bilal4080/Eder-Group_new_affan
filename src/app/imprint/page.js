@@ -18,11 +18,11 @@ const page = () => {
             <h2 data-translate className="text-xl font-semibold mt-4">
                 Contact
             </h2>
-            <p data-translate>Tel.: +49 (0) 821 - 809974 - 0</p>
+            <p data-translate>Tel.: +49 (0)1777 44 1002</p>
             <p data-translate>
                 Email:{" "}
-                <a href="mailto:anfrage@srs-stahl.de" className="text-blue-500">
-                    anfrage@srs-stahl.de
+                <a href="mailto:kontakt@the-eder.de" className="text-blue-500">
+                    kontakt@the-eder.de
                 </a>
             </p>
 
