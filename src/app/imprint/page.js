@@ -40,30 +40,6 @@ const page = () => {
             </h2>
             <p data-translate>Data Protection Officer: Mr. Muhammad Affan Rana</p>
 
-            <h2 data-translate className="text-xl font-semibold mt-4">
-                FairCommerce
-            </h2>
-
-            <p>
-                For more information, please visit{" "}
-                <a href="http://www.fair-commerce.de" className="text-blue-500">
-                    www.fair-commerce.de
-                </a>
-                .
-            </p>
-
-            <h2 data-translate className="text-xl font-semibold mt-4">
-                Photographer
-            </h2>
-            <p>
-                Photographer: Ingo Dumreicher /{" "}
-                <a href="http://www.id-fotos.de" className="text-blue-500">
-                    www.id-fotos.de
-                </a>
-            </p>
-            <p data-translate>Photo NE-Metals from the program:</p>
-            <p data-translate>© iStock.com / lucentius</p>
-
             <h2 data-translateclassName="text-xl font-semibold mt-4">Copyright</h2>
             <p data-translate>Layout and programming are protected by copyright.</p>
         </div>
