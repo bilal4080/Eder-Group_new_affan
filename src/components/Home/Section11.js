@@ -12,7 +12,7 @@ const Section11 = () => {
     const faqs = [
         {
             question: "What is Eder?",
-            answer: "Eder GmbH is a wholesale, import, export, and logistics company. It deals with exporting steel, metals, automotive parts, and tires from Germany to the world. Eder GmbH is a wholesale, import, export, and logistics company. It deals with exporting steel, metals, automotive parts, and tires from Germany to the world.",
+            answer: "EDER GmbH is a steel manufacturer and distributor company dealing with import, export including warehousing, logistics and freight forwading services.",
         },
         {
             question: "How does Eder contribute to increasing productivity?",
