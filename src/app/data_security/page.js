@@ -13,13 +13,13 @@ export default function PrivacyPolicy() {
                     1. Introduction
                 </h2>
                 <p data-translate>
-                    At EDER - Steel GmbH, we are committed to protecting your personal information. This policy outlines
-                    our practices regarding data collection, use, and protection.
+                    At EDER UG, we are committed to protecting your personal information. This policy outlines our
+                    practices regarding data collection, use, and protection.
                 </p>
                 <p data-translate>
                     <strong>Company Information:</strong>
                     <br />
-                    <strong>Company Name:</strong> EDER - Steel GmbH
+                    <strong>Company Name:</strong> EDER UG
                     <br />
                     <strong>Represented by:</strong> Managing Director Mr. Muhammad Affan Rana
                     <br />
@@ -191,7 +191,7 @@ export default function PrivacyPolicy() {
                     If you have any questions or concerns about this policy or your data, please contact us at:
                 </p>
                 <p data-translate>
-                    <strong>EDER - Steel GmbH</strong>
+                    <strong>EDER UG</strong>
                     <br />
                     Hindenburgstraße 14, 6356, Neusäß, Deutschland
                     <br />
