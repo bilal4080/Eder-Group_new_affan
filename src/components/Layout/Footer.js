@@ -69,7 +69,7 @@ const Footer = () => {
                             <p data-translate className="text-gray-900">
                                 Contact
                             </p>
-                            <p data-translate>EDER GmbH</p>
+                            <p data-translate>EDER UG</p>
                             {/* <p>Ulmer Landstraße 383, 86391 Stadtbergen</p> */}
                             <p data-translate>Phone #: +49 1777 44 1002</p>
                             <p data-translate>Email: kontakt@the-eder.de</p>
@@ -96,9 +96,9 @@ const Footer = () => {
                                     <a
                                         data-translate
                                         className="text-gray-700 transition hover:text-gray-700/75"
-                                        href="/trans_border"
+                                        href="/custom_clear"
                                     >
-                                        Trans Border
+                                        Custom
                                     </a>
                                 </li>
                                 <li>

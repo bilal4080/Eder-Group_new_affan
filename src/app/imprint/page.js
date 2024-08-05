@@ -7,7 +7,7 @@ const page = () => {
             <h1 className="text-2xl font-bold mb-4 data-translate">Imprint</h1>
 
             <h2 className="text-xl font-semibold mt-4 data-translate">Legal Provider Identification:</h2>
-            <p data-translate>EDER - Steel GmbH</p>
+            <p data-translate>EDER UG</p>
             <p data-translate>represented by the Managing Directors Mr. Muhammad Affan Rana</p>
             <p data-translate>Hindenburgstraße 14, 6356,</p>
             <p data-translate>Neusäß,</p>
