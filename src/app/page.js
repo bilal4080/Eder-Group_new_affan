@@ -39,7 +39,7 @@ export default function Home() {
                                     className="bg-[#f97316] text-white px-6 py-3 rounded-lg w-full text-lg font-medium"
                                     onClick={() => setShowModal(false)}
                                 >
-                                    Stahlerzeugnisse
+                                    Stahlkatalog
                                 </button>
                             </Link>
                             <Link href="/logistics">
@@ -143,3 +143,6 @@ export default function Home() {
         </>
     );
 }
+//mew
+
+//sssASaaas
