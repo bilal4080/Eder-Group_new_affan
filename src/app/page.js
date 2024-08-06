@@ -1,5 +1,5 @@
 "use client";
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import Link from "next/link";
 import {AiOutlineClose} from "react-icons/ai";
 import {BsMessenger} from "react-icons/bs";
@@ -15,14 +15,46 @@ import Section11 from "@/components/Home/Section11";
 
 export default function Home() {
     const [showMessengerPopup, setShowMessengerPopup] = useState(false);
+    const [showModal, setShowModal] = useState(false);
 
-    const openMessenger = (message) => {
-        const url = `https://m.me/theminuseder?ref=${encodeURIComponent(message)}`;
-        window.open(url, "_blank");
-    };
+    useEffect(() => {
+        // Check if the modal has been shown in this session
+        const hasModalBeenShown = sessionStorage.getItem("modalShown");
+        if (!hasModalBeenShown) {
+            setShowModal(true);
+            sessionStorage.setItem("modalShown", "true");
+        }
+    }, []);
 
     return (
         <>
+            {showModal && (
+                <div className="fixed inset-0 flex items-center justify-center z-50 backdrop-blur-lg">
+                    <div className="bg-white p-8 md:p-12 rounded-lg shadow-lg max-w-lg w-full mx-4 text-center">
+                        <h2 className="text-3xl font-bold mb-6">Willkommen bei EDER</h2>
+                        <p className="mb-8">Wählen Sie eine Option, um fortzufahren:</p>
+                        <div className="flex flex-col space-y-4">
+                            <Link href="/steel">
+                                <button
+                                    className="bg-[#f97316] text-white px-6 py-3 rounded-lg w-full text-lg font-medium"
+                                    onClick={() => setShowModal(false)}
+                                >
+                                    Stahlerzeugnisse
+                                </button>
+                            </Link>
+                            <Link href="/logistics">
+                                <button
+                                    className="bg-[#f97316] text-white px-6 py-3 rounded-lg w-full text-lg font-medium"
+                                    onClick={() => setShowModal(false)}
+                                >
+                                    Logistische Dienstleistungen
+                                </button>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            )}
+
             <Hero />
             <SupplyChain />
             <section className="w-full flex justify-start items-start">
