@@ -9,7 +9,7 @@ const page = () => {
             <h2 className="text-xl font-semibold mt-4 data-translate">Legal Provider Identification:</h2>
             <p data-translate>EDER UG</p>
             <p data-translate>represented by the Managing Directors Mr. Muhammad Affan Rana</p>
-            <p data-translate>Hindenburgstraße 14, 6356,</p>
+            <p data-translate>Hindenburgstraße 14, 86356,</p>
             <p data-translate>Neusäß,</p>
             <p data-translate>Deutschland</p>
 
